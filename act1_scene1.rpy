@@ -1,5 +1,12 @@
+# $ style = "fantasy"
+
 label act1_scene1:
     # FSY Section
+    
+    # $ style = "fantasy"
+    
+    # style window background Image("gui/fantasy_textbox.png", xalign=0.5, yalign=1.0)
+    # define gui.text_color = '#000000'
 
     play music "fantasy_ambient.mp3" loop fadein 1.0
     scene fantasy_town with fade
@@ -62,11 +69,13 @@ label act1_scene1:
 
     # CYB Section
 
+    # style window background Image("gui/cyber_textbox.png", xalign=0.5, yalign=1.0)
+    # define gui.text_color = '#ffffff'
+
     stop music fadeout 2.0
     # play music "cyberpunk_town.mp3" fadein 1.0
 
     scene cyber_town with fade
-
 
     "The fog clung to you as you moved further into the neon-lit mist, its grainy tendrils wrapping around your skin like damp silk."
     "The air was thick with an acrid stench—a chemical tang of oil, burning circuitry, and decay that gnawed at your senses."
