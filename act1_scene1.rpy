@@ -2,6 +2,8 @@ label act1_scene1:
     # FSY Section
 
     scene fantasy_town with fade
+    play music "fantasy_casual.m4a" fadein 1.0
+
     "You are a traveler from distant lands, a stranger threading foreign soil."
     "Whether it is the pull of adventure or the escape from something left behind, you’ve made the decision to seek out new horizons."
 
@@ -36,7 +38,7 @@ label act1_scene1:
 
     # CYB Section
 
-    scene cyberpunk_town with fade
+    scene cyber_town with fade
     "The fog clung to you as you moved further into the neon-lit mist, its grainy tendrils wrapping around your skin like damp silk."
     "The road stretched out before you, framed by the skeletal remains of towering buildings, long abandoned."
     "Somewhere behind you, the wooden automaton watched from the shadows of its forgotten inn."
