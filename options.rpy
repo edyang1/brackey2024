@@ -6,11 +6,6 @@
 
 
 
-######################
-#FONTS
-######################
-define gui.text_font = "fonts/Poppins-Regular.ttf"
-
 ## Basics ######################################################################
 
 ## A human-readable name of the game. This is used to set the default window
