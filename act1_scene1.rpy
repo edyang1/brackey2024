@@ -1,7 +1,7 @@
 label act1_scene1:
     # FSY Section
 
-    play music "fantasy_ambient.mp3" fadein 1.0
+    play music "fantasy_ambient.mp3" loop fadein 1.0
     scene fantasy_town with fade
 
     "You are a traveler from distant lands, a stranger threading foreign soil."
