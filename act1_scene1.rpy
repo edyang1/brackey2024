@@ -4,7 +4,7 @@ label act1_scene1:
     $ artstyle = "fantasy"
 
     play music "fantasy_ambient.mp3" loop fadein 1.0
-    scene fantasy_town with fade
+    scene fantasy_cottage with fade
 
     "You are a traveler from distant lands, a stranger threading foreign soil."
     "Whether it is the pull of adventure or the desire to escape something left behind, you've made the decision to seek out new horizons."
@@ -69,7 +69,7 @@ label act1_scene1:
     stop music fadeout 2.0
     # play music "cyberpunk_town.mp3" fadein 1.0
 
-    scene cyber_town with fade
+    scene cyber_android with fade
 
     "The fog clung to you as you moved further into the neon-lit mist, its grainy tendrils wrapping around your skin like damp silk."
     "The air was thick with an acrid stench—a chemical tang of oil, burning circuitry, and decay that gnawed at your senses."
