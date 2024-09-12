@@ -1,7 +1,7 @@
 label act1_scene1:
     # FSY Section
 
-    play music "fantasy_casual.mp3" fadein 1.0
+    play music "fantasy_ambient.mp3" fadein 1.0
     scene fantasy_town with fade
 
     "You are a traveler from distant lands, a stranger threading foreign soil."
@@ -62,8 +62,12 @@ label act1_scene1:
 
     # CYB Section
 
+    stop music fadeout 2.0
+    # play music "cyberpunk_town.mp3" fadein 1.0
+
     scene cyber_town with fade
-    
+
+
     "The fog clung to you as you moved further into the neon-lit mist, its grainy tendrils wrapping around your skin like damp silk."
     "The air was thick with an acrid stench—a chemical tang of oil, burning circuitry, and decay that gnawed at your senses."
     "Faint flickers of neon signs blinked erratically in the distance, half-broken, their distorted light casting jagged shadows across the shattered streets."
