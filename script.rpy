@@ -19,6 +19,8 @@ transform barge_into_center:
     easein_back 0.1 xpos 0.45
     easeout 0.1 xpos 0.5
 
+# START
+
 label start:
     call act1_scene1
     return
