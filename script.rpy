@@ -1,33 +1,24 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+﻿# CHARACTERS
 
 define e = Character("Eileen")
 
 
-# The game starts here.
+# ANIMATIONS
+
+transform close_to_camera:
+    xpos 0.5
+    ypos 0.5
+    xanchor 0.5
+    yanchor 0.5
+    zoom 1.5
+
+transform barge_into_center:
+    center
+    xpos 1.2
+    easeout_quint 0.3 xpos 0.5
+    easein_back 0.1 xpos 0.45
+    easeout 0.1 xpos 0.5
 
 label start:
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
-
+    call act1_scene1
     return
