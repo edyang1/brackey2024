@@ -1,9 +1,7 @@
-# $ style = "fantasy"
-
 label act1_scene1:
     # FSY Section
     
-    # $ style = "fantasy"
+    $ artstyle = "fantasy"
     
     # style window background Image("gui/fantasy_textbox.png", xalign=0.5, yalign=1.0)
     # define gui.text_color = '#000000'
@@ -69,8 +67,7 @@ label act1_scene1:
 
     # CYB Section
 
-    # style window background Image("gui/cyber_textbox.png", xalign=0.5, yalign=1.0)
-    # define gui.text_color = '#ffffff'
+    $ artstyle = "cyber"
 
     stop music fadeout 2.0
     # play music "cyberpunk_town.mp3" fadein 1.0

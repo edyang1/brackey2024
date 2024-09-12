@@ -1,7 +1,6 @@
 ﻿# CHARACTERS
 
-define e = Character("Eileen")
-
+# define e = Character("Eileen")
 
 # ANIMATIONS
 
