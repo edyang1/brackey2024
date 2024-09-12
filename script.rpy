@@ -1,6 +1,12 @@
 ﻿# CHARACTERS
 
-# define e = Character("Eileen")
+define stav = Character("stav")
+define cah = Character("cah")
+define i = Character("i")
+
+define stan = Character("stan")
+define cal = Character("cal")
+define b = Character("b")
 
 # ANIMATIONS
 
