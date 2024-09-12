@@ -2,9 +2,6 @@ label act1_scene1:
     # FSY Section
     
     $ artstyle = "fantasy"
-    
-    # style window background Image("gui/fantasy_textbox.png", xalign=0.5, yalign=1.0)
-    # define gui.text_color = '#000000'
 
     play music "fantasy_ambient.mp3" loop fadein 1.0
     scene fantasy_town with fade
