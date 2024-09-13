@@ -51,7 +51,7 @@ define gui.hover_muted_color = '#005b7a'
 
 ## The colors used for dialogue and menu choice text.
 
-define gui.text_color = '#ffffff'
+define gui.text_color = '#000000'
 
 # if artstyle == "fantasy":
 #     define gui.text_color = '#000000'
