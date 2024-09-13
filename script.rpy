@@ -1,11 +1,11 @@
 ﻿# CHARACTERS
-define stav = Character("stav")
-define cah = Character("cah")
-define i = Character("i")
+define stav = Character("stav") #Stavros Attelides
+define cah = Character("cah") #Caharel
+define i = Character("i") #Iolkos
 
-define stan = Character("stan")
-define cal = Character("cal")
-define b = Character("b")
+define stan = Character("stan") #Stanley “Stars” Hatterlode
+define cal = Character("cal") #Callie Wollerback
+define b = Character("b") #B4/22C (Bass)
 
 # ANIMATIONS
 transform close_to_camera:
@@ -37,13 +37,13 @@ python:
         
         # Loop to apply the stop-start effect while active
         while stop_start_glitch_active:
-            stop music
+            renpy.stop_music()  # Corrected stop function
             renpy.pause(renpy.random.uniform(0.1, 0.3))  # Random pause between 0.1 and 0.3 seconds
-            play music audio_file
+            renpy.play_music(audio_file)  # Corrected play function
             renpy.pause(renpy.random.uniform(0.05, 0.2))  # Random pause between 0.05 and 0.2 seconds
-            stop music
+            renpy.stop_music()  # Corrected stop function
             renpy.pause(renpy.random.uniform(0.1, 0.25))  # Random pause between 0.1 and 0.25 seconds
-            play music audio_file
+            renpy.play_music(audio_file)  # Corrected play function
 
     def start_stop_start_glitch(audio_file):
         global stop_start_glitch_active
@@ -53,7 +53,7 @@ python:
     def stop_stop_start_glitch():
         global stop_start_glitch_active
         stop_start_glitch_active = False
-        stop music
+        renpy.stop_music()  # Corrected stop function
 
     # Global variable to control whether the sound glitch effect should be running
     sound_glitch_active = False
@@ -72,7 +72,7 @@ python:
             for sound in glitch_sounds:
                 if not sound_glitch_active:
                     break  # If stopped during the loop, exit early
-                play sound sound
+                renpy.play(sound)  # Corrected play sound function
                 renpy.pause(renpy.random.uniform(0.1, 0.4))  # Random pause between 0.1 and 0.4 seconds
 
     def start_sound_glitch():
@@ -83,8 +83,7 @@ python:
     def stop_sound_glitch():
         global sound_glitch_active
         sound_glitch_active = False
-        stop sound
-        stop music
+        renpy.stop_all_sounds()  # Stop all sounds playing
 
     # Global variable to control whether the pitch glitch effect should be running
     pitch_glitch_active = False
@@ -113,7 +112,7 @@ python:
         global pitch_glitch_active
         pitch_glitch_active = False
         renpy.music.set_pan(0)  # Reset to center speaker
-        stop music
+        renpy.stop_music()  # Corrected stop function
 
 # START
 label start:
