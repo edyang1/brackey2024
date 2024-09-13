@@ -127,18 +127,44 @@ label fx_test:
     
     play music "fantasy_casual.mp3" loop fadein 1.0
     "Let's play some music."
-    "Now, let's glitch it."
-    
-    # Start the glitch effect (in parallel)
-    $ start_stop_start_glitch("fantasy_casual.mp3")
-    
-    "The music is glitching now!"
-    
-    "Stop the glitch."
-    
-    # Stop the glitch effect
-    $ stop_stop_start_glitch()
+    "Now, let's glitch it by pausing and resuming."
+
+    python:
+        for i in range(2):
+            renpy.music.set_pause(True)
+            renpy.pause(renpy.random.uniform(0.1, 0.3))  
+            
+            renpy.music.set_pause(False)
+            renpy.pause(renpy.random.uniform(0.05, 0.2))
     
     "The glitch has stopped."
+    
+    "Glitch it with random sound effects."
+
+    python:
+        glitch_sounds = ["meme1.mp3", "meme2.mp3"]
+        for i in range (2):
+            random_sound = renpy.random.choice(glitch_sounds)
+            renpy.sound.play(random_sound)
+            renpy.pause(renpy.random.uniform(3, 5))
+
+    "The glitch has stopped."
+
+    "Glitch the pitch."
+    
+    python:
+        for i in range (50):
+            renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
+            renpy.pause(renpy.random.uniform(0.02, 0.1))
+
+    "The pitch glitch has stopped."
+    
+    # "Let's try something new!"
+
+    
+    # python:
+    #     renpy.music.set_audio_filter("music", [renpy.audio.filter.Reverb(0.5), renpy.audio.filter.Lowpass(440)])
+
+    # "The music is now glitched!"
     
     return
