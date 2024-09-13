@@ -92,6 +92,19 @@ label char_test:
 
     return
 
+label pos_test:
+    $ artstyle = "fantasy"
+    scene fantasy_cottage with fade
+
+    show cah neu at close_to_camera
+    cah "I'm neutral and close to the camera."
+
+    hide cah
+    show cah neu at barge_into_center
+    cah "I'm neutral and barge into the center."
+
+    return
+
 label bg_test:
     $ artstyle = "fantasy"
     scene black with fade
