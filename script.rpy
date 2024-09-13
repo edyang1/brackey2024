@@ -25,10 +25,13 @@ transform barge_into_center:
 
 # START
 label start:
-    call act1_scene1
+    # call act1_scene1
 
-    # call char_test
-    # call pos_test
-    # call bg_test
+    call char_test
+    call pos_test
+    call bg_test
     # call fx_test
+
+    call act1_scene1
+    
     return
