@@ -90,6 +90,8 @@ label char_test:
     b "Seeya!"
     hide b
 
+    return
+
 label bg_test:
     $ artstyle = "fantasy"
     scene black with fade
@@ -116,6 +118,8 @@ label bg_test:
     scene cyber_healer with fade
 
     "I just lost my dog. And my brother taught me how to chase the bag."
+
+    return
 
 label fx_test:
     $ artstyle = "fantasy"
