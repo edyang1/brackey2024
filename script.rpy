@@ -37,13 +37,13 @@ python:
         
         # Loop to apply the stop-start effect while active
         while stop_start_glitch_active:
-            renpy.stop_music()  # Corrected stop function
+            renpy.stop_music()
             renpy.pause(renpy.random.uniform(0.1, 0.3))  # Random pause between 0.1 and 0.3 seconds
             renpy.play_music(audio_file)  # Corrected play function
             renpy.pause(renpy.random.uniform(0.05, 0.2))  # Random pause between 0.05 and 0.2 seconds
-            renpy.stop_music()  # Corrected stop function
+            renpy.stop_music()
             renpy.pause(renpy.random.uniform(0.1, 0.25))  # Random pause between 0.1 and 0.25 seconds
-            renpy.play_music(audio_file)  # Corrected play function
+            renpy.play_music(audio_file)
 
     def start_stop_start_glitch(audio_file):
         global stop_start_glitch_active
@@ -53,7 +53,7 @@ python:
     def stop_stop_start_glitch():
         global stop_start_glitch_active
         stop_start_glitch_active = False
-        renpy.stop_music()  # Corrected stop function
+        renpy.stop_music() 
 
     # Global variable to control whether the sound glitch effect should be running
     sound_glitch_active = False
@@ -72,7 +72,7 @@ python:
             for sound in glitch_sounds:
                 if not sound_glitch_active:
                     break  # If stopped during the loop, exit early
-                renpy.play(sound)  # Corrected play sound function
+                renpy.play(sound)
                 renpy.pause(renpy.random.uniform(0.1, 0.4))  # Random pause between 0.1 and 0.4 seconds
 
     def start_sound_glitch():
@@ -112,9 +112,15 @@ python:
         global pitch_glitch_active
         pitch_glitch_active = False
         renpy.music.set_pan(0)  # Reset to center speaker
-        renpy.stop_music()  # Corrected stop function
+        renpy.stop_music()
 
 # START
 label start:
-    call act1_scene1
+    # call act1_scene1
+
+
+
+    # call char_test
+    # call bg_test
+    call fx_test
     return
