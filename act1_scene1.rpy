@@ -3,7 +3,7 @@ label act1_scene1:
     
     $ artstyle = "fantasy"
 
-    play music "fantasy_ambient.mp3" loop fadein 1.0
+    play music "fantasy_casual.mp3" loop fadein 1.0
     scene fantasy_cottage with fade
 
     "You are a traveler from distant lands, a stranger threading foreign soil."
@@ -67,7 +67,7 @@ label act1_scene1:
     $ artstyle = "cyber"
 
     stop music fadeout 2.0
-    # play music "cyberpunk_town.mp3" fadein 1.0
+    play music "cyber_casual.mp3" loop fadein 1.0
 
     scene cyber_android with fade
 
