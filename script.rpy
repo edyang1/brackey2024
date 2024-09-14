@@ -29,7 +29,7 @@ transform barge_into_center:
 # START
 label start:
 
-    call s_a1s1
+    call s_a1_f_start
 
     # call choice_test
     # call char_test
