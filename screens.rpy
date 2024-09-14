@@ -254,7 +254,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 0.94
+            yalign 0.90
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
