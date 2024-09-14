@@ -59,6 +59,8 @@ label char_test:
     stan "I'm angry."
     show stan sup
     stan "I'm surprised."
+    show stan bigsup
+    stan "I'm very surprised."
     show stan neu
     stan "I'm neutral."
     stan "Seeya!"
