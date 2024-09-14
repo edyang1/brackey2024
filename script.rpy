@@ -1,11 +1,14 @@
 ﻿# CHARACTERS
 define stav = Character("stav") #Stavros Attelides
-define cah = Character("cah") #Caharel
+define cah = Character("cah") #Caharel (they)
 define i = Character("i") #Iolkos
 
 define stan = Character("stan") #Stanley “Stars” Hatterlode
 define cal = Character("cal") #Callie Wollerback
 define b = Character("b") #B4/22C (Bass)
+
+define f_name = "Cassiopeia"
+define cyber_name = "CassioP0X"
 
 # ANIMATIONS
 transform close_to_camera:
@@ -25,14 +28,12 @@ transform barge_into_center:
 
 # START
 label start:
-    # call act1_scene1
+    call s_a1s1
 
     # call choice_test
     # call char_test
-    call pos_test
+    # call pos_test
     # call bg_test
     # call fx_test
-
-    call act1_scene1
     
     return
