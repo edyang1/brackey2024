@@ -1,4 +1,4 @@
-label act1_scene1:
+label s_a1s1:
     # FSY Section
     
     $ artstyle = "fantasy"
@@ -6,61 +6,54 @@ label act1_scene1:
     play music "fantasy_casual.mp3" loop fadein 1.0
     scene fantasy_cottage with fade
 
-    "You are a traveler from distant lands, a stranger threading foreign soil."
-    "Whether it is the pull of adventure or the desire to escape something left behind, you've made the decision to seek out new horizons."
+    "The wind whispered through the tall grass, carrying the lingering scent of the damp forest behind you."
+    "You had been lulled into a sense of security by the warmth of the sun on your back."
+    "The rhythmic crunch of gravel beneath your boots set a steady beat, your mind drifting to distant lands and forgotten tales."
+    "Maybe you’d spot one of those two-tailed foxes the old tomes spoke of."
+    "Or perhaps you’d stumble upon an apothecary eager to buy the plants you’d gathered in the forest."
+    "You estimated by the sun's position that you'd have about an hour of daylight left."
+    "The air was thick with the scent of pine and earth, but something else stirred—a faint, unsettling presence, like the ghost of forgotten magic clinging to the breeze."
+    "You paused, trying to make out the source of long shadows that stretched across the path ahead."
+    "It was a cemetery,  jagged tombstones casting long shadows under a fading sky, their edges softened by the last golden hues of the setting sun."
+    "As you stepped closer, you saw him: a man in armor, standing still amidst the tombstones."
+    "He looked almost like a statue, his broad, brawny frame etched in the dying light."
+    "His face was solemn, eyes downcast, focused on something far beyond the graves at his feet."
+    "The missing arm spoke of battles hard-fought, scars earned in silence."
+    "His armor was scratched and worn, bearing the weight of a soldier who had seen far too much."
 
-    "In this world, adventure comes not with fanfare but in quiet steps along forgotten paths."
-    "The path beneath you is uneven, worn by time and the steps of many travelers long gone."
-    "Ahead, the mountains rise like ancient sentinels, their jagged peaks cutting against the darkening sky, silhouetted by the fading light of day."
-    "The air is thick with the scent of pine and earth, but there is something else—something faint but unsettling, like the remnants of forgotten magic lingering in the air."
+    "He noticed you before you had a chance to turn away."
+    "His gaze, sharp and thoughtful, settled on you with the calm focus of someone used to watching over others."
+    stav "A traveler?"
+    "His voice was low and gravelly."
+    stav "I don't see many passing through here anymore."
+    "The knight raised his good arm in a welcoming gesture, though his tone carried a note of wariness."
 
-    "Your feet tread this road as an outsider, feeling the weight of every step in a land that does not yet know you."
-    "The cold bites at your skin, sharp and unforgiving, carried by the wind that seems to whisper in a language you cannot understand."
+    python:
+        f_name = renpy.input("What's your name?", default = "Cassiopeia")
+        f_name = f_name.strip()
+        if f_name == "":
+            f_name = "Cassiopeia"
+    
+    "He nodded slightly, as if turning the name over in his mind. "
+    stav "Well met, {f_name}."
+    stav "These paths aren’t known for their hospitality, but if it’s rest you’re looking for, I’ll not turn you away." 
+    "He glanced briefly at the tombstones."
+    stav"I’ve seen enough of the dead for one day."
 
-    "The wind carries with it not just the scent of pine and cold earth, but the faintest echo of voices—long silenced by time, yet still present in the stones beneath your feet."
-    "As you press forward, the road narrows, winding its way through the shadowy terrain."
-    "Low stone walls flank either side, their surfaces weathered and crumbling, overgrown with moss and lichen."
-    "The stones seem to murmur in the twilight, telling stories of an age long forgotten, of battles fought and lives lost, of kingdoms that once stood tall but are now nothing more than dust in the wind."
+    "He stepped away from the graves and motioned for you to follow."
+    stav "Come on. My home’s not far."
+    stav "It’ll be night soon, and the cold isn’t something to face out here."
 
-    "Your breath fogs in the air before you, every step slower than the last."
-    "The sun has nearly disappeared behind the peaks, leaving only the faintest traces of light."
-    "Soon, the world will be plunged into night, and you must find shelter—or keep moving into the unknown, where the mountain’s embrace is less forgiving."
 
-    "You know you must make a choice."
 
-    menu:
-        "Keep walking, driven by the hope of finding shelter soon.":
-            "With what remains of your strength, you push forward, each step heavier than the last."
-            "The path narrows as the trees close in, their branches reaching out like skeletal fingers to snag at your clothing."
-            "The minutes stretch into eternity, the landscape around you shifting from shadowed forests to rolling hills of frostbitten grass."
-            "Just as you think you cannot go any further, a thin plume of smoke curls into the sky ahead, like a lifeline."
-            "There, nestled beside a small graveyard, stands a lone cottage."
-            "The tombstones are arranged in a semi-circle, their shapes obscured by a thin layer of frost."
-            "A single light flickers in the window, casting a warm glow that feels at odds with the surrounding desolation."
-            "Exhausted but driven by the promise of warmth, you press onward."
-            # jump fighter_location
 
-        "Rest on the stone wall, taking a moment to gather your strength.":
-            "The cold stone wall beckons, a solid presence in a world that feels increasingly uncertain."
-            "You sit down, letting the chill of the rock press into your legs as you exhale a long breath."
-            "The world around you feels distant, muted by the encroaching darkness."
-            "You take a long swig from your waterskin, but the liquid is tepid, offering little comfort against the biting cold."
-            "As your head tilts back, your eyes drift shut."
-            "In the haze of sleep, the earth beneath you shifts, rumbling softly as if stirred by ancient forces."
-            "The air grows heavy, thick with a presence you cannot see but can sense."
-            "You awaken to find the world changed, the sky darker, the stone beneath you no longer feels cold—it feels alive."
-            # jump golem_location
 
-        "Collapse to the ground, cursing your misfortune, no longer able to bear the weight of exhaustion.":
-            "Your legs buckle beneath you, sending you sprawling to the cold, unforgiving earth."
-            "A strangled cry escapes your lips as your knees hit the dirt, hands clawing at the frozen ground in a futile attempt to pull yourself forward."
-            "But there is no strength left in your limbs."
-            "Tears blur your vision, the wind howls around you, mocking your helplessness."
-            "Through the haze of despair, you barely register the sound of footsteps crunching through the frozen grass."
-            "Two figures emerge from the shadows, woodsmen with hard faces and soft eyes. They lift you gently from the ground."
-            "'We’ll get you to the hospice,' one of them says. 'You’ll be alright.'"
-            "In the distance, you see the faint outline of a building—a small hospice tucked away on the edge of the forest."
-            # jump healer_location
+
+
+
+
+
+
 
     # CYB Section
 
