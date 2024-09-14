@@ -183,3 +183,74 @@ label fx_test:
     # "The music is now glitched!"
     
     return
+
+label choice_test:
+    $ artstyle = "fantasy"
+    scene fantasy_cottage with fade
+
+    "Let's make a choice between 2."
+
+    menu:
+        "Option 1":
+            "You chose option 1."
+        "Option 2":
+            "You chose option 2."
+    
+    "Let's make a choice between 3."
+
+    menu:
+        "Option 1":
+            "You chose option 1."
+        "Option 2":
+            "You chose option 2."
+        "Option 3":
+            "You chose option 3."
+    
+    "Let's make a choice between 4."
+
+    menu:
+        "Option 1":
+            "You chose option 1."
+        "Option 2":
+            "You chose option 2."
+        "Option 3":
+            "You chose option 3."
+        "Option 4":
+            "You chose option 4."
+
+    "Excellent job! Let's go to the cyberpunk world."
+
+    $ artstyle = "cyber"
+    scene cyber_android with fade
+
+    "Let's make a choice between 2."
+
+    menu:
+        "Option 1":
+            "You chose option 1."
+        "Option 2":
+            "You chose option 2."
+    
+    "Let's make a choice between 3."
+
+    menu:
+        "Option 1":
+            "You chose option 1."
+        "Option 2":
+            "You chose option 2."
+        "Option 3":
+            "You chose option 3."
+    
+    "Let's make a choice between 4."
+
+    menu:
+        "Option 1":
+            "You chose option 1."
+        "Option 2":
+            "You chose option 2."
+        "Option 3":
+            "You chose option 3."
+        "Option 4":
+            "You chose option 4."
+        
+    return

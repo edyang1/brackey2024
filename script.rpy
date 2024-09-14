@@ -27,6 +27,7 @@ transform barge_into_center:
 label start:
     # call act1_scene1
 
+    call choice_test
     call char_test
     call pos_test
     call bg_test
