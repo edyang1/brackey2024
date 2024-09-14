@@ -139,11 +139,11 @@ style window:
     # background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
     background ConditionSwitch(
-        "artstyle == 'fantasy'", "gui/fantasy_textbox.png",
-        "artstyle == 'cyber'", "gui/cyber_textbox.png",
-        # Default background if no conditions are met
-        "True", "gui/textbox.png"
-    )
+    "artstyle == 'fantasy'", Image("gui/fantasy_textbox.png", xalign=0.5, yalign=1.0),
+    "artstyle == 'cyber'", Image("gui/cyber_textbox.png", xalign=0.5, yalign=1.0),
+    # Default background if no conditions are met
+    "True", Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+)
 
 style namebox:
     xpos gui.name_xpos

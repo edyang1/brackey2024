@@ -51,7 +51,7 @@ define gui.hover_muted_color = '#005b7a'
 
 ## The colors used for dialogue and menu choice text.
 
-define gui.text_color = '#000000'
+define gui.text_color = '#ffffff'
 
 # if artstyle == "fantasy":
 #     define gui.text_color = '#000000'
@@ -110,7 +110,7 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## time.
 
 ## The height of the textbox containing dialogue.
-define gui.textbox_height = 370
+define gui.textbox_height = 600
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
