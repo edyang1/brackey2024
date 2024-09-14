@@ -98,8 +98,33 @@ label pos_test:
     $ artstyle = "fantasy"
     scene fantasy_cottage with fade
 
+    show stav neu at close_to_camera
+    stav "I'm neutral and close to the camera."
+    hide stav
+
     show cah neu at close_to_camera
     cah "I'm neutral and close to the camera."
+    hide cah
+
+    show i neu at close_to_camera
+    i "I'm neutral and close to the camera."
+    hide i
+
+    "Lets go over to the cyber world."
+    $ artstyle = "cyber"
+    scene cyber_fighter with fade
+
+    show stan neu at close_to_camera
+    stan "I'm neutral and close to the camera."
+    hide stan
+
+    show cal neu at close_to_camera
+    cal "I'm neutral and close to the camera."
+    hide cal
+
+    show b neu at close_to_camera
+    b "I'm neutral and close to the camera."
+    hide b    
 
     hide cah
     show cah neu at barge_into_center

@@ -10,10 +10,10 @@ define b = Character("b") #B4/22C (Bass)
 # ANIMATIONS
 transform close_to_camera:
     xpos 0.5
-    ypos 0.5
+    ypos 0.45
     xanchor 0.5
     yanchor 0.5
-    zoom 1.5
+    zoom 1.12
 
 transform barge_into_center:
     center
@@ -27,10 +27,10 @@ transform barge_into_center:
 label start:
     # call act1_scene1
 
-    call choice_test
-    call char_test
+    # call choice_test
+    # call char_test
     call pos_test
-    call bg_test
+    # call bg_test
     # call fx_test
 
     call act1_scene1
