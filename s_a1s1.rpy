@@ -35,7 +35,7 @@ label s_a1s1:
             f_name = "Cassiopeia"
     
     "He nodded slightly, as if turning the name over in his mind. "
-    stav "Well met, {f_name}."
+    stav "Well met, [f_name]."
     stav "These paths aren’t known for their hospitality, but if it’s rest you’re looking for, I’ll not turn you away." 
     "He glanced briefly at the tombstones."
     stav"I’ve seen enough of the dead for one day."

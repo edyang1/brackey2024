@@ -1,11 +1,11 @@
 ﻿# CHARACTERS
-define stav = Character("stav") #Stavros Attelides
-define cah = Character("cah") #Caharel (they)
-define i = Character("i") #Iolkos
+define stav = Character("Stavros", color="#007a02", image="stav")  # Stavros Attelides
+define cah = Character("Caharel", color="#7fb638", image="cah")  # Caharel (they)
+define i = Character("Iolkos", color = "#684930", image="i")  # Iolkos
 
-define stan = Character("stan") #Stanley “Stars” Hatterlode
-define cal = Character("cal") #Callie Wollerback
-define b = Character("b") #B4/22C (Bass)
+define stan = Character("Stanley", color="#5d89f7", image="stan")  # Stanley “Stars” Hatterlode
+define cal = Character("Callie", color="#ff764a", image="cal")  # Callie Wollerback
+define b = Character("B4/22C", color="#d9a832", image="b")  # B4/22C (Bass)
 
 define f_name = "Cassiopeia"
 define cyber_name = "CassioP0X"
@@ -28,6 +28,7 @@ transform barge_into_center:
 
 # START
 label start:
+
     call s_a1s1
 
     # call choice_test
