@@ -71,12 +71,83 @@ label s_a1_golem:
             i "I'm sorry. I try cooking, but I can't taste the food and I'm always alone, so I never know if it's any good."
 
     i "But enough about that. What were you doing before? I could sense you were in a bad situation."
+    jump a1_golem_conversation_menu1
 
+label a1_golem_conversation_menu1:
     menu:
-        "explain how you have little memories of what led you here.":
-
+        "Explain how you have little memories of what led you here.":
+            "The statue's eyes shift, narrowing into thoughtful slits as it listens to you, lost in contemplation."
+            "After a moment, they return to their original shape."
+            i "I get it... you're like me, huh? I can't remember much from my past either."
+            "For a brief moment, it seems to sag, as though something unseen weighs on it."
+            i "To be honest, I can't remember almost anything from before a year ago."
+            i "Maybe... maybe there's a connection between your case and mine?"
+            "It raises its gaze to the ceiling, thoughtfully stroking its chin."
+            i "I'll have to look through some of the old man's notes. He might've written something relevant."
+            "It pauses, studying you intently from head to toe, as if measuring something."
+            i "But... you're not a golem, are you? So, I'm not sure if it's exactly the same issue. Oh!"
+            "It suddenly stretches out its hand toward you, eyes bright with realization."
+            i "My name is Iolkos. The old man told me that's what I should say when introducing myself."
+            jump a1_golem_conversation_menu1
+        
         "Ask why it's alone in this building. It doesn't seem a great place to be.":
+            "The statue looks at you, confusion flickering in its gaze."
+            "It tilts its head as though trying to raise an eyebrow—if it even had one, you reckon."
+            i "What do you mean? This is my home. I like it here! It's full of books and strange little things to play with."
+            i "Plus, the old man said I should stay here for now."
+            "It lifts its arms and shrugs, a gesture that seems oddly casual for something so mechanical."
+            i "Besides, I can't really leave... I mean, I *literally* can't."
+            "It gestures toward its wrists, indicating the delicate threads attached to them."
+            "When you look closer, you notice a thin filament trailing from its wrists upward."
+            "Your eyes follow the threads, and they disappear somewhere into the ceiling, but their exact origin remains a mystery."
+            i "These little things are great for doing all sorts of tasks, but they've got one drawback—they won't let me out."
+            i "Not through the windows, and definitely not through the door. Trust me, I've tried."
+            i "They always get tangled in the frame. Frustrating, right?"
+            jump a1_golem_conversation_menu1
 
         "Inquire more about the old man it mentioned.":
+            i "He's the one who told me what to do here. He's also the one who collected all these books you see."
+            "The golem gestures toward the bookshelves on the upper floor, extending a hand."
+            "With the faintest rumble, the wooden planks shift and bend, releasing a book that slowly lowers on one of the shimmering threads connected to its limbs."
+            "It catches it, flipping through the pages."
+            i "He was a person of great knowledge—he read all these books and even more!"
+            i "He's written down a lot of what he did, and where he went, in this book here."
+            "Its eyes narrow slightly, forming curious, diagonal shapes as it mutters to itself."
+            i "Diary? Is that what it's called?"
+            "It nods, seemingly satisfied with the word."
+            i "In his diary, he says he bought this inn to have somewhere quiet to study... important things."
+            i "I know because he told me. Well, sort of."
+            "The golem's voice lowers slightly, its tone more somber."
+            i "He made me, but he hasn't come back since I woke up... a year ago."
+            "It flips through the pages with a strange precision, as if searching for a hidden answer."
+            "You catch glimpses of the handwritten notes—symbols and words in a language unfamiliar to you, though the golem reads it effortlessly."
+            "Diagrams of spheres, circles, and strange charts fill entire pages, adding to the mystery."
+            "At last, it stops at the very end of the book."
+            i "See? He says he made me, and that I'm supposed to do something for him."
+            i "I just... need to figure out what."
+            jump a1_golem_conversation_menu1
 
         "Ask about how it managed to take you here.":
+            i "Oh, that? It's something I can do pretty easily with these."
+            "The golem lifts its wrists, twisting them slightly to reveal the delicate threads extending from its joints."
+            "You follow them upward with your gaze, noticing how they vanish somewhere into the ceiling."
+            i "I can use them to move things or change how they behave—inside this place and even outside."
+            i "But... when I try to reach beyond the inn, it gets much harder."
+            "Its right hand extends toward the stove."
+            "A thread detaches from the main strand, snaking out and clumsily grabbing the ladle, stirring the soup with jerky, imprecise movements."
+            "Another thread reaches for the jug of milk, tipping it toward the pot with awkward care, splashing more than pouring."
+            i "They're useful for a lot of things, but... they lack finesse sometimes."
+            i "And they definitely won't let me leave."
+            "For just a moment, a shadow of sadness flickers across its dark eyes before disappearing, as fleeting as it came."
+            i "But it's fine! The old man gave them to me, so I'm sure there's something I haven't figured out yet."
+            i "Maybe there's something in one of the books he left behind."
+            jump a1_golem_conversation_menu1
+
+        "Exit":
+            "He moves with careful precision, his delicate threads guiding the ladle to his lips as he takes a slow sip of the soup."
+            "The faint glow of the nearby candlelight reflects off his polished skin,"
+            "casting intricate patterns across his face, the threads shimmering as they catch the light."
+            jump a1_golem_conversation_menu2
+
+label a1_golem_conversation_menu2:
+    "hello world"
