@@ -2,7 +2,7 @@ label s_a2_knight:
     $ artstyle = "cyber"
 
     scene black
-    play music "cyber_suspense.mp3" loop fadein 1.0
+    play music "cyber_suspense.mp3" loop
 
     python:
         c_name = renpy.input("ENTER YOUR ALIAS", default = "Ca55ioP0X")
