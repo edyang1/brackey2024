@@ -102,6 +102,110 @@ label pos_test:
     stav "I'm neutral and close to the camera."
     hide stav
 
+    show stav neu at lean_in
+    stav "I'm neutral and lean in."
+    hide stav
+
+    show stav neu at lean_back
+    stav "I'm neutral and lean back."
+    hide stav
+
+    show stav neu at shift_left
+    stav "I'm neutral and shift left."
+    hide stav
+
+    show stav neu at shift_right
+    stav "I'm neutral and shift right."
+    hide stav
+
+    show stav neu at tilt_left
+    stav "I'm neutral and tilt left."
+    hide stav
+
+    show stav neu at tilt_right
+    stav "I'm neutral and tilt right."
+    hide stav
+
+    show stav neu at nod
+    stav "I'm neutral and nod."
+    hide stav
+
+    show stav neu at shake_head
+    stav "I'm shaking my head."
+    hide stav
+
+    show stav neu at subtle_breathe
+    stav "I'm subtly breathing."
+    hide stav
+
+    show stav neu at sway_left_right
+    stav "I'm swaying left and right."
+    hide stav
+
+    show stav neu at shrink_back
+    stav "I'm shrinking back."
+    hide stav
+
+    show stav neu at jitter
+    stav "I'm jittery."
+    hide stav
+
+    show stav neu at step_forward
+    stav "I'm stepping forward."
+    hide stav
+
+    show stav neu at step_back
+    stav "I'm stepping back."
+    hide stav
+
+    show stav neu at look_away
+    stav "I'm looking away."
+    hide stav
+
+    show stav neu at look_up
+    stav "I'm looking up."
+    hide stav
+
+    show stav neu at look_down
+    stav "I'm looking down."
+    hide stav
+
+    show stav neu at enter_slow
+    stav "I just entered the scene slowly."
+    hide stav at exit_slow
+
+    show stav neu at enter_quick
+    stav "I'm in a hurry, so I entered quickly."
+    hide stav at exit_quick
+
+    show stav neu at enter_hesitant
+    stav "I’m not sure about this, so I entered hesitantly."
+    hide stav at exit_hesitant
+
+    show stav neu at enter_confident
+    stav "I’m confident, so I made a bold entrance."
+    hide stav at exit_confident
+
+    show stav neu at enter_shy
+    stav "I’m feeling shy, so I entered cautiously."
+    hide stav at exit_shy
+
+    show stav neu at enter_bold
+    stav "I made a dramatic and sudden entrance!"
+    hide stav at exit_bold
+
+    show stav neu at enter_subtle
+    stav "I sneaked in quietly with a subtle entrance."
+    hide stav at exit_subtle
+
+    "Holy crap we're done."
+
+    show stav neu at close_to_camera
+    stav "I'm neutral and close to the camera."
+    hide stav
+
+    
+
     show cah neu at close_to_camera
     cah "I'm neutral and close to the camera."
     hide cah
@@ -125,10 +229,6 @@ label pos_test:
     show b neu at close_to_camera
     b "I'm neutral and close to the camera."
     hide b    
-
-    hide cah
-    show cah neu at barge_into_center
-    cah "I'm neutral and barge into the center."
 
     return
 
