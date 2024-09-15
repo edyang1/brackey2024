@@ -457,12 +457,7 @@ label start:
     "{size=+4}{color=#ff0000}ERR0RRRRRrrrrr{size=+7}rRrrrRrrRrrRrr{/size}{/color}"
     "{size=*0.6}Memory leak in thread {size=*1.3}{color=#8b0000}#5432... attempting to resolve{/color}{/size}"
     "{size=*0.8}{b}!!W@RN¡NG!!:{/b} Recursive loop detected in m€møry ₲{size=*1.4}{color=#00ff00}43FZ{/color}..."
-    "{size=*0.9}{i}{color=#ff1493}Page fault—insufficient memory resources{/color}{/i}"
-    "{size=+5}{color=#ff6347}System HALT: Stack trace corrupted—cannot continue.{/color}"
-    "{size=*1.7}{b}{color=#ff4500}Segmentation fault. Memory access violation. Reboot required...{/color}{/b}"
-    "{size=*1.5}{s}{i}Memory buffer underrun...data {color=#0000ff}loss imminent{/color}{/i}{/s}"
-    "{size=+6}{color=#ff4500}DISK F@ILURE{/color}"
-    "{size=*1.3}Invalid memory read at address {size=*0.8}{u}{color=#4682b4}0x0000FFFF{/color}{/u}"
+    
 
     # call s_a2_glitch
 

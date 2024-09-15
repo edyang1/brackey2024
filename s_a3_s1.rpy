@@ -60,7 +60,10 @@ label a3_s1_1:
 
             stav "What do you mean? I've never met a young lad in that place. There was an old man who used to live there before… Before…"
 
+            scene cyber_console with flash
             show stav neu at lean_back
+            scene fantasy_cottage with flash
+
             "He trails off, his bewilderment deepening."
 
             stav "My memory... it's playing tricks on me. I can't seem to recall the last time I went there."
@@ -106,7 +109,10 @@ label a3_s1_1:
             "You mentally retrace your steps, searching for the stone building in the distance, but it never appears."
             "You keep walking, each step heavier than the last, your energy draining, but still, the hospice remains out of sight."
 
+            scene cyber_console with flash
             "Baffled, you push yourself to run for another ten minutes, desperation creeping into your movements."
+            scene fantasy_healer with flash
+
             "Suddenly, you realize something is wrong."
             
             "You look down at your feet, watching as the world around you shifts. It moves with you for a moment, then abruptly jerks itself back, as though resetting."
@@ -162,7 +168,9 @@ label a3_s1_1:
 
             i "I don't remember you! I don't know who you are!"
 
+            scene cyber_console with flash
             show i ang at jitter
+            scene fantasy_golem with flash
 
             "Iolkos cries out, his voice rising in fear."
 
