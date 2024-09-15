@@ -12,8 +12,8 @@ label s_a1_glitch:
     "You pass by, feeling drawn toward the outskirts, where the village's stone walls fade into the darkened forest."
     "As you walk, you notice something strange—a glimmer beneath the roots of an ancient tree,"
     "just beyond the last row of cottages. It's faint, barely noticeable, but it pulses with an odd, rhythmic glow."
-    
-    menu: #glitches start here
+
+    menu:
         "Investigate":
             "You bend down, your fingers brushing the cool earth as you reach for the glimmering light."
             "The object pulses faintly beneath your touch, a sudden warmth spreading through your hand."
@@ -29,11 +29,43 @@ label s_a1_glitch:
 
     jump a1_glitch1
 
-label a1_glitch1: #glitches get more intense
-    "SEGMENTATION FAULT"
+label a1_glitch1:
+    scene black with fade
+    stop music fadeout 1.0
+    stop sound fadeout 1.0
+    
+    "{b}SEGMENTATION FAULT: Stack overflow detected. Address 0x7FFF{/b}"
 
-    "m€mø®¥ Øverfłøw"
+    "Your vision blurs as the village around you seems to warp, the trees flickering in and out of existence."
 
-    "rEboOtiNG..."
+    "{b}MEMORY LEAK: Invalid memory reference at 0x0000FF. Core dump initiated.{/b}"
+
+    "The ground beneath your feet shudders, and the sky seems to ripple like water, distorting the landscape."
+
+    "{b}CRITICAL ERROR: Buffer overflow... memory corrupted... terminating process.{/b}"
+
+    "Reality splinters as the village dissolves, replaced by jagged, shifting fragments of what once was."
+
+    "{b}m€mø®¥ Øverfłøw{/b}"
+
+    "You stumble, the world around you collapsing into a chaotic swirl of colors and shapes."
+
+    "{b}ERROR: UNDEFINED ENTITY{/b}"
+
+    "The trees stretch unnaturally, twisting into impossible angles as the ground beneath you splits open."
+
+    "{b}rEboOtiNG... SYSTEM FAILURE{/b}"
+
+    "Suddenly, everything goes black."
+
+    "{b}MeM0Ry... FRAgMentEd...{/b}"
+
+    "{b}eRr0rrrRrrRR: CoRruptED pAThWay{/b}"
+
+    "{b}Rebuilding n#n#-><-- ... //r€AL_ity....{/b}"
+
+    "The ground stabilizes for a moment, but your surroundings flicker, caught between what was and what is."
+
+    "{b}SHuTtInG DowN iNN->ffñteEe.... 10... 9... 8...{/b}"
 
     jump s_a2_knight
