@@ -270,7 +270,7 @@ label fx_test:
     "Now, let's glitch it by pausing and resuming."
 
     python:
-        for i in range(2):
+        for count in range(2):
             renpy.music.set_pause(True)
             renpy.pause(renpy.random.uniform(0.1, 0.3))  
             
@@ -283,7 +283,7 @@ label fx_test:
 
     python:
         glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
-        for i in range (5): # how many times to play any sound
+        for count in range (5): # how many times to play any sound
             random_sound = renpy.random.choice(glitch_sounds)
             renpy.sound.play(random_sound)
             renpy.pause(renpy.random.uniform(3, 5))
@@ -293,7 +293,7 @@ label fx_test:
     "Glitch the pitch."
     
     python:
-        for i in range (50):
+        for count in range (50):
             renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
             renpy.pause(renpy.random.uniform(0.02, 0.1))
 
