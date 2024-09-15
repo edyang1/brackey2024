@@ -4,7 +4,7 @@ label s_a2_android:
     play music "cyber_casual.mp3" loop fadein 1.0
     play sound "a_safehouse.mp3" loop fadein 1.0
 
-    scene fantasy_golem with fade
+    scene cyber_android with fade
 
     "The street corner is steeped in shadow, occasionally disrupted by the flicker of neon lights and the soft hum of electric signs above."
     "Under the concrete maze of buildings and archways, the small street feels almost forgotten,"
