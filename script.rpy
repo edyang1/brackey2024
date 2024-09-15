@@ -443,7 +443,6 @@ transform enter_expand:
 
 # START
 label start:
-
     $ artstyle = "fantasy"
 
     "ERROR: {size=*1.5}{color=#f00}M€mø®¥ Sėgmêntâ†ïøñ Fåûł†{/color}{/size}"
