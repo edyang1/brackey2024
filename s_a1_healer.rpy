@@ -251,4 +251,43 @@ label a1_healer_conversation_menu1:
             jump a1_healer1
 
 label a1_healer1:
-    "hello world"
+    "Days pass slowly in the hospice, each one blurring into the next."
+    "The faint scent of pine and sage lingers in the air, mixing with the constant,"
+    "comforting crackle of the hearth at the far end of the room."
+    "You spend most of your time lying in bed, your body still weak from the cold and exhaustion."
+    "Outside, the world carries on, but here within the stone walls, it feels like time has slowed to a crawl."
+    "Caharel visits intermittently, his presence as steady and routine as the ticking of a clock."
+    "He checks your pulse, examines your recovery with the same detached precision as before,"
+    "but always with the same quiet efficiency."
+    "The sound of his tools, the rustle of his robes, the scrape of his chair—these become the background noise of your recovery."
+    "And though his touch is careful, you can't help but feel the distance in it."
+    "But slowly, you feel your strength returning. At first, it's a flicker—just enough to sit up in bed,"
+    "to hold a cup of warm broth in your hands without trembling."
+    "The warmth spreads through you with each sip,"
+    "the rich taste of marigold and chamomile soothing the last remnants of your fatigue."
+    "The world beyond the small window seems brighter, more alive, though still distant."
+    "By the end of the week, you manage to stand, taking tentative steps around the room."
+    "The floor is cool beneath your feet, the stone rough but familiar."
+    "Caharel watches from a distance, his arms crossed, his sharp gaze never lingering too long,"
+    "as if making sure you don't falter."
+    "Finally, one evening, he approaches, his voice as calm as ever."
+    cah "You're healing well. Soon, you'll be strong enough to leave."
+    "His words are simple, almost clinical, but there's a faint softness in his tone."
+    "The smallest sign that, despite everything, your recovery means something. Even if he would never say it."
+
+    menu:
+        "Resume your search for the mysterious stranger Stavros mentioned.":
+            "After resting for a few more hours, you feel your strength return. The weight of Stavros' words lingers in your mind, urging you onward."
+            "You gather your belongings, the familiar chill of the forest wrapping around you as you step back onto the worn path."
+            "The trees close in once more, their twisted branches arching above like a dark canopy, and the distant calls of forest creatures echo through the woods."
+            "Your footsteps quicken as you remember the direction Stavros gave you—west, past the river. The air grows cooler as the sun begins to sink lower in the sky."
+            "You press on, navigating the narrowing trail, your breath visible in the cold air."
+
+            stop music fadeout 1.0
+            scene black with fade
+            jump s_a1_golem
+
+        "Explore Everdusk Valley.":
+            stop music fadeout 1.0
+            scene black with fade
+            jump s_a1_glitch
