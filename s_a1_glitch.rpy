@@ -13,18 +13,18 @@ label s_a1_glitch:
     "just beyond the last row of cottages. It's faint, barely noticeable, but it pulses with an odd, rhythmic glow."
     
     menu:
-    "Investigate":
-        "You bend down, your fingers brushing the cool earth as you reach for the glimmering light."
-        "The object pulses faintly beneath your touch, a sudden warmth spreading through your hand."
-        "Before you can react, the stone begins to glow brighter,"
-        "sending a shiver down your spine as the ground trembles beneath your feet."
+        "Investigate":
+            "You bend down, your fingers brushing the cool earth as you reach for the glimmering light."
+            "The object pulses faintly beneath your touch, a sudden warmth spreading through your hand."
+            "Before you can react, the stone begins to glow brighter,"
+            "sending a shiver down your spine as the ground trembles beneath your feet."
 
-    "Don't mess with it":
-        "You take a step back, hesitant to tamper with something so strange and out of place."
-        "But as you turn to leave, the glimmering light pulses again, this time stronger, as if responding to your retreat."
-        "The ground trembles, and you feel a sudden pull—a magnetic force drawing you back toward the object."
-        "Before you can react, the stone begins to glow brighter,"
-        "sending a shiver down your spine as the ground trembles beneath your feet."
+        "Don't mess with it":
+            "You take a step back, hesitant to tamper with something so strange and out of place."
+            "But as you turn to leave, the glimmering light pulses again, this time stronger, as if responding to your retreat."
+            "The ground trembles, and you feel a sudden pull—a magnetic force drawing you back toward the object."
+            "Before you can react, the stone begins to glow brighter,"
+            "sending a shiver down your spine as the ground trembles beneath your feet."
 
     jump a1_glitch1
 
