@@ -184,7 +184,9 @@ label fox_intro: #introduction to the fox\
 
 label fox_intro_2:
     fox "Dude, I was totally messing with you."
-    fox "You should have seen the look on your face."
+    fox "The hell even is a magnetic field?"
+    fox "I mean, you can see it. You can't feel it. But it's there."
+    fox "Anyways."
 
     "The two-tailed fox grins mischievously, its tails flicking back and forth."
     "They glow faintly as the fox studies you."
@@ -202,7 +204,7 @@ label fox_intro_2:
             fox "I'm just trying to lighten the mood."
             fox "Well listen, dude, you kinda don't have a choice."
             fox "As the spirit guardian of this forest, I've got magic powers. I can't let you leave yet."
-            fox "I mean, I won't zap you with lasers or anything (even though it's totally awesome!)"
+            fox "I mean, I won't zap you with lasers or anything (even though that would be totally awesome!)"
             fox "But chill with me for a bit, and I'll send you right on your way."
             jump forest_minigame_9
         "Let me at em, coach!":
@@ -210,12 +212,13 @@ label fox_intro_2:
             jump forest_minigame_9
 
 label forest_minigame_9: #two foxes puzzle
+    fox "Alright, this one's gonna be light work."
+
     "The two-tailed fox flicks its tails, and suddenly there are two identical foxes standing before you."
     "One tail on each fox glows faintly, making it hard to distinguish which is real."
 
-    fox "This one's light work."
     fox "Only one of us speaks the truth. The other... well, let's just say I like to play with the truth a little."
-    fox "You can ask one question to find out which path will lead you safely through the forest."
+    fox "So you can ask one question to find out which path will lead you safely through the forest."
     "The foxes grin mischievously, each waiting for your question."
 
     menu:
@@ -231,7 +234,7 @@ label forest_minigame_9: #two foxes puzzle
             fox "The other would say to take the left path."
             fox "So would I."
             "You realize that both foxes would point to the wrong path in this scenario."
-            fox "Alright, alright, I see you."
+            fox "Alright, alright, I see you. Big stepper over here."
             "You now know which path leads to safety: the opposite of what they said."
             jump forest_minigame_10
 
@@ -252,7 +255,7 @@ label forest_minigame_10: #pawns
             jump forest_minigame_10
 
         "Chess pawns":
-            fox "Boom! You got it. Pawns are always marching forward, never back."
+            fox "Yerr! You got it. Pawns are always marching forward, never back."
             jump forest_minigame_11
 
         "Guardians":
@@ -261,7 +264,7 @@ label forest_minigame_10: #pawns
             jump forest_minigame_10
 
         "The king's army":
-            fox "Sounds cool, but nope. Armies can retreat."
+            fox "Sounds cool, but nope. Armies can definitely retreat."
             jump forest_minigame_10
 
 label forest_minigame_11: #keyboard
@@ -273,19 +276,22 @@ label forest_minigame_11: #keyboard
             jump forest_minigame_12
 
         "A map":
-            fox "Close, but not quite. A map does have keys, but 'space with no room'? Not so much. Try again."
+            fox "Close, but not quite. A map does have keys, but 'space with no room'? Not so much."
             jump forest_minigame_11
 
         "A book":
-            fox "Books are a bit too literal here, don't you think? They don't exactly have 'keys' like a keyboard does."
+            fox "Books are a bit too literal here, don't you think? They don't exactly have keys."
             jump forest_minigame_11
 
         "A computer":
-            fox "Computers have locks, and you can definitely leave your desk, dude."
+            fox "No dude, a computer has keys and space, but you can definitely go outside of it."
             jump forest_minigame_11
 
 label forest_minigame_12: #foxes at a table
-    fox "Alright, dude, this one's a doozy."
+    fox "Alright, we got John Riddle over here."
+    fox "The Riddler, one might say."
+    fox "Can I say that? Is that copyrighted?"
+
     "The fox grins and twirls, suddenly splitting into four identical versions of itself—each a different color."
     "The foxes sit down at a round table, tails flicking in unison, waiting for your answer."
     
@@ -297,7 +303,7 @@ label forest_minigame_12: #foxes at a table
         "How many ways can you arrange 4 unique foxes around a circular table?"
         "12 ways":
             fox "Oof, not quite! You forgot something important about round tables."
-            fox "Remember, in a circle, one position is fixed!"
+            fox "In a circle, one position is fixed!"
             jump forest_minigame_12
 
         "24 ways":
@@ -311,7 +317,7 @@ label forest_minigame_12: #foxes at a table
             jump forest_minigame_success
 
         "4 ways":
-            fox "Haha, good guess, but we can swap places a lot more than that!"
+            fox "Good guess, but we can swap places a lot more than that!"
             fox "Try thinking about the fact that we're sitting at a round table—it's not the same as a straight line!"
             jump forest_minigame_12
 
@@ -321,6 +327,7 @@ label forest_minigame_success:
     fox "Nice, dude. I'll let you go now. You're pretty chill."
     fox "Just, y'know, keep the forests clean and stuff, okay?"
     fox "I am the guardian spirit of the Everdusk Forest, after all."
+    fox "I'm tapped into that conversation... condensation... uhhh... conservation type stuff, you feel me?"
 
     fox "Can I get your insta?"
     menu:
