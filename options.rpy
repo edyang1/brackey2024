@@ -15,7 +15,7 @@ define config.default_voice_volume = 0.7
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("brackey2024")
+define config.name = _("Everdusk S3ct0r")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
