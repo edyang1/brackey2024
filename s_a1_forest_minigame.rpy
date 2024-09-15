@@ -1,4 +1,7 @@
-label s_a1_forest_minigame:    
+label s_a1_forest_minigame:
+    play music "fantasy_casual.mp3" loop fadein 1.0
+    scene fantasy_knight with fade
+
     "As you forge ahead, the forest begins to envelop you, its tall, thick trees casting long shadows over the path."
     "The deeper you venture, the more the woods seem to close in around you, a quiet stillness hanging in the air."
     "It feels as though lost magic lingers here, barely perceptible but unmistakable."
@@ -307,6 +310,8 @@ label forest_minigame_success:
         "Dap him up.":
             fox "Alright, dude, I'll see you around. Take care."
     
+    stop music fadeout 2.0
+    scene black with fade
     jump s_a1_golem
 
 label forest_minigame_setback:

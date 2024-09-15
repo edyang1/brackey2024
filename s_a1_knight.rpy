@@ -341,3 +341,6 @@ label a1_knight3:
             "You smile and nod, understanding his quiet offer."
             stav "Take care of yourself."
             jump s_a1_forest_minigame
+    
+    stop music fadeout 2.0
+    scene black with fade
