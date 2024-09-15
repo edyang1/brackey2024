@@ -11,7 +11,7 @@ label a3_s1_1:
     menu:
         "Head for Stavros' house near the cemetery to check on him.":
             scene fantasy_cottage with fade
-            play music "fantasy_casual.mp3" loop fadein 1.0
+            play music "fantasy_suspense.mp3" loop fadein 1.0
 
             "With uncertainty weighing on your heart, you try to recall the path to the former knight's hut."
             "Your footsteps no longer emit that awful, screeching sound, but the unease persists."
@@ -83,6 +83,9 @@ label a3_s1_1:
             jump a3_s1_1
 
         "Go and check Caharel's hospice, further down the road.":
+            scene fantasy_healer with fade
+            play music "fantasy_suspense.mp3" loop fadein 1.0
+
             "With uncertainty weighing heavily on your heart, you struggle to recall the way to the former knight's hut."
             "Your footsteps no longer screech as they did before, but the sense of unease clings to you all the same."
             "Your soles dig into the soft ground, almost slipping as you steady yourself on the stone wall running beside the road."
@@ -118,8 +121,8 @@ label a3_s1_1:
             jump a3_s1_1
 
         "Reach Iolkos' inn and see if everything's in order.":
-            scene fantasy_golem_path with fade
-            play music "fantasy_casual.mp3" loop fadein 1.0
+            scene fantasy_golem with fade
+            play music "fantasy_suspense.mp3" loop fadein 1.0
 
             "With uncertainty weighing heavily in your heart, you try to recall the way to the golem's abandoned inn."
             "You tread carefully on the frozen earth, almost losing your footing on the slick ground."
