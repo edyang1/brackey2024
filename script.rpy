@@ -10,7 +10,7 @@ define cal = Character("Callie", color="#ff764a", image="cal")  # Callie Wollerb
 define b = Character("B4/22C", color="#d9a832", image="b")  # B4/22C (Bass)
 
 define f_name = "Cassiopeia"
-define cyber_name = "Ca55ioP0X"
+define c_name = "Ca55ioP0X"
 
 # ANIMATIONS
 transform close_to_camera:
