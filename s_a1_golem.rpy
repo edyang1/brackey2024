@@ -33,17 +33,17 @@ label s_a1_golem:
     "The figure closes the book, standing with a strange grace, and places it on a nearby shelf."
 
     menu:
-    "Explain how Stavros pointed you in this direction.":
-        show i neu at subtle_breathe
-        "The figure's eyes seem to brighten at your words, its expressionless face somehow conveying excitement."
-        show i hap at nod
-        i "Oh, the old knight! He's a good man, I'm glad he sent you."
+        "Explain how Stavros pointed you in this direction.":
+            show i neu at subtle_breathe
+            "The figure's eyes seem to brighten at your words, its expressionless face somehow conveying excitement."
+            show i hap at nod
+            i "Oh, the old knight! He's a good man, I'm glad he sent you."
 
-    "Explain that you stumbled upon this place by accident.":
-        show i sup at tilt_right
-        "The figure tilts its head, its eyes narrowing slightly as if considering your words."
-        show i neu at subtle_breathe
-        i "Accident? That's strange. This place isn't easy to find by chance."
+        "Explain that you stumbled upon this place by accident.":
+            show i sup at tilt_right
+            "The figure tilts its head, its eyes narrowing slightly as if considering your words."
+            show i neu at subtle_breathe
+            i "Accident? That's strange. This place isn't easy to find by chance."
 
     "You look cold, though. Come with me!"
 
