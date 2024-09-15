@@ -24,6 +24,6 @@ label s_a1_f_start:
 
     menu:
         "Approach the knight.":
-            jump s_a1knight
+            jump s_a1_knight
         "Leave him be.":
-            return
+            jump s_a1_forest_minigame

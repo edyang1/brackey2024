@@ -1,4 +1,4 @@
-label s_a1knight:
+label s_a1_knight:
 
     "He notices you before you have a chance to turn away."
     "His gaze, sharp and thoughtful, settles on you with the calm focus of someone used to watching over others."
