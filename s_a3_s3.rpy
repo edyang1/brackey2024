@@ -1,6 +1,8 @@
 label s_a3_s3:
     $ artstyle = "cyber"
 
+    $ renpy.music.set_pan(0, 0)
+
     stop music
 
     scene cyber_console with fade

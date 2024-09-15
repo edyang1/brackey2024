@@ -1,6 +1,8 @@
 label s_a2_knight:
     $ artstyle = "cyber"
 
+    $ renpy.music.set_pan(0, 0)
+
     scene black
     play music "cyber_suspense.mp3" loop
 

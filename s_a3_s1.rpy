@@ -1,6 +1,8 @@
 label s_a3_s1:
     $ artstyle = "fantasy"
 
+    $ renpy.music.set_pan(0, 0)
+
     play music "fantasy_suspense.mp3" loop fadein 1.0
     play sound "a_town.mp3" loop fadein 1.0
 
@@ -80,7 +82,7 @@ label a3_s1_1:
             "Your vision trembles, and your eyes blink uncontrollably. Stavros' body is outlined by a faint blue glow."
             
             python:
-                for i in range(5):
+                for count in range(5):
                     renpy.music.set_pause(True)
                     renpy.pause(renpy.random.uniform(0.1, 0.3))  
                     
@@ -131,7 +133,7 @@ label a3_s1_1:
             "Whatever lies beyond the bend in the road is simply out of reach—an illusion,"
 
             python:
-                for i in range(5):
+                for count in range(5):
                     renpy.music.set_pause(True)
                     renpy.pause(renpy.random.uniform(0.1, 0.3))  
                     
@@ -175,7 +177,7 @@ label a3_s1_1:
             show i neu at subtle_breathe
 
             python:
-                for i in range(5):
+                for count in range(5):
                     renpy.music.set_pause(True)
                     renpy.pause(renpy.random.uniform(0.1, 0.3))  
                     

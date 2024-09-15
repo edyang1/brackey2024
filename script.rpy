@@ -462,9 +462,9 @@ label start:
     # "{size=*1.3}{s}Faulty{/s} segment in {i}Mₑₘₒᵣᵧ₋ₛₜₐcₖ₁{/i}."
     
 
-    call s_a2_healer
+    call s_a1_glitch
 
-    # call s_a1_f_start
+    call s_a1_f_start
 
     # call choice_test
     # call char_test
