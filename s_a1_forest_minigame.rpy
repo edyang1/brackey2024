@@ -1,5 +1,7 @@
 label s_a1_forest_minigame:
-    "hello"
+    
+    
+    "As you forge ahead, you enter a forest"
 
 
 
@@ -7,7 +9,7 @@ label s_a1_forest_minigame:
     play music "fantasy_suspense.mp3" loop fadein 1.0
 
 label forest_minigame_success:
-
+    "hello"
 
 label forest_minigame_setback:
     menu:

@@ -228,7 +228,116 @@ label a1_knight_conversation_menu2:
         "Exit":
             "He takes a slow, deliberate sip of the soup, savoring the warmth as it spreads through him."
             "The flickering firelight dances across his weathered face, casting long shadows that cling to the lines of his brow."
-            jump a1_knight2
+            jump a1_knight_conversation_menu3
 
-label a1_knight2:
-    "hey"
+label a1_knight_conversation_menu3:
+    menu:
+        "Head for the inn Stavros mentioned.":
+            "You fall into a deep sleep, the warmth of Stavros' cottage and the crackling fire lulling you into rest."
+
+            scene black with fade
+            "..."
+            "..."
+            "..."
+            "..."
+            "..."
+
+            scene fantasy_cottage with dissolve
+
+            "Morning comes quietly. You wake to the smell of porridge cooking, and see Stavros at the fire."
+            stav "Morning. Figured you'd need something before heading out."
+            "He sets a simple bowl of porridge on the table in front of you."
+            stav "Eat up. The inn's west, past the river. You'll find it easy enough."
+            "You finish the meal in silence, Stavros glancing toward the window, avoiding direct eye contact."
+            stav "If you're ever back this way… there's room here. Not many travelers these days."
+            jump a1_knight3
+
+        "Ask about the battle he's just mentioned.":
+            "Stavros' face darkens, his expression hardening as turbulent memories rise to the surface."
+            stav "Years ago, the Marquis set his sights on expanding control over the western mountains."
+            stav "There's a vast plateau up there, less than half a day's march from here."
+            stav "It's a natural stronghold, commanding the valley below."
+            stav "The Marquis knew if we didn't secure it, the hamlets and villages would remain vulnerable to raids."
+            stav "The gnolls had been attacking for years."
+            "He pauses for a moment, his eyes distant, as if weighing the past."
+            stav "And truth be told, he wasn't wrong."
+            stav "The Pinestripe gnolls were relentless, always descending from the hills to pillage and burn."
+            stav "They were quick, using the mountains to their advantage, disappearing before we could properly retaliate."
+            stav "But this time, the Marquis had had enough."
+            stav "He ordered us to draw them out and crush them, once and for all."
+            "Stavros shifts in his seat, straightening as his voice takes on a harder edge, his military discipline rising to the surface."
+            stav "Our plan was simple—at least it seemed so."
+            stav "We'd march through the valley, luring them in, forcing them to commit to a fight on the open ground."
+            stav "But we had another card to play."
+            stav "I sent our cavalry around the far ridge, hoping to flank them."
+            stav "If we could close the pincer, we'd cut off their retreat into the mountains."
+            stav "The Kestrels were leading the charge, with the rest of the infantry following behind."
+            stav "We needed to hit hard and fast to secure the plateau before they could escape."
+            "He shakes his head, the weight of hindsight settling over him."
+            stav "But the gnolls were smarter than we gave them credit for."
+            stav "They anticipated our cavalry's maneuver and had scouts posted on the high ground."
+            stav "By the time our horsemen reached the ridge, the gnolls had already repositioned, using the rocks and narrow paths to bottle us in."
+            stav "They knew the terrain better than we did."
+            stav "Their slingers and javelin throwers rained hell down on us from the cliffs."
+            stav "Our cavalry was pinned, unable to maneuver."
+            "You listen intently, feeling the weight of the battle building in his voice, as if he's reliving every step."
+            stav "Our plan to cut them off had failed."
+            stav "Worse still, the infantry—my Kestrels—had pushed too far ahead."
+            stav "We were exposed on the plateau, waiting for the reinforcements that never came."
+            stav "The gnolls attacked swiftly, waves of them pouring down from the mountains."
+            stav "They didn't fight like we did."
+            stav "They were more fluid, breaking apart, reforming, always moving."
+            stav "They hit our flanks first, trying to break our line with a mixture of fear and chaos."
+            "He takes a slow breath, the memory clearly painful."
+            stav "I sent my reserves to reinforce the line, trying to hold them off while our archers took positions, but it was no use."
+            stav "Their slingers kept us pinned, and we couldn't form up properly."
+            stav "We were losing ground, losing men, and fast."
+            "He pauses, taking a breath, and the weight of his next words hangs heavy between you."
+            stav "I knew we couldn't hold the plateau."
+            stav "I gave the order to retreat, to fall back to the entrance where we could regroup."
+            stav "But the gnolls… they smelled blood."
+            stav "They pursued us, harrying us all the way down."
+            stav "By the time the reinforcements arrived, the plateau was drenched in blood."
+            "He raises his arm, or what's left of it, and looks at the stump with hollow eyes."
+            stav "A Pinestripe warrior struck my shield arm with an axe."
+            stav "Crushed it to the bone."
+            stav "They had to take it off at the shoulder."
+            stav "I couldn't even carry my standard off the field."
+            "Stavros' gaze drifts to a corner of the room, where a piece of furniture is covered with a cloth."
+            "His voice softens, but the bitterness remains."
+            stav "We won the battle, but at what cost?"
+            stav "I lost everything that mattered."
+            stav "My brothers, my family… all gone, because of an order I gave."
+            "He exhales slowly, as if trying to push the weight of it all away."
+            stav "I can't shake it."
+            stav "Never will."
+            "He turns back to you, his eyes hard again, though the sorrow lingers in them."
+            stav "The Marquis offered me a reward after the victory."
+            stav "Called me a hero."
+            stav "Gave me a knighthood and a plot of land."
+            stav "I accepted… but on one condition."
+            stav "My comrades, my brothers, would be buried with me."
+            stav "I built this place, their graves just outside."
+            stav "I watch over them."
+            stav "It's all I have left."
+            "His gaze flickers back to the corner, where the strange, human-shaped object stands, covered in dust and neglect."
+            stav "I've never put that commander's armor back on."
+            stav "Haven't touched it since that day."
+            "He pauses, the silence thick and heavy, before he adds quietly,"
+            stav "I'll watch over them until it's my turn to join them."
+            stav "That's the only promise I have left to keep."
+            stav "Until then, I'll help those in need… when I can."
+            "You feel the weight of his words, like the room itself is holding its breath."
+            jump a1_knight_conversation_menu3
+
+label a1_knight3:
+    menu:
+        "Thank him sincerely.":
+            stav "Yeah, yeah. Get moving."
+            stav "Take care of yourself."
+            jump s_a1_forest_minigame
+
+        "Leave quietly, with a smile.":
+            "You smile and nod, understanding his quiet offer."
+            stav "Take care of yourself."
+            jump s_a1_forest_minigame
