@@ -444,7 +444,7 @@ transform enter_expand:
 # START
 label start:
 
-    call s_a2_knight
+    call s_a2_glitch
 
     call s_a1_f_start
 
