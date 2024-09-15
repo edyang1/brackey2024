@@ -12,6 +12,144 @@ define b = Character("B4/22C", color="#d9a832", image="b")  # B4/22C (Bass)
 define f_name = "Cassiopeia"
 define c_name = "Ca55ioP0X"
 
+# TRANSFORM GUIDE
+
+# 1. close_to_camera
+# Description: Places the character close to the camera with a slight zoom for emphasis.
+# Use Case: When the character is engaging in an intimate conversation or taking a prominent role in the scene.
+
+# 2. lean_in
+# Description: Moves the character slightly forward, as if leaning in during conversation.
+# Use Case: Useful for showing engagement or interest in a conversation.
+
+# 3. lean_back
+# Description: Moves the character slightly back, simulating leaning away.
+# Use Case: Appropriate for moments of reflection or pulling back after a statement.
+
+# 4. shift_left
+# Description: Shifts the character a bit to the left.
+# Use Case: Perfect for moments of hesitation or thinking.
+
+# 5. shift_right
+# Description: Shifts the character a bit to the right.
+# Use Case: Used when showing contemplation, doubt, or a moment of surprise.
+
+# 6. tilt_left
+# Description: Tilts the character slightly to the left.
+# Use Case: For expressions of curiosity, consideration, or light confusion.
+
+# 7. tilt_right
+# Description: Tilts the character slightly to the right.
+# Use Case: Expresses curiosity or reacting with a slight emotional shift.
+
+# 8. nod
+# Description: Subtle head nod to show agreement.
+# Use Case: When the character agrees or acknowledges something.
+
+# 9. shake_head
+# Description: Shakes the character's head left and right in disagreement.
+# Use Case: Perfect for disapproval or rejection.
+
+# 10. subtle_breathe
+# Description: A subtle breathing effect for a calm or thoughtful stance.
+# Use Case: Use when the character is calm, contemplative, or thinking deeply.
+
+# 11. bounce_up
+# Description: Small bounce upwards.
+# Use Case: Suitable for excitement, enthusiasm, or happiness.
+
+# 12. sway_left_right
+# Description: Soft sway from side to side.
+# Use Case: Ideal for nervousness, impatience, or pacing.
+
+# 13. shrink_back
+# Description: The character shrinks back slightly, like retreating in fear or embarrassment.
+# Use Case: When the character feels embarrassed, afraid, or hesitant.
+
+# 14. jitter
+# Description: Quick, jittery movement to show the character is startled.
+# Use Case: Useful for showing surprise, nervousness, or shock.
+
+# 15. step_forward
+# Description: The character steps forward slowly.
+# Use Case: Used when a character cautiously advances in the conversation or physically moves closer.
+
+# 16. step_back
+# Description: The character steps back slowly.
+# Use Case: Appropriate for moments of hesitation or retreat during a conversation.
+
+# 17. look_away
+# Description: Rotates the character away slightly, as if looking elsewhere.
+# Use Case: Represents the character becoming distant, distracted, or emotionally withdrawn.
+
+# 18. look_up
+# Description: Character looks upwards.
+# Use Case: Ideal for moments of thought, reflection, or daydreaming.
+
+# 19. look_down
+# Description: Character looks downwards.
+# Use Case: Represents sadness, regret, or introspection.
+
+# 20. enter_slow
+# Description: Slow and deliberate entrance into the scene.
+# Use Case: Suitable for calm or serious characters entering without haste.
+
+# 21. enter_quick
+# Description: Quick and energetic entrance.
+# Use Case: For characters who are enthusiastic or in a hurry.
+
+# 22. enter_hesitant
+# Description: Nervous or hesitant entrance with a slight stop.
+# Use Case: Best for shy or unsure characters entering a scene cautiously.
+
+# 23. enter_confident
+# Description: Confident entrance with a slight pause to survey the scene.
+# Use Case: Perfect for bold or self-assured characters making an entrance.
+
+# 24. enter_shy
+# Description: Slow, shy entrance with a slight zoom effect.
+# Use Case: Use for timid or introverted characters entering cautiously.
+
+# 25. enter_bold
+# Description: Bold and sudden entrance.
+# Use Case: Dramatic entrances for characters who want to make a statement.
+
+# 26. enter_subtle
+# Description: Subtle, unnoticed entrance.
+# Use Case: Best for sneaky or quiet characters entering a scene without drawing attention.
+
+# 27. exit_slow
+# Description: Slow and deliberate exit.
+# Use Case: Used for characters leaving calmly or solemnly.
+
+# 28. exit_quick
+# Description: Quick and energetic exit.
+# Use Case: For characters who are in a hurry to leave.
+
+# 29. exit_hesitant
+# Description: Hesitant exit with a slight pause.
+# Use Case: Perfect for characters who aren’t sure if they should leave.
+
+# 30. exit_confident
+# Description: Bold and confident exit with a slight pause.
+# Use Case: Suitable for proud or bold characters leaving a scene.
+
+# 31. exit_shy
+# Description: Shy, cautious exit with a zoom-out effect.
+# Use Case: Use for characters who retreat or leave quietly.
+
+# 32. exit_bold
+# Description: Dramatic and sudden exit.
+# Use Case: Suitable for characters who want to storm out or leave dramatically.
+
+# 33. exit_subtle
+# Description: Quiet, unnoticed exit.
+# Use Case: For sneaky characters who want to slip away without being noticed.
+
+# 34. exit_shrink
+# Description: Shrinking exit, like someone withdrawing or feeling embarrassed.
+# Use Case: For characters who feel embarrassed, defeated, or wish to disappear.
+
 # POSITIONS/ANIMATIONS
 transform close_to_camera:
     xpos 0.5
@@ -308,11 +446,11 @@ label start:
 
     # call s_a1_golem
 
-    # call s_a1_f_start
+    call s_a1_f_start
 
     # call choice_test
     # call char_test
-    call pos_test
+    # call pos_test
     # call bg_test
     # call fx_test
     
