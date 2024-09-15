@@ -12,7 +12,7 @@ label s_a1_glitch:
     "As you walk, you notice something strange—a glimmer beneath the roots of an ancient tree,"
     "just beyond the last row of cottages. It's faint, barely noticeable, but it pulses with an odd, rhythmic glow."
     
-    menu:
+    menu: #glitches start here
         "Investigate":
             "You bend down, your fingers brushing the cool earth as you reach for the glimmering light."
             "The object pulses faintly beneath your touch, a sudden warmth spreading through your hand."
@@ -28,5 +28,11 @@ label s_a1_glitch:
 
     jump a1_glitch1
 
-label a1_glitch1: #it gets crazy
-    "hello world"
+label a1_glitch1: #glitches get more intense
+    "SEGMENTATION FAULT"
+
+    "m€mø®¥ Øverfłøw"
+
+    "rEboOtiNG..."
+
+    jump s_a2_knight
