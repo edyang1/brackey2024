@@ -8,6 +8,9 @@ define config.default_music_volume = 0.7
 define config.default_sfx_volume = 0.7
 define config.default_voice_volume = 0.7
 
+init python:
+    config.auto_voice = "voice/{id}.mp3"
+
 ## Basics ######################################################################
 
 ## A human-readable name of the game. This is used to set the default window

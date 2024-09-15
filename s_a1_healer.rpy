@@ -24,20 +24,25 @@ label s_a1_healer:
     "His pale ashen hair almost blends into the gray walls, and his eyes—sharp, yet distant—meet yours with a practiced detachment."
     "He carries a small, weathered box under one arm, and without a word, he pulls up a stool beside your bed."
     
+    show cah neu at enter_confident
     cah "Well then, let's see what mess you've dragged yourself into this time."
     
     "He sighs, setting the box on the floor with a soft clink, before turning his attention to you, the air of professionalism never leaving his movements."
-
+    
+    show cah neu at subtle_breathe
     cah "Well then, let's see what mess you've dragged yourself into this time."
     
     "His voice carries a note of weary disinterest, but his hands move with practiced efficiency as he places a small, weathered box of tools beside your bed."
     "The tools clink faintly as they settle, and Caharel sighs, more out of routine than exasperation."
     
+    show cah neu at look_down
     cah "Tell me, what exactly happened?"
 
     menu:
         "I was traveling along the road when exhaustion took over.":
+            show cah neu at lean_back
             cah "Ah, yes, wandering into the cold. A choice neither wise nor brave."
+            show cah neu at shake_head
             cah "It's astonishing what people are willing to risk for the illusion of adventure."
             
             "He doesn't look up as he speaks, his hands already moving with quick, methodical precision as he begins his examination."
@@ -45,16 +50,20 @@ label s_a1_healer:
             
             "There's a professionalism in his movements, but it's distant, as though you're just another patient in a long, endless line. He's not unkind, just... detached."
             
+            show cah neu at subtle_breathe
             cah "Still, you'll be fine. A few days' rest and you should be right as rain."
             
-            "He pauses then, something in your appearance catching his eye. His hand, previously so steady, hovers for a moment in the air, and he fixes you with an intense gaze."
-            
+            # Caharel pauses, noticing something about the player.
+            show cah sup at lean_in
             cah "You don't look familiar."
             "You tell him your name, and he nods, though his expression remains unreadable."
+            show cah neu at nod
             cah "Nice to meet you, [f_name]. I'm Caharel."
 
         "It was too cold, I thought my time had come.":
+            show cah neu at lean_back
             cah "Ah, yes, wandering into the cold. A choice neither wise nor brave."
+            show cah neu at shake_head
             cah "It's astonishing what people are willing to risk for the illusion of adventure."
             
             "He doesn't look up as he speaks, his hands already moving with quick, methodical precision as he begins his examination."
@@ -62,11 +71,14 @@ label s_a1_healer:
             
             "There's a professionalism in his movements, but it's distant, as though you're just another patient in a long, endless line. He's not unkind, just... detached."
             
+            show cah neu at subtle_breathe
             cah "Still, you'll be fine. A few days' rest and you should be right as rain."
-            
+
         "It was just an accident. I tripped.":
+            show cah sup at tilt_left
             cah "Of course it was. It's always an accident, isn't it?"
             "He lets out a soft chuckle, almost to himself, though it carries no real warmth."
+            show cah neu at subtle_breathe
             cah "Funny how accidents tend to land people right on my doorstep."
             
             "With practiced ease, he opens his weathered toolkit and begins the examination."
@@ -75,11 +87,14 @@ label s_a1_healer:
             "The tools he uses are strange, foreign in design, gleaming faintly in the dim light."
             "Caharel works with sharp precision, his face calm, though something in his eyes betrays a deeper weariness."
         
+            show cah neu at subtle_breathe
             cah "You'll be fine. Just some exhaustion and bruising. A few days' rest and you'll be back on your feet."       
 
     "He pauses then, something in your appearance catching his eye. His hand, previously so steady, hovers for a moment in the air, and he fixes you with an intense gaze."    
+    show cah sup at lean_in
     cah "You don't look familiar."
     "You tell him your name, and he nods, though his expression remains unreadable."
+    show cah neu at nod
     cah "Nice to meet you, [f_name]. I'm Caharel."
     cah "Any questions about your treatment? Any questions at all, really."
     jump a1_healer_conversation_menu1
@@ -87,54 +102,65 @@ label s_a1_healer:
 label a1_healer_conversation_menu1:
     menu:
         "What can you tell me about the plague? Or the kind of work you do here?":
-            "Caharel's fingers pause over the instruments in his hands, and for a moment, his eyes narrow, as if he's considering whether to give you a proper answer or just brush it aside. Then, he lets out a breath, a slow, controlled exhalation."
+            "Caharel's fingers pause over the instruments in his hands, and for a moment, his eyes narrow, as if he's considering whether to give you a proper answer or just brush it aside."
+            "Then, he lets out a breath, a slow, controlled exhalation."
 
+            show cah neu at subtle_breathe
             cah "The plague? Yes, it's been and gone. Took more than it left, I suppose."
             
             "He offers a small, almost mechanical smile—polite, practiced, but empty."
+            show cah hap at lean_back
             "It doesn't reach his eyes, which remain cool, detached, as if recalling the events like he's reading from a dry medical text."
 
-            cah "We saved as many as we could. But death..." 
-            cah "..."
+            show cah neu at look_down
+            cah "We saved as many as we could. But death..."
             cah "...death is insistent. You can't negotiate with it. You can't outthink it or overpower it."
             "No matter how skilled you are, it's always waiting."
 
             "His hands move again, adjusting your blanket, checking your pulse with clinical precision."
+            show cah neu at subtle_breathe
             "His touch is efficient but distant, like he's performing a task he's done thousands of times before, without feeling."
 
             cah "We tried, of course. Xantos, my mentor, and I."
             cah "There were moments, brief moments, when we thought we could turn the tide."
             cah "But the truth is, medicine isn't magic. We couldn't save everyone."
 
+            show cah neu at shift_left
             "There's a brief flicker of something behind his calm exterior—regret, or perhaps something darker."
             "But it vanishes almost as quickly as it appears, swallowed up by his well-practiced detachment."
 
             cah "People prefer to see me as some kind of savior. It's easier for them, I suppose."
+            show cah sup at tilt_left
             cah "Easier than facing the truth—that sometimes, survival isn't in our hands at all."
             cah "They want to believe that skill alone can keep death at bay."
 
+            show cah neu at look_down
             "His smile fades entirely, and there's a hollowness in his gaze,"
             "as if the weight of all the lives lost is something he's long since stopped carrying—"
             "or perhaps he's buried it deep inside, where it can't reach him anymore."
 
+            show cah neu at subtle_breathe
             cah "They don't like to think too much about the cost of being saved."
             cah "The cost to them, the cost to me. After all,"
             cah "if you start thinking about what it really takes to stand on the edge between life and death, you might not want to face it at all."
 
+            show cah neu at lean_back
             "He leans back slightly, studying you for a moment longer than necessary, his expression unreadable."
             "His hands are still now, resting lightly in his lap, the tools lying forgotten beside him."
 
             cah "I've watched too many people slip away, one breath at a time, while we tried to keep them tethered to life."
             cah "It does something to you after a while. You start seeing people as... fragile. Just a few heartbeats from the end."
 
+            show cah sad at look_down
             "His voice softens, almost as if he's talking to himself."
             
             cah "You stop feeling it after a while. Not the way you should. And maybe that's the price."
             cah "You can save a life, but you lose a little of yourself each time."
-            
+
+            show cah neu at subtle_breathe
             "He falls silent, staring at nothing for a moment before his gaze refocuses on you."
             "Whatever vulnerability had slipped through his words vanishes, replaced by his usual calm detachment."
-            
+
             cah "But you're not here for philosophy. You'll be fine. A little rest, and you'll be on your way."
             jump a1_healer_conversation_menu1
 
@@ -142,22 +168,27 @@ label a1_healer_conversation_menu1:
             "Caharel's movements slow for a moment, his hand hesitating over the tools on the tray beside him."
             "His sharp eyes grow distant, as if reaching back to a memory he's not sure he wants to revisit."
 
+            show cah sup at look_up
             cah "Xantos… now there was a man who believed in the impossible."
 
+            show cah neu at subtle_breathe
             "His tone softens, the usual edge in his voice replaced by something else."
             "Respect? Perhaps even admiration."
             "But whatever it is, it's fleeting, like a shadow passing over his face before it disappears."
 
+            show cah hap at lean_in
             cah "He had this unwavering belief that no illness was beyond his reach, no life too far gone to save."
             cah "He used to say that if you can study hard enough, learn enough, there's always a way."
 
             "Caharel lets out a quiet, humorless chuckle, but there's no real warmth in it—just a bitter acknowledgment of his mentor's idealism."
 
+            show cah neu at lean_back
             cah "He stretched his knowledge to its very limits."
             cah "I've never seen someone fight so hard for people he barely knew."
             cah "Day after day, he worked himself to the bone, chasing answers that didn't exist, hoping to save them."
             cah "But in the end..."
 
+            show cah sad at look_down
             "He pauses, his eyes narrowing slightly as his voice drops."
 
             cah "...in the end, the plague didn't care."
@@ -166,12 +197,14 @@ label a1_healer_conversation_menu1:
             cah "His brilliance, his determination… none of it made a difference."
             cah "Death doesn't care how skilled you are."
 
+            show cah neu at subtle_breathe
             "The flicker of emotion vanishes as quickly as it appeared, and Caharel's expression hardens again."
             "He turns away from you, busying himself with the instruments on his tray, his fingers moving with cold precision."
 
             cah "Now I run this hospice."
 
             "His voice is matter-of-fact, devoid of the reverence or passion you might expect when speaking of such responsibility."
+            show cah neu at step_back
             "His hands work with the tools, but it feels like more of a reflex than a labor of love,"
             "as though the motions have become automatic after years of repetition."
 
@@ -179,20 +212,23 @@ label a1_healer_conversation_menu1:
             cah "They see me as some kind of successor to Xantos, a healer who can work miracles just like he did."
             cah "But the truth is…"
 
+            show cah sup at lean_in
             "He pauses, the tools in his hands stilling for just a moment, his gaze fixed on the table in front of him."
 
             cah "The truth is, I don't care for their gratitude."
             cah "Not anymore."
 
             "He resumes his work, his hands moving with their usual efficiency, but there's a coldness to his actions now, a sense of distance."
+            show cah neu at subtle_breathe
             "His skill is undeniable, but it's mechanical—precise, but devoid of passion or warmth."
 
             cah "You spend enough time watching people die, watching them slip away despite everything you do,"
-            "and eventually, you stop feeling much of anything."
+            cah "and eventually, you stop feeling much of anything."
             cah "You just… do the work."
             cah "Because it's what's expected of you."
             cah "Because it's all you know how to do."
 
+            show cah sad at look_down
             "There's a heavy silence that follows his words, as if he's said too much and is retreating back into himself."
             "His gaze remains averted, focused on the task at hand, his expression unreadable."
 
@@ -202,12 +238,14 @@ label a1_healer_conversation_menu1:
             cah "That's all there is."
             cah "You treat what you can, and you bury the rest."
 
+            show cah sup at lean_in
             "For a moment, his hands still completely, and he looks up at you with an intensity that catches you off guard."
             "There's something in his eyes—something bitter, something broken."
 
             cah "That's the real lesson I learned from him."
             cah "No matter how hard you try, sometimes the only thing left to do is let go."
 
+            show cah neu at subtle_breathe
             "He lets out a slow breath, his expression neutral again, as though he's said everything he intended to say."
 
             cah "Now, let's see to you."
@@ -218,31 +256,37 @@ label a1_healer_conversation_menu1:
             "Caharel's expression remains unreadable for a moment, his gaze shifting slightly, though not meeting yours."
             "He seems to weigh your question before responding, the air around him thick with the weight of unspoken thoughts."
 
+            show cah neu at tilt_left
             cah "Calm? No, I wouldn't call it calm."
 
             "He finally looks at you, his pale eyes steady and unblinking, cold and distant like a winter sky just before the first frost."
 
+            show cah neu at subtle_breathe
             cah "It's... clarity. A kind of understanding that comes with time. Life, death—they're not opposites."
             cah "They're part of the same fragile thread. You come to see that people are like flickering lights in a storm."
             cah "Some flames burn longer than others, but eventually, they all go out."
 
+            show cah neu at nod
             "His voice is soft but carries an unshakable certainty, as if he's repeated these thoughts to himself over and over again,"
             "until they've become his truth."
 
             cah "Sometimes, you can keep the flame going a little longer. Other times, it flickers out before you can even blink."
             cah "You learn not to fight it. You learn to accept it."
 
+            show cah neu at look_down
             "He taps his fingers lightly against the edge of the bed, the sound faint, almost rhythmic,"
             "like he's counting out the beats of a life fading away."
 
             cah "You get used to it. The human heart can only take so much before it hardens, before it protects itself."
             "My hands may heal, but my soul... my soul learned long ago to let go."
 
+            show cah sad at look_down
             "There's a pause, the silence stretching out between you like a vast, empty chasm."
             "The space between the two of you feels colder now, as if the warmth of human connection has been lost to the endless cycle of life and death he's seen."
 
             cah "It's not heartlessness. It's survival. For both me and them."
 
+            show cah neu at step_back
             "He rises slowly, as if the conversation has taken its toll on him, though his expression remains calm, steady—unyielding."
 
             cah "If I let every loss break me, I wouldn't be able to help the next person. And there's always a next person."
@@ -258,21 +302,34 @@ label a1_healer1:
     "You spend most of your time lying in bed, your body still weak from the cold and exhaustion."
     "Outside, the world carries on, but here within the stone walls, it feels like time has slowed to a crawl."
     "Caharel visits intermittently, his presence as steady and routine as the ticking of a clock."
+    
+    show cah neu at subtle_breathe
     "He checks your pulse, examines your recovery with the same detached precision as before,"
     "but always with the same quiet efficiency."
+
     "The sound of his tools, the rustle of his robes, the scrape of his chair—these become the background noise of your recovery."
     "And though his touch is careful, you can't help but feel the distance in it."
     "But slowly, you feel your strength returning. At first, it's a flicker—just enough to sit up in bed,"
     "to hold a cup of warm broth in your hands without trembling."
+    
+    show cah neu at step_back
     "The warmth spreads through you with each sip,"
     "the rich taste of marigold and chamomile soothing the last remnants of your fatigue."
     "The world beyond the small window seems brighter, more alive, though still distant."
+
     "By the end of the week, you manage to stand, taking tentative steps around the room."
     "The floor is cool beneath your feet, the stone rough but familiar."
+
+    show cah neu at lean_in
     "Caharel watches from a distance, his arms crossed, his sharp gaze never lingering too long,"
     "as if making sure you don't falter."
+
     "Finally, one evening, he approaches, his voice as calm as ever."
+    
+    show cah neu at nod
     cah "You're healing well. Soon, you'll be strong enough to leave."
+    
+    show cah neu at subtle_breathe
     "His words are simple, almost clinical, but there's a faint softness in his tone."
     "The smallest sign that, despite everything, your recovery means something. Even if he would never say it."
 
