@@ -81,14 +81,6 @@ label forest_minigame_4: #plant quiz
             "Please do your due dilligence before exploring the wilderness."
             jump forest_minigame_setback
 
-        "Perform an edibility test (rub it on skin first)":
-            "You carefully rub a piece of the plant on your skin and wait. After several minutes, nothing happens."
-            "It seems safe to taste a small piece."
-
-            "Disclaimer: take our survival advice with a grain of salt."
-            "Please do your due dilligence before exploring the wilderness."
-            jump forest_minigame_5
-
         "If animals are eating it, it must be safe":
             "You assume it's safe since you saw a rabbit nibbling nearby."
             "Unfortunately, what's safe for animals isn't always safe for humans, and soon you feel dizzy."
@@ -96,6 +88,14 @@ label forest_minigame_4: #plant quiz
             "Disclaimer: take our survival advice with a grain of salt."
             "Please do your due dilligence before exploring the wilderness."
             jump forest_minigame_setback
+
+        "Perform an edibility test (rub it on skin first)":
+            "You carefully rub a piece of the plant on your skin and wait. After several minutes, nothing happens."
+            "It seems safe to taste a small piece."
+
+            "Disclaimer: take our survival advice with a grain of salt."
+            "Please do your due dilligence before exploring the wilderness."
+            jump forest_minigame_5
 
 label forest_minigame_5: #navigation. establish animal calls for later puzzle
     "You continue on the path, the distant calls of animals reaching your ears."
@@ -219,28 +219,28 @@ label forest_minigame_9: #two foxes puzzle
     "The foxes grin mischievously, each waiting for your question."
 
     menu:
-    "Two foxes stand before you, one always lies, one always tells the truth. You are allowed to ask one question to determine which path is correct."
-    
-    "Ask: 'If the other fox were the opposite of what they are, what path would they point to?'":
-        "Both foxes smile knowingly, but their answers are cryptic. One nods, the other laughs softly. You're left feeling more confused than before."
-        "This question did not help as much as you'd hoped."
-        jump forest_minigame_9
+        "Two foxes stand before you, one always lies, one always tells the truth. You are allowed to ask one question to determine which path is correct."
+        
+        "Ask: 'If the other fox were the opposite of what they are, what path would they point to?'":
+            "Both foxes smile knowingly, but their answers are cryptic. One nods, the other laughs softly. You're left feeling more confused than before."
+            "This question did not help as much as you'd hoped."
+            jump forest_minigame_9
 
-    "Ask: 'If I asked the other fox which path is safe, what would they say?'":
-        "One fox tilts its head, the other grins wider."
-        fox "The other would say to take the left path."
-        fox "So would I."
-        "You realize that both foxes would point to the wrong path in this scenario."
-        fox "Alright, alright, I see you."
-        "You now know which path leads to safety: the opposite of what they said."
-        jump forest_minigame_10
+        "Ask: 'If I asked the other fox which path is safe, what would they say?'":
+            "One fox tilts its head, the other grins wider."
+            fox "The other would say to take the left path."
+            fox "So would I."
+            "You realize that both foxes would point to the wrong path in this scenario."
+            fox "Alright, alright, I see you."
+            "You now know which path leads to safety: the opposite of what they said."
+            jump forest_minigame_10
 
-    "Ask: 'If I were to ask you which path leads to the treasure, what would you say?'":
-        "One fox nods, while the other shakes its head."
-        fox "Right, obviously."
-        fox "No, it's left."
-        "The conflicting responses leave you uncertain of which path is correct."
-        jump forest_minigame_9
+        "Ask: 'If I were to ask you which path is correct, what would you say?'":
+            "One fox nods, while the other shakes its head."
+            fox "Right, obviously."
+            fox "No, it's left."
+            "The conflicting responses leave you uncertain of which path is correct."
+            jump forest_minigame_9
 
 label forest_minigame_10: #pawns
     menu:
@@ -261,7 +261,7 @@ label forest_minigame_10: #pawns
             jump forest_minigame_10
 
         "The king's army":
-            fox "Sounds cool, but nope. Armies can retreat—pawns, though, they keep pushing forward."
+            fox "Sounds cool, but nope. Armies can retreat."
             jump forest_minigame_10
 
 label forest_minigame_11: #keyboard
@@ -319,6 +319,9 @@ label forest_minigame_success:
     play music "fantasy_casual.mp3" loop fadein 1.0
     
     fox "Nice, dude. I'll let you go now. You're pretty chill."
+    fox "Just, y'know, keep the forests clean and stuff, okay?"
+    fox "I am the guardian spirit of the Everdusk Forest, after all."
+
     fox "Can I get your insta?"
     menu:
         "What's an insta?":
