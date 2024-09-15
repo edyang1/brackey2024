@@ -322,4 +322,34 @@ label forest_minigame_setback:
             jump forest_minigame_start
 
         "Call for help":
+            "You shout out, your voice cracking as it echoes through the stillness of the forest."
+            "Nothing. Only the soft rustle of leaves and the occasional creak of distant branches in the wind."
+            "You wait, heart pounding in your chest, but no answer comes. The forest seems to swallow your cries,"
+            "leaving you alone with your breath freezing in the chill air."
+
+            "Time passes—minutes, or maybe hours—it's hard to tell."
+            "The cold seeps deeper into your bones, and the ache in your limbs grows heavier with each passing moment."
+            "Your vision blurs, the edges of the world dimming as the exhaustion and cold creep over you."
+
+            "Then, faintly, you hear it—the sound of footsteps crunching through the underbrush."
+            "At first, it seems like a trick of your tired mind, but then a voice, low and gruff, reaches your ears."
+
+            "Someone calls out."
+            "Hey! Someone's out here!"
+
+            "You feel the ground beneath you change from the uneven forest floor to something smoother—cobblestones."
+            "The faint hum of life surrounds you now: distant voices, the clink of metal,"
+            "and the warmth of a small village beginning to stir awake."
+
+            "The kind stranger says,"
+            "Everdusk Valley. We'll get you to the healer. Don't worry, you're safe now."
+
+            "The two figures carry you through the quiet streets, the town bathed in the cool glow of early evening."
+            "Lanterns flicker to life as they guide you toward a building with a faint light glowing from inside."
+            "A large sign swings gently in the breeze, its worn letters spelling out 'The Hospice of Sparrow Road.'"
+
+            "You barely feel your legs as they help you up the steps and through the door."
+
+            stop music fadeout 2.0
+            scene black with fade
             jump s_a1_healer
