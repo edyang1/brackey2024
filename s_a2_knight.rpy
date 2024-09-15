@@ -95,7 +95,7 @@ label s_a2_knight:
     "He gives a dry chuckle, his lips curling into a smirk as he walks over, surveying the damage with a casual glance."
     "His metal fingers tap rhythmically against his belt."
 
-    stan "Most rookies in this part of town don't last long when they start picking fights with the wrong people."
+    stan "Most rookies in Cyberdusk Sector don't last long when they start picking fights with the wrong people."
     stan "But you… you've got potential."
     stan "Stupid and reckless, maybe, but potential nonetheless."
 
@@ -403,4 +403,4 @@ label a2_knight_conversation_menu_4:
 
     stop music fadeout 2.0
     scene black with fade
-    jump s_a2_healer
+    jump s_a2_android
