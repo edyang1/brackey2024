@@ -250,38 +250,20 @@ label a1_golem_conversation_menu2:
 label a1_golem_conversation_menu3:
     menu:
         "Head for the hospice Iolkos mentioned.":
-            "You drift into a restless sleep, the strange energy of the inn lingering in your thoughts."
+            call a1_golem1
 
-            stop music fadeout 1.0
+            stop music fadeout 2.0
             scene black with fade
 
-            "..."
-            "..."
-            "..."
-            "..."
-            "..."
+            jump s_a1_healer
 
-            play music "fantasy_casual.mp3" loop fadein 1.0
-            scene fantasy_golem with dissolve
+        "Explore Everdusk Valley.": 
+            call a1_golem1
 
-            "Morning arrives softly, the quiet hum of threads moving through the air the first sound you hear."
-            "You open your eyes to see Iolkos busy near the stove, its threads delicately stirring a pot."
+            stop music fadeout 2.0
+            scene black with fade
 
-            i "Ah, you're awake! Morning. I made some soup. Not the best for breakfast, maybe, but it's all I've got right now."
-            "Iolkos sets a steaming bowl in front of you, the aroma of simple broth filling the air."
-            
-            i "Eat up. The hospice is west, past the village. You'll find it soon enough."
-
-            "You sip the soup, its warmth filling you, while Iolkos hovers nearby, occasionally adjusting things with its threads."
-            "For a moment, it seems to hesitate, its eyes shifting slightly as if lost in thought."
-
-            i "You know… if you ever come back this way, I could use the company. It's… pretty quiet here most of the time."
-            
-            "Its voice softens, just for a moment, before it resumes its usual bright tone."
-
-            i "But, of course, no pressure! Just thought I'd mention it."
-
-            jump a1_golem1
+            jump s_a1_glitch
 
         "Ask how it can be certain that the old man will come back.":
             "The golem's expression shifts from bubbling excitement to meek uncertainty as you pose your question."
@@ -326,6 +308,37 @@ label a1_golem_conversation_menu3:
             jump a1_golem_conversation_menu3
 
 label a1_golem1:
+    "You drift into a restless sleep, the strange energy of the inn lingering in your thoughts."
+
+    stop music fadeout 1.0
+    scene black with fade
+
+    "..."
+    "..."
+    "..."
+    "..."
+    "..."
+
+    play music "fantasy_casual.mp3" loop fadein 1.0
+    scene fantasy_golem with dissolve
+
+    "Morning arrives softly, the quiet hum of threads moving through the air the first sound you hear."
+    "You open your eyes to see Iolkos busy near the stove, its threads delicately stirring a pot."
+
+    i "Ah, you're awake! Morning. I made some soup. Not the best for breakfast, maybe, but it's all I've got right now."
+    "Iolkos sets a steaming bowl in front of you, the aroma of simple broth filling the air."
+    
+    i "Eat up. The hospice is west, past the village. You'll find it soon enough."
+
+    "You sip the soup, its warmth filling you, while Iolkos hovers nearby, occasionally adjusting things with its threads."
+    "For a moment, it seems to hesitate, its eyes shifting slightly as if lost in thought."
+
+    i "You know… if you ever come back this way, I could use the company. It's… pretty quiet here most of the time."
+    
+    "Its voice softens, just for a moment, before it resumes its usual bright tone."
+
+    i "But, of course, no pressure! Just thought I'd mention it."
+    
     i "Well... I guess this is goodbye for now, huh?"
 
     "Iolkos' eyes gleam softly, the ever-present threads swirling around it as if hesitant to let go of the moment."
@@ -344,6 +357,4 @@ label a1_golem1:
     "It gives you a warm, albeit clumsy smile, and with a final wave, it turns back to its tasks."
     "The soft clinking of threads and quiet hum of its world are the last sounds you hear as you step out the door."
 
-    stop music fadeout 2.0
-    scene black with fade
-    jump s_a1_healer
+    return

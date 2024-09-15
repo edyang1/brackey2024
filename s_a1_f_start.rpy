@@ -29,4 +29,4 @@ label s_a1_f_start:
         "Approach the knight.":
             jump s_a1_knight
         "Leave him be.":
-            jump s_a1_forest_minigame
+            jump s_a1_knight
