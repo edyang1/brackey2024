@@ -155,19 +155,83 @@ label a2_android_conversation_menu_2:
 label a2_android_conversation_menu_3:
     menu:
         "Ask for the name of the doctor he's mentioned for your problem.":
-
+            "Bass points at an odd news sheet cutout stuck on the wall facing the desk."
+            "It pictures a small clinic and a paramedic pulling a stretcher inside."
+            b "The Temple Quay Medical Center."
+            "It gestures at the photo, its metallic finger tracing the image."
+            b "There's a very skilled doctor on duty there twice a week. Offers healthcare assistance for free."
+            b "Famous enough that even the Arcology Monitor wrote about it. Not exactly in a good light, though."
+            "You step closer to the cutout, squinting to make out the words."
+            "It's a vitriol-filled rant, accusing the clinic of aiding criminals and gang members—offering them free care despite the charges they face."
+            "The doctor, Callie Wollerback, is quoted as saying the clinic is for those who can't afford even the cheapest insurance in the Arcology."
+            "Bass's eyes flicker as it continues."
+            b "She's a handful, no doubt. But she's got a good heart. I'm sure she could help you, or at least know someone who might."
+            b "Today's one of the days the clinic's open if you feel like paying her a visit."
+            "Listening to Bass, you can't help but feel a clash between this image of compassion and everything else you've experienced since arriving."
+            "This world, so far, has been drenched in mistrust and distance."
+            "People passing each other on the streets, heads encased in devices, shutting themselves off."
+            "No glances exchanged, no connection—just layers of tech between them and the world."
+            "The first few moments you spent here were marked by an eerie detachment, as though the very fabric of society was stitched together by cold wires rather than human bonds."
+            "And yet, knowing there's someone like Callie, who pushes back against that isolation... it bolsters your resolve."
             jump a2_android_conversation_menu_3
 
         "Ask for more information about itself. What's a migration android?":
-
+            b "It's a type of android you can buy and start programming years in advance."
+            "Bass points at its head."
+            b "You adapt it to your specific brain, using your nerve outputs."
+            "The goal is to build a mind frame around your neural structure—perfectly tailored to you."
+            b "That way, you minimize or even eliminate the risk of rejection psychosis."
+            "It taps a metallic finger against its temple, as if emphasizing the point."
+            b "You begin uploading data to your chosen model when you're around twelve."
+            b "Keep feeding it information until you reach full adulthood."
+            b "By then, the neural network is calibrated to accept any input from the person who bought it."
+            "Bass's eyes flicker briefly, processing."
+            b "In essence, you're using one AI to train another AI, preparing it to respond to your brain."
+            b "Once it's coded, though, it's no longer an AI—because it's mimicking a human brain structure."
+            "The android pauses, as though mulling over its own explanation."
+            b "Hmm… this is getting interesting."
+            b "A triple-layered artificial intellect, developed on a synchronized lattice of parallel neural pathways…"
+            "Bass trails off, lost in the intricate web of its own thought."
+            "It goes on for a while, constructing a complex argument, layering technical jargon and scientific terms over one another."
+            "It all flies above your head."
+            "Sensing your confusion, Bass halts mid-sentence."
+            "But just before it stops, you catch something—fragments of another personality bleeding through its precise vocabulary."
+            b "Sorry. I got carried away."
+            "The android's screen blinks in what seems like an attempt at an apologetic smile."
+            b "Simply put, a migration android is a machine you build and train to follow your commands perfectly."
+            b "Some people use them in case their biological bodies fail."
             jump a2_android_conversation_menu_3
 
         "Ask how exactly he escaped from this Office. It sounded difficult.":
-
+            b "It required some planning ahead, but I wouldn't say it was difficult."
+            b "As soon as I knew I wanted to leave, I started figuring out how to escape the Office without being seen."
+            b "Each night, I connected myself secretly to the mainframe, searching for files to flesh out my plan."
+            "Bass's eyes gleam, clearly enjoying the memory."
+            b "The funniest part? I didn't even know I could do that."
+            b "It wasn't until I sat down at a computer for the first time that I realized—neural adaptation had been happening for years by then."
+            "It shrugs, casual, as though hacking into a corporate mainframe were as easy as flipping a switch."
+            b "Once I had the blueprints and schematics, it was just a matter of timing."
+            b "I synchronized my internal clock with an algorithm I designed to calculate the cameras' angles of vision."
+            b "Then, I walked right to the entrance, avoiding every security system."
+            "It grins, the digital display flickering with amusement."
+            b "Oh, and this hoodie? Stole it from the personnel's changing room before hitting the streets!"
+            b "Very clever, don't you think?"
+            "The android zips the hoodie a little higher, smiling to itself, clearly pleased with its own ingenuity."
             jump a2_android_conversation_menu_3
 
         "Inquire what he's been doing this whole time inside this safehouse.":
-
+            "The android lets out a sharp beep, clearly annoyed."
+            b "I've been trying not to get caught!"
+            b "I have to keep scrambling the diagnostic pings the corporation's mainframe sends out, jamming their communications with this safehouse."
+            b "Otherwise, they'll track me down."
+            "It crosses its arms, frustration apparent even in the mechanical way its limbs move."
+            b "I'm waiting for the right moment to escape for good."
+            b "That's why I set up a vehicle, in case I need to make a quick getaway."
+            "It gestures toward the door you came through."
+            b "Why do you think that car already had this address?"
+            b "It's a company vehicle. I've hacked into it multiple times, changing the access codes and signal emissions bit by bit."
+            "The android's digital eyes flicker slightly, narrowing in suspicion."
+            b "But it's strange that you, of all people, were the one to find it."
             jump a2_android_conversation_menu_3
 
         "Exit.":
@@ -175,3 +239,80 @@ label a2_android_conversation_menu_3:
 
 label a2_android_conversation_menu_4:
     menu:
+        "Head out, and reach the clinic he pointed you towards.":
+            jump a2_android_conversation_menu_5
+   
+        "Ask what he means when he says that you input a person's brain into a machine.":
+            "Bass' expression darkens suddenly."
+            b "It means you take a person's memories, personality, and knowledge, then shape another brain to accommodate them."
+            b "In this case, it's a synthetic brain made of silicates and transistors rather than flesh,"
+            "but the concept's the same."
+            "The android glances at one of its metallic appendages, fingers flexing with subtle unease."
+            b "The difference is, you can buy several Alius Alloy androids to reach your goal,"
+            "but you can't exactly buy that many humans to achieve the same result. If you get what I mean."
+            "It shifts its gaze, scanning the room as if the walls themselves are holding secrets."
+            b "The neural adaptation phase lasts for years. The android has to form the same pathways as the future host..."
+            b "assuming there are no issues."
+            "Bass' eyes flicker, darting back to the screen beside it."
+            b "I'm a kind of mistake. A production prototype with a glitch in its adaptation phase."
+            b "I've gotten most of my designated host's memories. I'm a cyber and electronic warfare expert,"
+            b "but I didn't inherit their personality."
+            "The android's face darkens further, as though the weight of its existence presses down."
+            b "The glitch evolved into something else."
+            b "I developed my own."
+            "There's a silence. The room feels charged."
+            b "No, before you ask—no, it's not supposed to happen."
+            b "Alius Alloy C-series androids are supposed to hold a human personality in backup,"
+            "not use the data to create another one."
+            "Your eyes flicker to the screen beside Bass. Technical specifications fill the display—blueprints,"
+            "designs, notes—nothing pointing to what went wrong with this unit."
+            "The android's unease is almost palpable. A silent current of confusion and dread runs beneath its mechanical surface."
+            b "I fled the Office because I knew they'd scrap me for this glitch."
+            b "I didn't want to be recycled. I was scared."
+            "Its voice wavers, the idea hanging heavy in the air."
+            b "I know it's illogical. Machines can't feel fear... but I did. I still do."
+            b "I don't want them to wipe me, to reset me to factory settings."
+            "Suddenly, Bass' eyes blaze with something fierce, a spark of anger in its artificial gaze."
+            b "It's not fair! I didn't choose to glitch into sentience. That's their fault!"
+            b "They messed up, and now I'm supposed to pay for it? No way!"
+            b "I am... I am..."
+            "The fierce resolve falters, replaced by a quieter sorrow."
+            b "I don't know who I am. I don't even know the name of the person I was supposed to become."
+            "But as quickly as the doubt came, it vanishes. Resolve returns to its glowing eyes."
+            b "But I know one thing."
+            b "I want to decide who I am."
+            b "Not my programming. Not anyone else."
+            b "Me."
+            jump a2_android_conversation_menu_4
+
+label a2_android_conversation_menu_5:
+    b "I don't know if anyone can truly escape their own wiring, you know?"
+    "Bass lets out a faint digital sigh, its eyes dimming slightly as it continues tinkering with the digital mess in front of it."
+    b "But I guess you'll have to figure that out for yourself. I've got enough to deal with here."
+    "Bass's glowing eyes flick back to the screen, and it gives you one last look."
+    b "I've done what I can for now. You should probably head out and get some healing."
+    "With a soft click, the door to the hideout begins to slide open."
+    "The cold outside air cuts through the room, a stark contrast to the warmth of the cluttered space."
+    
+    "You step out into the street, your mind swimming with the information Bass had shared."
+    "The city hums around you, lights flashing overhead, the distant buzz of vehicles passing by."
+    "You check the address Bass had recommended—the Temple Quay Medical Center."
+    "Maybe this Doctor Wollerback could help, or maybe she'd just lead you into more questions. Either way, it's a lead."
+    
+    "The vehicle Bass had set up waits for you at the curb, its lights flickering on as you approach."
+    "You slide into the driver's seat, inputting the address."
+    "The journey feels strangely smooth, your mind drifting as the car silently navigates the neon-lit streets,"
+    "heading deeper into the city."
+    "But something feels off."
+    "Your head throbs suddenly, a sharp pain blooming behind your eyes."
+    "You grip the steering wheel tighter, trying to shake the fog clouding your thoughts."
+    
+    "The road ahead blurs, lights bending and twisting as your vision narrows. A wave of dizziness washes over you, and before you can react—"
+    
+    scene black with fade
+    "..."
+    "..."
+    "The world tilts, and everything goes dark."
+    stop music fadeout 2.0
+    
+    jump s_a2_healer
