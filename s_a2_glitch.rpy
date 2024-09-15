@@ -124,7 +124,7 @@ label s_a2_glitch:
 
     stop music
     stop sound
-    jump next_scene
+    jump s_a3_s1
 
 """
 PAUSE/PLAY GLITCH
