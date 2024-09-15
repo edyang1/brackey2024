@@ -3,6 +3,7 @@ label s_a1_healer:
 
     scene fantasy_healer with fade
     play music "fantasy_casual.mp3" loop fadein 1.0
+    play sound "a_town.mp3" loop fadein 2.0
 
     "The moment you step inside the hospice, the warmth hits you like a wave, pushing back the bitter cold that had settled deep into your bones."
     "The room is long and narrow, lined with simple wooden beds draped in rough, woolen blankets."
@@ -284,10 +285,12 @@ label a1_healer1:
             "You press on, navigating the narrowing trail, your breath visible in the cold air."
 
             stop music fadeout 1.0
+            stop sound fadeout 1.0
             scene black with fade
             jump s_a1_golem
 
         "Explore Everdusk Valley.":
             stop music fadeout 1.0
+            stop sound fadeout 1.0
             scene black with fade
             jump s_a1_glitch

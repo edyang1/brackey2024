@@ -3,6 +3,7 @@ label s_a1_golem:
 
     scene fantasy_golem with fade
     play music "fantasy_casual.mp3" loop fadein 1.0
+    play sound "a_fantasy.mp3" loop fadein 2.0
 
     "Finally, through the trees, you spot a weathered structure, sagging under the weight of moss and ivy."
     "The door is closed, though the building feels alive with a strange energy."
@@ -253,6 +254,7 @@ label a1_golem_conversation_menu3:
             call a1_golem1
 
             stop music fadeout 2.0
+            stop sound fadeout 2.0
             scene black with fade
 
             jump s_a1_healer
@@ -261,6 +263,7 @@ label a1_golem_conversation_menu3:
             call a1_golem1
 
             stop music fadeout 2.0
+            stop sound fadeout 2.0
             scene black with fade
 
             jump s_a1_glitch
@@ -311,6 +314,7 @@ label a1_golem1:
     "You drift into a restless sleep, the strange energy of the inn lingering in your thoughts."
 
     stop music fadeout 1.0
+    stop sound fadeout 1.0
     scene black with fade
 
     "..."
@@ -320,6 +324,7 @@ label a1_golem1:
     "..."
 
     play music "fantasy_casual.mp3" loop fadein 1.0
+    play sound "a_town.mp3" loop fadein 2.0
     scene fantasy_golem with dissolve
 
     "Morning arrives softly, the quiet hum of threads moving through the air the first sound you hear."
