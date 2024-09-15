@@ -33,6 +33,19 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Team members:
+
+Eddie - Programmer, Writer, Designer
+
+Memnyo - Music
+
+RavenCount - Character Design, World Building, Writer
+
+Mia - Art
+
+Nex - Idea Generation, Logistics
+
+Special Thanks: Eddie would like to extend special thanks to @quakn for providing last-minute Photoshop design advice, to his therapist for keeping him sane throughout this week, to his friends for their unwavering support, and to Dylan and Xavier Lodle for giving him a much-needed pep talk and fresh ideas.
 """)
 
 
