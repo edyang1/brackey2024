@@ -33,7 +33,9 @@ label s_a4:
 
     menu:
         "Dap him up.": 
-            fox "I'm sure we'll meet again very soon."
+            fox "Seeya soon."
+            fox "Let the kitsune guide you."
+            fox "Wait, who said that?"
             pause 3.0
     return
 

@@ -57,12 +57,12 @@ label s_a3_bad_ending:
     "The fox hops up, his energy suddenly brighter despite the bleak surroundings."
 
     fox "Lets keep it chill. Well find something new. Maybe another magical forest?"
-    fox "A futuristic city? Hell, Ill settle for a decent taco stand at this point."
+    fox "A futuristic city? Hell, Ill settle for a Chipotle at this point."
 
     "He extends his paw, flashing you a grin."
 
     menu:
         "Dap him up.":
-            fox "Next time, just pick the forest, dude."
+            fox "Next time, just save the forest, dude."
     
     jump s_a4
