@@ -10,6 +10,9 @@ label s_a3_s1:
 label a3_s1_1:
     menu:
         "Head for Stavros' house near the cemetery to check on him.":
+            scene fantasy_cottage with fade
+            play music "fantasy_casual.mp3" loop fadein 1.0
+
             "With uncertainty weighing on your heart, you try to recall the path to the former knight's hut."
             "Your footsteps no longer emit that awful, screeching sound, but the unease persists."
             "You tread carefully on the damp soil, nearly losing your footing several times as you grip the stone wall beside the road."
@@ -31,28 +34,39 @@ label a3_s1_1:
 
             stav "Who is it?"
 
+            show stav neu at subtle_breathe
+
             "A husk-like male voice responds from within. The door cracks open, revealing the brawny frame of a one-armed man."
 
             stav "Oh, it's you. Come on in."
 
+            show stav hap at nod
+
             "He gestures for you to enter."
+
+            show stav neu at step_forward
 
             "The house is exactly as you remember—same furniture, same items, all in their place."
             "Stavros settles by the fire, motioning for you to do the same."
 
             stav "Back so soon? Did you manage to speak with the old man at the inn?"
 
+            stop music fadeout 10.0
+
             menu:
                 "What old man? Didn't you say it was a young man?":
+                    show stav sup at tilt_left
                     "The knight's face twists into a puzzled expression."
 
             stav "What do you mean? I've never met a young lad in that place. There was an old man who used to live there before… Before…"
 
+            show stav neu at lean_back
             "He trails off, his bewilderment deepening."
 
             stav "My memory... it's playing tricks on me. I can't seem to recall the last time I went there."
             stav "Maybe it was back when I was still a farmer."
 
+            show stav sup at subtle_breathe
             "Your mind races. He never said he used to be a farmer."
 
             menu:
@@ -83,6 +97,8 @@ label a3_s1_1:
             "You blink, shake your head, even close your eyes, but the rectangles remain, beeping softly."
             "At times, they squirm and twitch more noticeably when you focus on them, making the sight all the more unsettling."
 
+            stop music fadeout 10.0
+
             "Disturbed and increasingly disoriented, you push forward, determined to reach the hospice."
             "You mentally retrace your steps, searching for the stone building in the distance, but it never appears."
             "You keep walking, each step heavier than the last, your energy draining, but still, the hospice remains out of sight."
@@ -102,6 +118,9 @@ label a3_s1_1:
             jump a3_s1_1
 
         "Reach Iolkos' inn and see if everything's in order.":
+            scene fantasy_golem_path with fade
+            play music "fantasy_casual.mp3" loop fadein 1.0
+
             "With uncertainty weighing heavily in your heart, you try to recall the way to the golem's abandoned inn."
             "You tread carefully on the frozen earth, almost losing your footing on the slick ground."
             "As you steady yourself against the stone wall running parallel to the road, you notice something strange."
@@ -118,11 +137,15 @@ label a3_s1_1:
             "You stop to catch your breath as you near the entrance, noticing the yellow bar has shrunk considerably, while the green remains unchanged."
             "A larger square has now appeared, filled with the same gray blocks you saw when you first encountered the fog in the Sector."
 
+            stop music fadeout 10.0
+
             "The inn's door is swung wide open. No light spills from within, no scent of food greets you."
             "The silence is heavy, unsettling."
 
             "As you step closer, something stirs within the darkness—small, almost childlike, skittering along the edge of the doorframe."
             "A thin figure emerges, clutching the wooden beams of the entrance. Its bright, pearl-like eyes and crafted metallic body glint faintly in the dim light."
+
+            show i neu at subtle_breathe
 
             i "Who are you? What are you doing here?"
 
@@ -132,7 +155,11 @@ label a3_s1_1:
                 "Iolkos, it's me. We talked before, remember? You even had me taste your soup.":
                     "You inch closer, your voice gentle, but with every step, the golem retreats further into the shadows."
 
+            show i sup at lean_back
+
             i "I don't remember you! I don't know who you are!"
+
+            show i ang at jitter
 
             "Iolkos cries out, his voice rising in fear."
 
@@ -140,14 +167,22 @@ label a3_s1_1:
 
             "The golem's pearl eyes twist into oblique lines, glowing with anger."
 
+            show i ang at tilt_right
+
             i "You're bad! You're a liar! No one has ever been in here with me!"
             i "People only come by to break things and steal from the outside!"
 
+            show i ang at step_back
+
             "The automaton scuttles toward the door, its small frame moving with frantic energy as it slams the door shut."
+
+            show i ang at subtle_breathe
 
             i "Don't come any closer! I want to be alone!"
 
             "Iolkos yells one final time before slamming the door, locking himself inside the decaying inn."
+
+            show i neu at look_down
 
             "You're left standing alone beneath the trees. Before the door shut, you noticed something odd—"
             "A purple outline surrounded Iolkos' small frame, with two colored bars hovering above him and two squares."

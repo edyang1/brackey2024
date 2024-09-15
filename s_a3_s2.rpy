@@ -16,4 +16,13 @@ label s_a3_s2:
 
     "Without hesitation, you summon the display, drawing on your fresh memories of Everdusk Valley and all that has transpired."
 
-    jump a3_s1_1
+    jump a3_s2_1
+
+label a3_s2_1:
+    "hello world"
+    # menu:
+    #     "Head for the Cherub, to check on Stars.":
+        
+    #     "Go straight to Temple Quay and see if Callie is still there.":
+
+    #     "Drive to the safehouse to meet with Bass.":
