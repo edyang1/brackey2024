@@ -185,7 +185,7 @@ label fox_intro: #introduction to the fox\
 label fox_intro_2:
     fox "Dude, I was totally messing with you."
     fox "The hell even is a magnetic field?"
-    fox "I mean, you can see it. You can't feel it. But it's there."
+    fox "I mean, you can't see it. You can't feel it. But it's there."
     fox "Anyways."
 
     "The two-tailed fox grins mischievously, its tails flicking back and forth."
