@@ -50,7 +50,7 @@ label s_a2_android:
     "grabbing a CannonBall fizzy drink and two Super Beams chocolate bars—banana and whole nuts."
     "Your stomach growls as you accept the snacks, popping open the can and unwrapping the bars."
     "The sweet taste of the chocolate and the fizz of the drink hit your senses, grounding you in the moment."
-    jump a2_android_conversation_menu_1:
+    jump a2_android_conversation_menu_1
 
 label a2_android_conversation_menu_1:
     b "So, how is it? I picked those flavors just for you."
