@@ -10,9 +10,9 @@ label s_a3_bad_ending:
 
     menu:
         "Wait... you?! What are you doing here?!":
-            fox "Bro, where else would I be? I live here. Well... lived."
+            fox "Bruh where else would I be? I live here. Well... lived."
 
-    "The fox grins, giving a casual shrug, like losing a whole universe is just another Tuesday."
+    "The fox grins."
 
     fox "So, uh, yeah. This totally blows. No trees, no magic forest, no neon-lit streets to stroll around. Just... this."
 
@@ -20,7 +20,7 @@ label s_a3_bad_ending:
 
     "The fox glances around the void like its sizing up some empty real estate."
 
-    fox "So, I guess the universe kinda... imploded? Guess thats what happens when youre too indecisive, huh?"
+    fox "So, I guess the universe kinda... imploded? Guess thats what happens when you're too indecisive, huh?"
 
     menu:
         "I didnt—It wasnt—I couldnt choose!":
@@ -30,6 +30,7 @@ label s_a3_bad_ending:
 
     fox "Sorry dude. I get it. Tough choice."
     fox "Nah, I wouldnt wanna deal with that either. But… here we are. Poof. Everything's gone."
+    fox "Turns out, literally being spirit of a forest doesn't make you immune to getting sent to the shadow realm."
 
     "..."
 
@@ -39,7 +40,7 @@ label s_a3_bad_ending:
 
     "He looks down at his paws, flexing his claws, as though testing if his powers still work."
 
-    fox "But hey, Im not mad. Were just in a... transitional phase. Y'know, moving on to new things, right?"
+    fox "But hey, Im not mad. Were just in a... transitional phase. Y'know, moving on to new things...type stuff?"
 
     menu:
         "Weren't you mad a minute ago?":
@@ -48,21 +49,28 @@ label s_a3_bad_ending:
     "The fox gives you a playful nudge with one of his glowing tails, like he's trying to cheer you up."
 
     fox "Cmon, you know the drill. We wander around, figure out where the next big adventure is."
-    "Or maybe well find a nice spot and just vibe. Who knows?"
+    fox "Or maybe we'll find a nice spot and just vibe. Who knows?"
 
-    fox "But lets be real. I'm magic, you're… well, you. Well be fine. Don't worry, I'll handle it."
+    fox "But lets be real. I'm magic, you're… well, you."
+    fox "Hey, I meant that in a nice way! You're cool. We're cool. We'll be fine."
+    fox "Don't worry, I'll handle it."
     fox "The universe—or whatever comes next—cant be any worse than this, right?"
-    fox "I mean, lowkey, what comes next?"
+    fox "I mean, lowkey, if you think about it, what comes next?"
 
     "The fox hops up, his energy suddenly brighter despite the bleak surroundings."
 
     fox "Lets keep it chill. Well find something new. Maybe another magical forest?"
-    fox "A futuristic city? Hell, Ill settle for a Chipotle at this point."
+    fox "A futuristic city? Hell, I'll settle for a Chipotle at this point."
+    fox "Now that I think about it, I could mess up some Chipotle right now."
+    fox "But if they don't fill my bowl to the top, I'm gonna—"
+    fox "There's some words I would share with them."
+    fox "They better load that thing up."
+    fox "Anyway, lets go find something new."
 
     "He extends his paw, flashing you a grin."
 
     menu:
         "Dap him up.":
-            fox "Next time, just save the forest, dude."
+            fox "Next time, just choose to save Everdusk, dude."
     
     jump s_a4
