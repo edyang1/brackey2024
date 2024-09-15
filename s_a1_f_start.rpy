@@ -12,20 +12,21 @@ label s_a1_f_start:
     "Maybe you'll spot one of those two-tailed foxes the old tomes speak of."
     "Or perhaps you'll stumble upon an apothecary in Everdusk Valley, eager to buy the plants you've gathered in the forest."
     "You estimate by the sun's position that you have about an hour of daylight left."
-    "The air is thick with the scent of pine and earth, but something else stirs—a faint,"
-    "unsettling presence, like the ghost of forgotten magic clinging to the breeze."
+    "The air is thick with the scent of pine and earth, but something else stirs—"
+    "a faint, unsettling presence, like the ghost of forgotten magic clinging to the breeze."
     "You pause, trying to make out the source of long shadows that stretch across the path ahead."
     "It is a cemetery, jagged tombstones casting long shadows under a fading sky, their edges softened by the last golden hues of the setting sun."
-    "As you step closer, you see him: a man in armor, standing still amidst the tombstones."
-    "You remember hearing that Everdusk Valley is close, just beyond this stretch of road,"
-    "but this figure seems out of place amidst the quiet graves."
-    "He looks almost like a statue, his broad, brawny frame etched in the dying light."
+    "As you step closer, you see him: a man in a cape, a statue amidst the tombstones."
+    "This figure seems out of place among the graves, with his broad, brawny frame etched in the dying light."
     "His face is solemn, eyes downcast, focused on something far beyond the graves at his feet."
     "The missing arm speaks of battles hard-fought, scars earned in silence."
     "His armor is scratched and worn, bearing the weight of a soldier who has seen far too much."
-    "Do you approach him?"
+    "You remember hearing that Everdusk Valley is close, just beyond this stretch of road."
+    "Should you find shelter soon or press on?"
 
     menu:
+        "Do you approach him?"
+
         "Approach the knight.":
             jump s_a1_knight
         "Leave him be.":

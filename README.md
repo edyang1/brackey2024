@@ -1,6 +1,6 @@
 A visual novel about two world colliding. And foxes.
 
-Statistics:
+**Statistics:**
 
 All nighters pulled (collectively): 2
 
@@ -8,7 +8,7 @@ Git commits: 85
 
 Lines of code (approximately): 5147
 
-Team members:
+**Team members:**
 
 Eddie - Programmer, Writer, Designer (https://subspace1.itch.io/)
 
