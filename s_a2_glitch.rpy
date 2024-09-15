@@ -10,7 +10,7 @@ label s_a2_glitch:
     "Your restless desire for exploration pushes you forward, just as it did in the mountains—alone, searching for something beyond these looming shadows."
     
     python:
-        for i in range(10):
+        for count in range(10):
             renpy.music.set_pause(True)
             renpy.pause(renpy.random.uniform(0.1, 0.3))  
             
@@ -22,7 +22,7 @@ label s_a2_glitch:
     "{b}MEMORY ERROR: Stack overflow detected. Process limit exceeded{/b}"
     
     python:
-        for i in range(20):
+        for count in range(20):
             renpy.music.set_pause(True)
             renpy.pause(renpy.random.uniform(0.1, 0.3))  
             
@@ -39,7 +39,7 @@ label s_a2_glitch:
 
     python:
         glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
-        for i in range (2): # how many times to play any sound
+        for count in range (2): # how many times to play any sound
             random_sound = renpy.random.choice(glitch_sounds)
             renpy.sound.play(random_sound)
             renpy.pause(renpy.random.uniform(3, 5))
@@ -88,7 +88,7 @@ label s_a2_glitch:
 
     python:
         glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
-        for i in range(5):
+        for count in range(5):
             renpy.music.set_pause(True)
             random_sound = renpy.random.choice(glitch_sounds)
             renpy.sound.play(random_sound)
@@ -108,7 +108,7 @@ label s_a2_glitch:
 
     python:
         glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
-        for i in range(10):
+        for count in range(10):
             renpy.music.set_pause(True)
             random_sound = renpy.random.choice(glitch_sounds)
             renpy.sound.play(random_sound)
@@ -133,7 +133,7 @@ label s_a2_glitch:
 PAUSE/PLAY GLITCH
 
     python:
-        for i in range(2):
+        for count in range(2):
             renpy.music.set_pause(True)
             renpy.pause(renpy.random.uniform(0.1, 0.3))  
             
@@ -144,7 +144,7 @@ SOUNDS GLITCH
 
     python:
         glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
-        for i in range (5): # how many times to play any sound
+        for count in range (5): # how many times to play any sound
             random_sound = renpy.random.choice(glitch_sounds)
             renpy.sound.play(random_sound)
             renpy.pause(renpy.random.uniform(3, 5))
@@ -152,7 +152,7 @@ SOUNDS GLITCH
 PITCH GLITCH
 
     python:
-        for i in range (50):
+        for count in range (50):
             renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
             renpy.pause(renpy.random.uniform(0.02, 0.1))
 """

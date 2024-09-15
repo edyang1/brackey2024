@@ -642,7 +642,7 @@ screen file_slots(title):
 
                 spacing gui.slot_spacing
 
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
+                for count in range(gui.file_slot_cols * gui.file_slot_rows):
 
                     $ slot = i + 1
 

@@ -72,7 +72,7 @@ label a3_s2_1:
                     stan "I've always been alone."
 
                     python:
-                        for i in range(5):
+                        for count in range(5):
                             renpy.music.set_pause(True)
                             renpy.pause(renpy.random.uniform(0.1, 0.3))  
                             
@@ -122,7 +122,7 @@ label a3_s2_1:
             "There's no response. Her vehicle only accelerates, pulling ahead as you struggle to keep up."
             
             python:
-                for i in range(5):
+                for count in range(5):
                     renpy.music.set_pause(True)
                     renpy.pause(renpy.random.uniform(0.1, 0.3))  
                     
@@ -192,7 +192,7 @@ label a3_s2_1:
             b "You said something before, like a name? Was that my name?"
 
             python:
-                for i in range(5):
+                for count in range(5):
                     renpy.music.set_pause(True)
                     renpy.pause(renpy.random.uniform(0.1, 0.3))  
                     
@@ -238,7 +238,7 @@ label a3_s2_2:
     scene fantasy_cottage with flash
 
     python:
-        for i in range (50):
+        for count in range (50):
             renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
             renpy.pause(renpy.random.uniform(0.02, 0.1))
 
@@ -251,7 +251,7 @@ label a3_s2_2:
     "StOpStoPSTOPSTOPSTOPstopSTOPSTOPStOpSTOPSTOP—"
 
     python:
-        for i in range (50):
+        for count in range (50):
             renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
             renpy.pause(renpy.random.uniform(0.02, 0.1))
 
@@ -265,7 +265,7 @@ label a3_s2_2:
 
     python:
         glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
-        for i in range (2): # how many times to play any sound
+        for count in range (2): # how many times to play any sound
             random_sound = renpy.random.choice(glitch_sounds)
             renpy.sound.play(random_sound)
             renpy.pause(renpy.random.uniform(3, 5))
@@ -274,7 +274,7 @@ label a3_s2_2:
 
     python:
         glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
-        for i in range(7):
+        for count in range(7):
             renpy.music.set_pause(True)
             random_sound = renpy.random.choice(glitch_sounds)
             renpy.sound.play(random_sound)
@@ -300,7 +300,7 @@ label a3_s2_2:
 
     python:
         glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
-        for i in range (3): # how many times to play any sound
+        for count in range (3): # how many times to play any sound
             random_sound = renpy.random.choice(glitch_sounds)
             renpy.sound.play(random_sound)
             renpy.pause(renpy.random.uniform(3, 5))
@@ -312,7 +312,7 @@ label a3_s2_2:
 
     python:
         glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
-        for i in range(10):
+        for count in range(10):
             renpy.music.set_pause(True)
             random_sound = renpy.random.choice(glitch_sounds)
             renpy.sound.play(random_sound)
