@@ -175,14 +175,14 @@ label fox_intro: #introduction to the fox\
             jump fox_intro_2
 
         "0.37 meters per second clockwise":
-            fox "Ah, good try."
+            fox "NT, NT."
             jump fox_intro_2
 
         "Huh?":
             jump fox_intro_2
 
 label fox_intro_2:
-    fox "Haha dude, I was totally messing with you."
+    fox "Dude, I was totally messing with you."
     fox "You should have seen the look on your face."
 
     "The two-tailed fox grins mischievously, its tails flicking back and forth."
