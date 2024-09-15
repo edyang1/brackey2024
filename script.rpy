@@ -31,7 +31,7 @@ transform barge_into_center:
 # START
 label start:
 
-    call s_a1_golem
+    # call s_a1_golem
 
     call s_a1_f_start
 
