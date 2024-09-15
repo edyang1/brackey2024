@@ -1,4 +1,6 @@
 label s_a1_forest_minigame:
+    $ artstyle = "fantasy"
+
     play music "fantasy_casual.mp3" loop fadein 1.0
     scene fantasy_knight with fade
 

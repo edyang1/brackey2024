@@ -1,4 +1,5 @@
 label s_a1_knight:
+    $ artstyle = "fantasy"
 
     "He notices you before you have a chance to turn away."
     "His gaze, sharp and thoughtful, settles on you with the calm focus of someone used to watching over others."
@@ -235,6 +236,7 @@ label a1_knight_conversation_menu3:
         "Head for the inn Stavros mentioned.":
             "You fall into a deep sleep, the warmth of Stavros' cottage and the crackling fire lulling you into rest."
 
+            stop music fadeout 1.0
             scene black with fade
             "..."
             "..."
@@ -242,6 +244,7 @@ label a1_knight_conversation_menu3:
             "..."
             "..."
 
+            play music "fantasy_casual.mp3" loop fadein 1.0
             scene fantasy_cottage with dissolve
 
             "Morning comes quietly. You wake to the smell of porridge cooking, and see Stavros at the fire."
@@ -335,12 +338,15 @@ label a1_knight3:
         "Thank him sincerely.":
             stav "Yeah, yeah. Get moving."
             stav "Take care of yourself."
+
+            stop music fadeout 2.0
+            scene black with fade
             jump s_a1_forest_minigame
 
         "Leave quietly, with a smile.":
             "You smile and nod, understanding his quiet offer."
             stav "Take care of yourself."
+
+            stop music fadeout 2.0
+            scene black with fade
             jump s_a1_forest_minigame
-    
-    stop music fadeout 2.0
-    scene black with fade

@@ -1,4 +1,6 @@
 label s_a1_golem:
+    $ artstyle = "fantasy"
+
     scene fantasy_golem with fade
     play music "fantasy_casual.mp3" loop fadein 1.0
 
@@ -150,4 +152,198 @@ label a1_golem_conversation_menu1:
             jump a1_golem_conversation_menu2
 
 label a1_golem_conversation_menu2:
-    "hello world"
+    menu:
+        "State that maybe your memory problem may be caused by some disease you caught on the way here.":
+            i "Well, it could be. It seems that humans and other similar species can contract diseases from all sorts of sources—water, air, food, plants..."
+            "Iolkos begins rattling off an extensive list of contagion methods, each ailment sounding progressively worse."
+            "Its knowledge on the subject is disturbingly thorough, but after a moment, it notices you're no longer following along and abruptly stops."
+            i "Hmm, I'm guessing you haven't consumed any fermented basilisk eyes lately, so we can probably rule out ophthalmic spiral spikes."
+            i "But it could be some other kind of disease entirely—maybe even one that hasn't been discovered yet."
+            "The golem closes its eyes, falling into a deep, contemplative silence."
+            "For a moment, you wonder if it has fallen asleep, but your theory is quickly disproved when it jolts up, its face lighting up with excitement."
+            i "I just remembered something! The old man once lent some books to the head physician at the local hospice."
+            i "He might know what's wrong with you—it's definitely worth checking out!"
+            jump a1_golem_conversation_menu2
+
+        "Ask what exactly it means by 'fun'.":
+            "The golem's expression darkens, a hint of frustration in its eyes."
+
+            i "There's plenty of fun to be had here, you know!"
+            i "There are five hundred ninety-four books on thirty-two different subjects,"
+            i "and I've only read a third of them—some are even in languages I don't know yet!"
+            i "There's so much to discover,"
+            i "like how to make broth using horse hooves or how long sparrow beaks are if they hatch in autumn when it's cold!"
+
+            "It launches into a tirade, painstakingly explaining why everything it does is incredibly fun and entertaining."
+            "As you listen, you start to grasp that this place means more to it than the words can convey."
+            "The books, the old man, the inn—they're all tied together in some deep, unspoken way for this strange being."
+
+            "It gestures toward the cooking implements you noticed earlier."
+
+            i "I'm teaching myself how to cook for when the old man comes back."
+            i "I've read half a dozen cookbooks and have been practicing for a month."
+            i "I also try to fix things."
+
+            "As it mentions this, you begin to notice a series of small repairs throughout the inn."
+            "Doorframes have been mended with sawdust mixed with a dense liquid, bonding it to the wood."
+            "Nails have been replaced by wooden pegs, carefully shaped to fit where the metal once was."
+            "You realize it's doing its best to take care of the inn."
+            "A pile of cannibalized tables and chairs lies in the corner,"
+            "their parts used to replace floorboards and patch the counter."
+
+            i "Oh, and sometimes I manage to watch people while they travel and even... sort of talk to them."
+
+            "Noticing your skepticism, the golem clarifies."
+
+            i "Just like I sensed you were in trouble, I can feel people nearby when they aren't too far from the inn."
+            i "I can shift things around, move things between places."
+            i "That's how I get the ingredients to practice my cooking."
+
+            "It raises a hand, almost in defense."
+
+            i "And of course, I leave money in place of the goods I take."
+            i "The old man said that's how people trade, right?"
+
+            "All of this feels like a person trying to create order in their world,"
+            "struggling against chaos in an effort to build a quiet, meaningful existence."
+            "The golem speaks with passion about its life here, but you can't shake the feeling that this life,"
+            "this place, wasn't meant for it alone."
+            jump a1_golem_conversation_menu2
+
+        "Question it about where the old man may be now.":
+            "The golem's expression darkens, uncertainty clouding its features."
+
+            i "I... I don't know."
+            i "I haven't seen him since I woke up."
+            i "Maybe he went on one of the trips he wrote about in his diary."
+            i "But... he didn't leave any instructions."
+
+            "The sadness in its voice seems to dim the hopeful energy you've seen up to now."
+
+            i "I know I'm supposed to wait for him, but I also feel like I need to do what he told me—explore both the inside and outside of the inn."
+
+            "Its gaze falls, and for the first time, you see the weight of its uncertainty fully."
+
+            i "I don't know what to do."
+            i "I'd love to know when he's coming back... but I also want to find a way to walk outside with my own feet, not just through these threads."
+            jump a1_golem_conversation_menu2
+
+        "Ask for more information about the strange threads.":
+            i "I'm sure they work with my body because I can only use them to interact with things if a part of me is touching them."
+
+            "You recall the golem always keeping its feet on the ground while manipulating the cookware with its threads."
+
+            i "But, I can also make them work outside the inn if I'm touching certain materials—like hardwood, slatestone, or metals."
+            i "That's how I bring in the things I buy from the outside."
+
+            "It glances up at the ceiling, then down at its hands, and finally back at you, a flicker of doubt crossing its face."
+
+            i "You know, sometimes I wonder if they're meant to keep me in here."
+            i "But... that wouldn't make sense, right?"
+            i "The old man said that one day I'd have to go outside and see the world."
+            jump a1_golem_conversation_menu2
+
+        "Exit":
+            "The golem's eyes study you lazily."
+            jump a1_golem_conversation_menu3
+
+label a1_golem_conversation_menu3:
+    menu:
+        "Head for the hospice Iolkos mentioned.":
+            "You drift into a restless sleep, the strange energy of the inn lingering in your thoughts."
+
+            stop music fadeout 1.0
+            scene black with fade
+
+            "..."
+            "..."
+            "..."
+            "..."
+            "..."
+
+            play music "fantasy_casual.mp3" loop fadein 1.0
+            scene fantasy_golem with dissolve
+
+            "Morning arrives softly, the quiet hum of threads moving through the air the first sound you hear."
+            "You open your eyes to see Iolkos busy near the stove, its threads delicately stirring a pot."
+
+            i "Ah, you're awake! Morning. I made some soup. Not the best for breakfast, maybe, but it's all I've got right now."
+            "Iolkos sets a steaming bowl in front of you, the aroma of simple broth filling the air."
+            
+            i "Eat up. The hospice is west, past the village. You'll find it soon enough."
+
+            "You sip the soup, its warmth filling you, while Iolkos hovers nearby, occasionally adjusting things with its threads."
+            "For a moment, it seems to hesitate, its eyes shifting slightly as if lost in thought."
+
+            i "You know… if you ever come back this way, I could use the company. It's… pretty quiet here most of the time."
+            
+            "Its voice softens, just for a moment, before it resumes its usual bright tone."
+
+            i "But, of course, no pressure! Just thought I'd mention it."
+
+            jump a1_golem1
+
+        "Ask how it can be certain that the old man will come back.":
+            "The golem's expression shifts from bubbling excitement to meek uncertainty as you pose your question."
+
+            i "I... I am not. I honestly have no clue."
+            i "The Illyrian left so many things written down for me, but not everything was meant for me specifically."
+            i "Sometimes he mentions other names—names that sound like mine, but aren't."
+            i "They look like other golems, but I can't find any trace of them, and I've searched this inn inch by inch."
+
+            "It pauses, the thought seemingly weighing on it."
+
+            i "Maybe they were my siblings? Is that what they'd be called?"
+
+            "The black pearls that serve as its eyes drift away from you, scanning the ceiling and nearby walls,"
+            "roaming the room once more as if searching for something unseen."
+            "The action feels almost habitual, like it has done this countless times before,"
+            "always searching for that missing piece, that unknown realization that might unlock the puzzle of its existence."
+
+            "In that moment, you catch a glimpse of something deeper—the dismay that lingers beneath its resolve."
+            "It's as if the burden of its purpose, its loneliness,"
+            "has slipped through the carefully constructed facade it keeps up."
+
+            "You picture this small, human-shaped creation, living out its days alone within these decaying walls,"
+            "surrounded by silence and the cryptic words left behind in old notebooks."
+            "Perhaps it finds some strange comfort in interpreting the vague notes of long-gone scholars,"
+            "rocked to sleep, if it ever sleeps, by their wisdom, just as its master once did."
+
+            "And yet, there's a resolve in the golem—a determination that surprises you,"
+            "a fierce desire to push beyond the boundaries of what you thought possible for such a creature."
+
+            i "I know there's much the old man hasn't told me yet, but I *have* to figure it all out before he comes back."
+            i "I need to understand how the world works—how people live."
+            i "That's my purpose. I'm sure of it."
+
+            "Its voice rises with renewed energy, the earlier hesitation all but gone."
+
+            i "And I *know* he'll come back. I can feel it deep inside me."
+            i "When he does, I'll have done everything he expected of me, and we'll have dinner together, just like you and I!"
+
+            "The sudden surge of enthusiasm seems to banish the earlier dread,"
+            "pushing it back into the shadows as the golem's eyes sparkle with an iridescent curiosity and intellect."
+            jump a1_golem_conversation_menu3
+
+label a1_golem1:
+    i "Well... I guess this is goodbye for now, huh?"
+
+    "Iolkos' eyes gleam softly, the ever-present threads swirling around it as if hesitant to let go of the moment."
+
+    i "I really hope you find what you're looking for out there. I'll keep the place tidy, just in case you come back."
+
+    "It gives a small, awkward wave, the threads fluttering slightly in response."
+
+    i "Remember, the world's a big place... but I think you'll do just fine."
+    i "I'll be here, learning, waiting, and maybe... maybe one day I'll step outside too."
+
+    "For a brief moment, the golem's expression shifts, its eyes reflecting something deeper—a flicker of hope and longing."
+
+    i "Take care out there. And if you ever need a strange little inn with a strange little golem, you know where to find me!"
+
+    "It gives you a warm, albeit clumsy smile, and with a final wave, it turns back to its tasks."
+    "The soft clinking of threads and quiet hum of its world are the last sounds you hear as you step out the door."
+
+    stop music fadeout 2.0
+    scene black with fade
+    jump s_a1_healer
