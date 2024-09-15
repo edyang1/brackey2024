@@ -444,6 +444,27 @@ transform enter_expand:
 # START
 label start:
 
+    $ artstyle = "fantasy"
+
+    "ERROR: {size=*1.5}{color=#f00}M€mø®¥ Sėgmêntâ†ïøñ Fåûł†{/color}{/size}"
+    "WARNING: {size=*0.7}{b}Stack Overflow Detected{/b}. Data integrity compromised."
+    "Corrupt Memory Block: {size=*1.2}{s}0xFFAC201{/s}{/size} {size=*0.5}{color=#00ff00}Attempting to recover{/color}..."
+    "{size=*0.8}{i}Runtime Exception: Unexpected NULL pointer dereference{/i}{/size}"
+    "{size=+7}{color=#f00}Fø®mât Šķÿñë {s}inva...invali{/s}d{/color}"
+    "{size=*1.8}{color=#ff4500}Data breach in sector XX—cr¡t¡cal failure. M¿smätçh detected.{/color}"
+    "{size=*0.4}{i}{color=#0000ff}Rebooting...rebOoOOting...{/color}{/i}"
+    "{size=*2}{u}{color=#8a2be2}Warning: Heap overflow detected!{/color}{/u}"
+    "{size=*1.3}{s}Faulty{/s} segment in {i}Mₑₘₒᵣᵧ₋ₛₜₐcₖ₁{/i}."
+    "{size=+4}{color=#ff0000}ERR0RRRRRrrrrr{size=+7}rRrrrRrrRrrRrr{/size}{/color}"
+    "{size=*0.6}Memory leak in thread {size=*1.3}{color=#8b0000}#5432... attempting to resolve{/color}{/size}"
+    "{size=*0.8}{b}!!W@RN¡NG!!:{/b} Recursive loop detected in m€møry ₲{size=*1.4}{color=#00ff00}43FZ{/color}..."
+    "{size=*0.9}{i}{color=#ff1493}Page fault—insufficient memory resources{/color}{/i}"
+    "{size=+5}{color=#ff6347}System HALT: Stack trace corrupted—cannot continue.{/color}"
+    "{size=*1.7}{b}{color=#ff4500}Segmentation fault. Memory access violation. Reboot required...{/color}{/b}"
+    "{size=*1.5}{s}{i}Memory buffer underrun...data {color=#0000ff}loss imminent{/color}{/i}{/s}"
+    "{size=+6}{color=#ff4500}DISK F@ILURE{/color}"
+    "{size=*1.3}Invalid memory read at address {size=*0.8}{u}{color=#4682b4}0x0000FFFF{/color}{/u}"
+
     # call s_a2_glitch
 
     call s_a1_f_start
