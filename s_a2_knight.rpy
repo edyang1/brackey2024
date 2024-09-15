@@ -331,3 +331,76 @@ label a2_knight_conversation_menu_2:
         "Exit":
             jump a2_knight_conversation_menu_3
 
+label a2_knight_conversation_menu_3:
+    menu:
+        "Ask more about the life he's been talking about. Why the backstabbing?":
+            "He laughs bitterly, almost amused by your question."
+
+            stan "Why that? Take a look around."
+            stan "Do you really think any of us is trustworthy? Go on, take a good look."
+
+            "You shift your gaze to the patrons hanging around the tables and the counter."
+            "Dahlia, the bartender, is pouring a drink for a man who's barely conscious, slumped over his stool."
+
+            "On the far side of the bar, contract brokers sit behind two imposing mercenaries with even more cybernetic augmentations than the rest."
+            "Their hands glide over spreadsheets, eyes fixed on floating holographic screens,"
+            "scanning information, making deals with the efficiency of machines."
+
+            "You glance at the regulars, none of whom look unprepared."
+            "They're not relaxed either, always on edge, just like Stars sitting next to you."
+
+            "Hatterlode motions to his missing arm."
+
+            stan "In this life, you don't trust anyone. The moment you do, you're done for."
+            stan "Most pay for it with their lives."
+            stan "Me? I just had to pay with an arm this time."
+
+            "He downs his drink in one gulp, and you see Dahlia already preparing another one."
+
+            stan "Trust makes you weak. Vulnerable. In the underworld, that's a death sentence."
+            stan "The moment someone sees you as easy prey, they'll strike."
+            stan "Happened to me once. Lucky to be sitting here talking to you now."
+
+            "He watches Dahlia mix the drink, his eyes narrowing slightly."
+
+            stan "She was a young mercenary. Reminded me of myself, so I cut her some slack."
+            stan "Trained her, mentored her, gave her a chance when others wouldn't."
+            stan "She was skilled, no doubt. But I got soft. Trusted her too much."
+
+            "He lets out a slow, bitter laugh."
+
+            stan "Last job we did together, I let her secure the escape route."
+            stan "Turns out, she double-crossed us. Took a second job on the side with the Marshani smugglers."
+            stan "Got double the pay for selling us out."
+
+            "He motions to his missing arm again, the scars telling the rest of the story."
+
+            stan "I made it out, barely. Medtech had to amputate the arm."
+            stan "Smart girl, though. She hasn't shown her face around here since."
+
+            "He chuckles again, the bitterness cutting through."
+
+            stan "Smart indeed."
+            jump a2_knight_conversation_menu_3
+
+        "Head for the address he's given you, to visit the other person having issues with his memory.":
+            jump a2_knight_conversation_menu_4
+
+label a2_knight_conversation_menu_4:
+    "You decide it's time to leave. You thank Stars for the drink and the conversation, offering to return the favor."
+
+    "He waves it off immediately, a tired smile crossing his face."
+
+    stan "Don't worry about it. Just watch your back out there."
+    stan "Also, word of advice. You should probably see a medtech."
+
+    "You take a mental note of the address he gave you and head toward the exit."
+
+    "As you enter the vehicle, you input the location,"
+    "only to be surprised when the system informs you that the address is already stored."
+
+    "The car hums to life, engines purring softly, and you're on your way."
+
+    stop music fadeout 2.0
+    scene black with fade
+    jump s_a2_healer
