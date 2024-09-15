@@ -2,6 +2,7 @@ label s_a2_android:
     $ artstyle = "cyber"
 
     play music "cyber_casual.mp3" loop fadein 1.0
+    play sound "a_safehouse.mp3" loop fadein 1.0
 
     scene fantasy_golem with fade
     
@@ -314,5 +315,6 @@ label a2_android_conversation_menu_5:
     "..."
     "The world tilts, and everything goes dark."
     stop music fadeout 2.0
+    stop sound fadeout 2.0
     
     jump s_a2_healer

@@ -2,6 +2,7 @@ label s_a1_forest_minigame:
     $ artstyle = "fantasy"
 
     play music "fantasy_casual.mp3" loop fadein 1.0
+    play sound "a_fantasy.mp3" loop fadein 2.0
     scene fantasy_knight with fade
 
     "As you forge ahead, the forest begins to envelop you, its tall, thick trees casting long shadows over the path."
@@ -351,5 +352,6 @@ label forest_minigame_setback:
             "You barely feel your legs as they help you up the steps and through the door."
 
             stop music fadeout 2.0
+            stop sound fadeout 2.0
             scene black with fade
             jump s_a1_healer

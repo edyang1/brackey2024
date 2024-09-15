@@ -3,6 +3,7 @@ label s_a1_glitch:
 
     scene fantasy_healer with fade
     play music "fantasy_casual.mp3" loop fadein 1.0
+    play sound "a_town.mp3" loop fadein 2.0
     
     "The village of Everdusk Valley lies before you, shrouded in an ethereal mist. The cobblestone streets wind like veins through the quiet town, the buildings quaint yet heavy with the weight of time."
     "Few people walk the streets, and those who do keep their heads low, their movements hurried, as if the air itself whispers of things best left unnoticed."
