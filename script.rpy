@@ -1,5 +1,5 @@
 ﻿# CHARACTERS
-define stav = Character("Stavros", color="#007a02", image="stav")  # Stavros Attelides
+define stav = Character("Stavros", color="#7a0000", image="stav")  # Stavros Attelides
 define cah = Character("Caharel", color="#7fb638", image="cah")  # Caharel (they)
 define i = Character("Iolkos", color = "#684930", image="i")  # Iolkos
 
