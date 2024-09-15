@@ -128,16 +128,16 @@ label forest_minigame_6: #animal calls puzzle
     "You realize you need to follow the order of the calls to find your way through the forest."
 
     menu:
+        "Follow the two-toned yip of the fox first.":
+            "You follow the fox's call, but it echoes strangely, leading you in circles."
+            jump forest_minigame_6
+        
         "Follow the chittering of the squirrel first.":
             "You follow the sound of the squirrel's chittering, and the forest seems to lighten. The trees open up slightly, giving you a clearer path."
             jump forest_minigame_7
 
         "Follow the hoot of the owl first.":
             "You follow the owl's call, but the forest grows darker, and the trees seem to close in. You sense you're heading in the wrong direction."
-            jump forest_minigame_6
-
-        "Follow the two-toned yip of the fox first.":
-            "You follow the fox's call, but it echoes strangely, leading you in circles."
             jump forest_minigame_6
 
 label forest_minigame_7: #animal calls puzzle 2
@@ -188,7 +188,7 @@ label fox_intro_2:
     "The two-tailed fox grins mischievously, its tails flicking back and forth."
     "They glow faintly as the fox studies you."
 
-    fox "dude, is it? Been a while since I've seen a human."
+    fox "It's been a minute since I've seen a human."
     fox "Lowkey, it gets lonely as hell out here."
     fox "But you seem chill."
     fox "How about we do some riddles?"
@@ -209,7 +209,9 @@ label fox_intro_2:
 label forest_minigame_9: #two foxes puzzle
     "The two-tailed fox flicks its tails, and suddenly there are two identical foxes standing before you."
     "One tail on each fox glows faintly, making it hard to distinguish which is real."
-    fox "dude, only one of us speaks the truth. The other... well, let's just say I like to play with the truth a little."
+
+    fox "This one's light work."
+    fox "Only one of us speaks the truth. The other... well, let's just say I like to play with the truth a little."
     fox "You can ask one question to find out which path will lead you safely through the forest."
 
     "The two foxes grin mischievously, each waiting for your question."
@@ -219,6 +221,7 @@ label forest_minigame_9: #two foxes puzzle
             fox "The other would say to take the left path."
             fox "So would I."
             "You realize that both foxes would point to the wrong path in this scenario."
+            fox "Alright, alright, I see you."
             jump forest_minigame_10
 
         "Ask: 'Which path would you take?'":
@@ -230,7 +233,7 @@ label forest_minigame_9: #two foxes puzzle
             jump forest_minigame_9
 
 label forest_minigame_10: #pawns
-    "The eight of us go forth, not back, to protect our king from a foe's attack. What are we?"
+    fox "The eight of us go forth, not back, to protect our king from a foe's attack. What are we?"
     menu:
         "Soldiers":
             fox "Close, but nah. Soldiers can retreat too, can't they?"
