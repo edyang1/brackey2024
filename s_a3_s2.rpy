@@ -326,4 +326,8 @@ label a3_s2_2:
 
     "PLSPLSPLSPLSPLSPLS—NO NO—"
 
+    stop music
+    stop sound
+    scene black with flash
+
     jump s_a3_s3

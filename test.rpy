@@ -179,15 +179,15 @@ label pos_test:
     hide stav at exit_quick
 
     show stav neu at enter_hesitant
-    stav "I’m not sure about this, so I entered hesitantly."
+    stav "I'm not sure about this, so I entered hesitantly."
     hide stav at exit_hesitant
 
     show stav neu at enter_confident
-    stav "I’m confident, so I made a bold entrance."
+    stav "I'm confident, so I made a bold entrance."
     hide stav at exit_confident
 
     show stav neu at enter_shy
-    stav "I’m feeling shy, so I entered cautiously."
+    stav "I'm feeling shy, so I entered cautiously."
     hide stav at exit_shy
 
     show stav neu at enter_bold

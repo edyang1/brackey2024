@@ -134,7 +134,7 @@ define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 
 # 29. exit_hesitant
 # Description: Hesitant exit with a slight pause.
-# Use Case: Perfect for characters who aren’t sure if they should leave.
+# Use Case: Perfect for characters who aren't sure if they should leave.
 
 # 30. exit_confident
 # Description: Bold and confident exit with a slight pause.
@@ -390,7 +390,7 @@ transform exit_quick:
     yanchor 0.5
     ease 0.5 xpos -0.2
 
-# Hesitant exit, for when the character isn’t sure if they should leave.
+# Hesitant exit, for when the character isn't sure if they should leave.
 transform exit_hesitant:
     xpos 0.5 ypos 0.45
     xanchor 0.5
@@ -462,9 +462,9 @@ label start:
     # "{size=*1.3}{s}Faulty{/s} segment in {i}Mₑₘₒᵣᵧ₋ₛₜₐcₖ₁{/i}."
     
 
-    # call s_a3_s1
+    call s_a3_s3
 
-    call s_a1_f_start
+    # call s_a1_f_start
 
     # call choice_test
     # call char_test
