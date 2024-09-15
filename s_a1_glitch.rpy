@@ -134,6 +134,8 @@ label a1_glitch1:
     stop music
     stop sound
 
+    pause 5.0
+
     jump s_a2_knight
 
 """
