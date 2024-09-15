@@ -9,8 +9,14 @@ define stan = Character("Stanley", color="#5d89f7", image="stan")  # Stanley “
 define cal = Character("Callie", color="#ff764a", image="cal")  # Callie Wollerback
 define b = Character("B4/22C", color="#d9a832", image="b")  # B4/22C (Bass)
 
+# PLAYER NAMES
 define f_name = "Cassiopeia"
 define c_name = "Ca55ioP0X"
+
+
+# SCENE EFFECTS
+
+define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 
 # TRANSFORM GUIDE
 
@@ -445,21 +451,18 @@ transform enter_expand:
 label start:
     $ artstyle = "fantasy"
 
-    "ERROR: {size=*1.5}{color=#f00}M€mø®¥ Sėgmêntâ†ïøñ Fåûł†{/color}{/size}"
-    "WARNING: {size=*0.7}{b}Stack Overflow Detected{/b}. Data integrity compromised."
-    "Corrupt Memory Block: {size=*1.2}{s}0xFFAC201{/s}{/size} {size=*0.5}{color=#00ff00}Attempting to recover{/color}..."
-    "{size=*0.8}{i}Runtime Exception: Unexpected NULL pointer dereference{/i}{/size}"
-    "{size=+7}{color=#f00}Fø®mât Šķÿñë {s}inva...invali{/s}d{/color}"
-    "{size=*1.8}{color=#ff4500}Data breach in sector XX—cr¡t¡cal failure. M¿smätçh detected.{/color}"
-    "{size=*0.4}{i}{color=#0000ff}Rebooting...rebOoOOting...{/color}{/i}"
-    "{size=*2}{u}{color=#8a2be2}Warning: Heap overflow detected!{/color}{/u}"
-    "{size=*1.3}{s}Faulty{/s} segment in {i}Mₑₘₒᵣᵧ₋ₛₜₐcₖ₁{/i}."
-    "{size=+4}{color=#ff0000}ERR0RRRRRrrrrr{size=+7}rRrrrRrrRrrRrr{/size}{/color}"
-    "{size=*0.6}Memory leak in thread {size=*1.3}{color=#8b0000}#5432... attempting to resolve{/color}{/size}"
-    "{size=*0.8}{b}!!W@RN¡NG!!:{/b} Recursive loop detected in m€møry ₲{size=*1.4}{color=#00ff00}43FZ{/color}..."
+    # "ERROR: {size=*1.5}{color=#f00}M€mø®¥ Sėgmêntâ†ïøñ Fåûł†{/color}{/size}"
+    # "WARNING: {size=*0.7}{b}Stack Overflow Detected{/b}. Data integrity compromised."
+    # "Corrupt Memory Block: {size=*1.2}{s}0xFFAC201{/s}{/size} {size=*0.5}{color=#00ff00}Attempting to recover{/color}..."
+    # "{size=*0.8}{i}Runtime Exception: Unexpected NULL pointer dereference{/i}{/size}"
+    # "{size=+7}{color=#f00}Fø®mât Šķÿñë {s}inva...invali{/s}d{/color}"
+    # "{size=*1.8}{color=#ff4500}Data breach in sector XX—cr¡t¡cal failure. M¿smätçh detected.{/color}"
+    # "{size=*0.4}{i}{color=#0000ff}Rebooting...rebOoOOting...{/color}{/i}"
+    # "{size=*2}{u}{color=#8a2be2}Warning: Heap overflow detected!{/color}{/u}"
+    # "{size=*1.3}{s}Faulty{/s} segment in {i}Mₑₘₒᵣᵧ₋ₛₜₐcₖ₁{/i}."
     
 
-    # call s_a2_glitch
+    # call s_a3_s1
 
     call s_a1_f_start
 

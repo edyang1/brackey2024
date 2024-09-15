@@ -71,6 +71,14 @@ label a3_s2_1:
 
                     stan "I've always been alone."
 
+                    python:
+                        for i in range(5):
+                            renpy.music.set_pause(True)
+                            renpy.pause(renpy.random.uniform(0.1, 0.3))  
+                            
+                            renpy.music.set_pause(False)
+                            renpy.pause(renpy.random.uniform(0.05, 0.2))
+
                     "No matter how much you call his name, Stephen Hatterlode no longer responds. His attention is elsewhere, locked onto his drink."
 
                     "You notice the now-familiar overlay forming around his body. The number 50 stands out clearly in the square, while a second panel displays three bullets aligned over a shield."
@@ -113,6 +121,14 @@ label a3_s2_1:
             
             "There's no response. Her vehicle only accelerates, pulling ahead as you struggle to keep up."
             
+            python:
+                for i in range(5):
+                    renpy.music.set_pause(True)
+                    renpy.pause(renpy.random.uniform(0.1, 0.3))  
+                    
+                    renpy.music.set_pause(False)
+                    renpy.pause(renpy.random.uniform(0.05, 0.2))
+
             "Both of your transports are following the same road, and soon you realize where she's headed."
             "Callie is driving straight towards a ring of gray mist, slowly closing in on the city."
             
@@ -175,6 +191,14 @@ label a3_s2_1:
 
             b "You said something before, like a name? Was that my name?"
 
+            python:
+                for i in range(5):
+                    renpy.music.set_pause(True)
+                    renpy.pause(renpy.random.uniform(0.1, 0.3))  
+                    
+                    renpy.music.set_pause(False)
+                    renpy.pause(renpy.random.uniform(0.05, 0.2))
+
             menu:
                 "Yes, Bass. That's your name. You told me that.":
                     "The machine's head display flickers and refreshes a few times, the screen momentarily blank."
@@ -202,7 +226,7 @@ label a3_s2_1:
             jump a3_s1_1
 
         "Exit.":
-            jump s_a3_s2
+            jump a3_s2_2
 
 label a3_s2_2:
     play music "fantasy_casual_glitched.mp3" loop fadein 1.0 volume 0.5
@@ -213,6 +237,11 @@ label a3_s2_2:
     
     scene fantasy_cottage with flash
 
+    python:
+        for i in range (50):
+            renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
+            renpy.pause(renpy.random.uniform(0.02, 0.1))
+
     "{size=*0.9}{i}{color=#ff1493}Page fault—insufficient memory resources{/color}{/i}"
     "{size=+5}{color=#ff6347}System HALT: Stack trace corrupted—cannot continue.{/color}"
     
@@ -221,6 +250,11 @@ label a3_s2_2:
     "no no no NO no stop STOP stop STOP—"
     "StOpStoPSTOPSTOPSTOPstopSTOPSTOPStOpSTOPSTOP—"
 
+    python:
+        for i in range (50):
+            renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
+            renpy.pause(renpy.random.uniform(0.02, 0.1))
+
     scene cyber_console with flash
 
     "{size=*1.7}{b}{color=#ff4500}Segmentation fault. Memory access violation. Reboot required...{/color}{/b}"
@@ -228,7 +262,29 @@ label a3_s2_2:
     scene cyber_healer with flash
 
     "plEaSePLEASEpleASEplEASEplease—NO—NO!"
+
+    python:
+        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
+        for i in range (2): # how many times to play any sound
+            random_sound = renpy.random.choice(glitch_sounds)
+            renpy.sound.play(random_sound)
+            renpy.pause(renpy.random.uniform(3, 5))
+
     "STOPSTOPSTOPstopSTOPSSTOPstpSTOPSTOPSTOP—"
+
+    python:
+        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
+        for i in range(7):
+            renpy.music.set_pause(True)
+            random_sound = renpy.random.choice(glitch_sounds)
+            renpy.sound.play(random_sound)
+            renpy.pause(renpy.random.uniform(1, 2))
+            
+            renpy.music.set_pause(False)
+
+            random_sound = renpy.random.choice(glitch_sounds)
+            renpy.sound.play(random_sound)
+            renpy.pause(renpy.random.uniform(1, 2))
 
     scene fantasy_knight with flash
 
@@ -241,11 +297,32 @@ label a3_s2_2:
     scene fantasy_cottage with flash
 
     "STOPSTOpSToPstopSTOPstOpSTOPSTOPSTOP—"
+
+    python:
+        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
+        for i in range (3): # how many times to play any sound
+            random_sound = renpy.random.choice(glitch_sounds)
+            renpy.sound.play(random_sound)
+            renpy.pause(renpy.random.uniform(3, 5))
     
     "{size=+6}{color=#ff4500}DISK F@ILURE{/color}"
     "{size=*1.3}Invalid memory read at address {size=*0.8}{u}{color=#4682b4}0x0000FFFF{/color}{/u}"
     
     scene fantasy_golem with flash
+
+    python:
+        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
+        for i in range(10):
+            renpy.music.set_pause(True)
+            random_sound = renpy.random.choice(glitch_sounds)
+            renpy.sound.play(random_sound)
+            renpy.pause(renpy.random.uniform(1, 2))
+            
+            renpy.music.set_pause(False)
+
+            random_sound = renpy.random.choice(glitch_sounds)
+            renpy.sound.play(random_sound)
+            renpy.pause(renpy.random.uniform(1, 2))
 
     "PLSPLSPLSPLSPLSPLS—NO NO—"
 

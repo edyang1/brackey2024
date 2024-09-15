@@ -78,6 +78,15 @@ label a3_s1_1:
 
             "A cold shock rushes through you as you hear Stavros' words."
             "Your vision trembles, and your eyes blink uncontrollably. Stavros' body is outlined by a faint blue glow."
+            
+            python:
+                for i in range(5):
+                    renpy.music.set_pause(True)
+                    renpy.pause(renpy.random.uniform(0.1, 0.3))  
+                    
+                    renpy.music.set_pause(False)
+                    renpy.pause(renpy.random.uniform(0.05, 0.2))
+            
             "A small panel with colored lines and a square appears above him. The number '50' is displayed next to the green and yellow bars."
             "For a brief moment, you spot the shape of a shield crossed by a blade before the image jitters and vanishes, leaving the box empty."
 
@@ -120,6 +129,15 @@ label a3_s1_1:
             "Exhausted, you finally stop, your breath ragged as the truth sinks in."
 
             "Whatever lies beyond the bend in the road is simply out of reach—an illusion,"
+
+            python:
+                for i in range(5):
+                    renpy.music.set_pause(True)
+                    renpy.pause(renpy.random.uniform(0.1, 0.3))  
+                    
+                    renpy.music.set_pause(False)
+                    renpy.pause(renpy.random.uniform(0.05, 0.2))
+
             "a space that doesn't exist in the reality you're trapped in."
             "Each step toward it displaces you back to where you started, and as you walk,"
             "the ground stretches and warps, triangles bending into impossible shapes before snapping back into place."
@@ -155,6 +173,14 @@ label a3_s1_1:
             "A thin figure emerges, clutching the wooden beams of the entrance. Its bright, pearl-like eyes and crafted metallic body glint faintly in the dim light."
 
             show i neu at subtle_breathe
+
+            python:
+                for i in range(5):
+                    renpy.music.set_pause(True)
+                    renpy.pause(renpy.random.uniform(0.1, 0.3))  
+                    
+                    renpy.music.set_pause(False)
+                    renpy.pause(renpy.random.uniform(0.05, 0.2))
 
             i "Who are you? What are you doing here?"
 
@@ -214,13 +240,19 @@ label a3_s1_1:
             "It washes over the slopes, swallowing up hills, homes, and roads. Everything vanishes under its relentless tide."
 
             "Houses, trees, animals—all dismantled, erased by the squirming fog you know all too well."
-
+            
+            "{size=*0.8}{b}!!W@RN¡NG!!:{/b} Recursive loop detected in m€møry ₲{size=*1.4}{color=#00ff00}43FZ{/color}..."
+            
             "Instinctively, you want to run, but there is nowhere to run to."
             "You take a few desperate steps, but the fog overtakes you, clinging to your body like damp sand."
             "Your arms and legs flail, trying to fight it off, but there is no escaping it. The fog smothers you, tightening its grip."
-
+           
+            "{size=+4}{color=#ff0000}ERR0RRRRRrrrrr{size=+7}rRrrrRrrRrrRrr{/size}{/color}"
+            
             "You twitch violently, gasping for air. Your head slams against cold metal."
-
+            
+            "{size=*0.6}Memory leak in thread {size=*1.3}{color=#8b0000}#5432... attempting to resolve{/color}{/size}"
+            
             scene black with flash
 
             stop music
