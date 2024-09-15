@@ -38,9 +38,13 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+A visual novel about two world colliding. And foxes.
+
 Team members:
 
 Eddie - Programmer, Writer, Designer
+
+https://subspace1.itch.io/
 
 Memnyo - Music
 
@@ -48,11 +52,12 @@ RavenCount - Character Design, World Building, Writer
 
 Mia - Art
 
+https://miacioffioutlookcom.itch.io/
+
 Nex - Idea Generation, Logistics
 
 Special Thanks: Eddie would like to extend special thanks to @quakn for providing last-minute Photoshop design advice, to his therapist for keeping him sane throughout this week, to his friends for their unwavering support, and to Dylan and Xavier Lodle for giving him a much-needed pep talk and fresh ideas.
 """)
-
 
 ## A short name for the game used for executables and directories in the built
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
