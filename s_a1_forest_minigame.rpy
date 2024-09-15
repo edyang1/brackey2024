@@ -168,8 +168,9 @@ label fox_intro: #introduction to the fox\
     fox "If you wish to proceed, and walk the forest free,"
     fox "You must answer my riddles, not one but three."
 
-    fox "A conducting bar of length l moves to the right on two frictionless rails, as shown in the figure below. A uniform magnetic field directed into the page has a magnitude of 0.30 T. Assume l = 35 cm and R = 9.0 ohms. At what constant speed should the bar move to produce an 8.5-mA current in the resistor? What is the direction of this induced current?"
     menu:
+        fox "A conducting bar of length l moves to the right on two frictionless rails, as shown in the figure below. A uniform magnetic field directed into the page has a magnitude of 0.30 T. Assume l = 35 cm and R = 9.0 ohms. At what constant speed should the bar move to produce an 8.5-mA current in the resistor? What is the direction of this induced current?"
+        
         "0.73 meters per second counterclockwise":
             fox "Wait, how on earth did you get that right?"
             jump fox_intro_2
@@ -191,18 +192,20 @@ label fox_intro_2:
     fox "It's been a minute since I've seen a human."
     fox "Lowkey, it gets lonely as hell out here."
     fox "But you seem chill."
-    fox "How about we do some riddles?"
 
     menu:
+        fox "How about we do some riddles?"
+
         "How about no?":
             fox "Oh, come on, don't be like that."
             fox "Such a killjoy."
             fox "I'm just trying to lighten the mood."
             fox "Well listen, dude, you kinda don't have a choice."
             fox "As the spirit guardian of this forest, I've got magic powers. I can't let you leave yet."
-            fox "Chill with me for a bit, and I'll send you right on your way."
+            fox "I mean, I won't zap you with lasers or anything (even though it's totally awesome!)"
+            fox "But chill with me for a bit, and I'll send you right on your way."
             jump forest_minigame_9
-        "Let me at em!":
+        "Let me at em, coach!":
             fox "That's the spirit!"
             jump forest_minigame_9
 
@@ -213,28 +216,36 @@ label forest_minigame_9: #two foxes puzzle
     fox "This one's light work."
     fox "Only one of us speaks the truth. The other... well, let's just say I like to play with the truth a little."
     fox "You can ask one question to find out which path will lead you safely through the forest."
+    "The foxes grin mischievously, each waiting for your question."
 
-    "The two foxes grin mischievously, each waiting for your question."
     menu:
-        "Ask: 'If I asked the other fox which path is safe, what would they say?'":
-            "One fox tilts its head, the other grins wider."
-            fox "The other would say to take the left path."
-            fox "So would I."
-            "You realize that both foxes would point to the wrong path in this scenario."
-            fox "Alright, alright, I see you."
-            jump forest_minigame_10
+    "Two foxes stand before you, one always lies, one always tells the truth. You are allowed to ask one question to determine which path is correct."
+    
+    "Ask: 'If the other fox were the opposite of what they are, what path would they point to?'":
+        "Both foxes smile knowingly, but their answers are cryptic. One nods, the other laughs softly. You're left feeling more confused than before."
+        "This question did not help as much as you'd hoped."
+        jump forest_minigame_9
 
-        "Ask: 'Which path would you take?'":
-            "Both foxes smile knowingly, but their answers are cryptic. You're unsure which one to trust."
-            jump forest_minigame_9
+    "Ask: 'If I asked the other fox which path is safe, what would they say?'":
+        "One fox tilts its head, the other grins wider."
+        fox "The other would say to take the left path."
+        fox "So would I."
+        "You realize that both foxes would point to the wrong path in this scenario."
+        fox "Alright, alright, I see you."
+        "You now know which path leads to safety: the opposite of what they said."
+        jump forest_minigame_10
 
-        "Ask: 'Is the left path safe?'":
-            "One fox nods, while the other shakes its head. You're left uncertain."
-            jump forest_minigame_9
+    "Ask: 'If I were to ask you which path leads to the treasure, what would you say?'":
+        "One fox nods, while the other shakes its head."
+        fox "Right, obviously."
+        fox "No, it's left."
+        "The conflicting responses leave you uncertain of which path is correct."
+        jump forest_minigame_9
 
 label forest_minigame_10: #pawns
-    fox "The eight of us go forth, not back, to protect our king from a foe's attack. What are we?"
     menu:
+        fox "The eight of us go forth, not back, to protect our king from a foe's attack. What are we?"
+
         "Soldiers":
             fox "Close, but nah. Soldiers can retreat too, can't they?"
             fox "Think more like… pieces on a board."
@@ -254,8 +265,9 @@ label forest_minigame_10: #pawns
             jump forest_minigame_10
 
 label forest_minigame_11: #keyboard
-    fox "I have keys but no locks. I have space but no room. You can enter, but you can't go outside. What am I?"
     menu:
+        fox "I have keys but no locks. I have space but no room. You can enter, but you can't go outside. What am I?"
+        
         "A keyboard":
             fox "Exactly! A keyboard has keys but no locks, it has space (the space bar) but no room, and you can enter without going anywhere physically."
             jump forest_minigame_12
@@ -282,6 +294,7 @@ label forest_minigame_12: #foxes at a table
     "The foxes all tilt their heads expectantly, as if daring you to solve the puzzle."
 
     menu:
+        "How many ways can you arrange 4 unique foxes around a circular table?"
         "12 ways":
             fox "Oof, not quite! You forgot something important about round tables."
             fox "Remember, in a circle, one position is fixed!"

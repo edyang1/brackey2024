@@ -7,13 +7,13 @@ label s_a4:
 
     "But before you can reflect any further—"
 
-    fox "Man, how cheesy can this game get? You're about to walk off into the sunset, and I don't even get a dap up for the road?"
+    fox "Man, how cheesy can this game get? You're about to ride off into the sunset, and I don't even get a dap up for the road?"
 
-    "The fox grins, its tails flicking lazily behind him."
+    "The fox grins, his tails flicking lazily behind him."
 
-    fox "Give me a second, I've got to crumple the fourth wall, yeah?"
+    fox "Give me a second, I need to crumple the fourth wall, yeah?"
 
-    fox "Let's give a huge thank you to the team that was able to make this happen."
+    fox "Let me give a huge thank you to the team that was able to make this happen."
 
     fox "Eddie: Programmer, writer, voice actor, and graphic designer"
     fox "Mia: Lead artist"
@@ -34,8 +34,7 @@ label s_a4:
     menu:
         "Dap him up.": 
             fox "Seeya soon."
-            fox "Let the kitsune guide you."
-            fox "Wait, who said that?"
+            fox "Aight, bruh. I'm out."
             pause 3.0
     return
 
