@@ -89,8 +89,6 @@ label a3_s3_2:
             "There's a sudden stillness in the control room. The air feels heavy, like a weight pressing down on your chest."
             "The soft hum of the machines continues, indifferent to the destruction you've just witnessed."
 
-            play music "ambient_somber.mp3" fadein 5.0
-
             "You stare at the panel, but the reality of what you've done feels distant, unreal."
             "The world that once existed just moments ago—its mountains, forests, the faces of Iolkos, Stavros—it's all gone now, wiped from existence as though it never was."
             "Not even a memory remains."
@@ -116,7 +114,7 @@ label a3_s3_2:
             "Somewhere in the back of your mind, a tiny, cruel voice whispers."
             "Was it worth it?"
 
-            "{color=#ff4500}Partition: Everdusk Sector. Memory capacity at 85%.{/color}"
+            "{color=#ff4500}Partition: Everdusk Sector. Memory capacity at 85 percent.{/color}"
             
             "The world you chose to save... lives on. The city, with its cold neon lights and crumbling streets, persists. But the cost—"
 
@@ -179,7 +177,7 @@ label a3_s3_2:
                 "Was this the right choice?":
                     "The screens flicker again, but now it's just empty static. The city is gone—its people, its stories, all erased in a moment. And yet... the system hums on, as if nothing has changed."
 
-            "{color=#ff4500}Partition: Everdusk_Valley_Region. Memory capacity at 85%.{/color}"
+            "{color=#ff4500}Partition: Everdusk_Valley_Region. Memory capacity at 85 percent.{/color}"
             
             "The valley, with its forests and villages, is still there. The mountains and ancient paths, preserved. But the world you chose to destroy... it's gone. Erased like a fleeting thought."
 

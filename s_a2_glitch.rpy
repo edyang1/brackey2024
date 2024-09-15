@@ -124,6 +124,9 @@ label s_a2_glitch:
 
     stop music
     stop sound
+
+    pause 5.0
+
     jump s_a3_s1
 
 """

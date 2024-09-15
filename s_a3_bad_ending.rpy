@@ -64,4 +64,5 @@ label s_a3_bad_ending:
     menu:
         "Dap him up.":
             fox "Next time, just pick the forest, dude."
-    return
+    
+    jump s_a4
