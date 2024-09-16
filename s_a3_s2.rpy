@@ -24,7 +24,7 @@ default investigated_bass = False
 
 label a3_s2_1:
     menu:
-        "Who will you check on?"
+        "Where do you go?"
         "Head for the Cherub, to check on Stars." if not investigated_stars:
             $ investigated_stars = True
 
@@ -236,7 +236,9 @@ label a3_s2_1:
 
             jump a3_s1_1
 
-        "Move on.":
+        "Leave.":
+            "NO."
+
             jump a3_s2_2
 
 label a3_s2_2:
@@ -244,7 +246,7 @@ label a3_s2_2:
 
     scene cyber_android with flash
     
-    "NO."
+    "STOP."
     
     scene fantasy_cottage with flash
 
@@ -268,7 +270,7 @@ label a3_s2_2:
             renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
             renpy.pause(renpy.random.uniform(0.02, 0.1))
 
-    scene cyber_console_g with flash
+    scene cyber_healer_g with flash
 
     "{size=*1.7}{b}{color=#ff4500}Segmentation fault. Memory access violation. Reboot required...{/color}{/b}"
     

@@ -10,9 +10,14 @@ define cal = Character("Callie", color="#39bd93", image="cal")  # Callie Wollerb
 define b = Character("B4/22C", color="#d93232", image="b")  # B4/22C (Bass)
 
 # PLAYER NAMES
-define f_name = "Cassiopeia"
-define c_name = "Ca55ioP0X"
+default f_name = "Cassiopeia"
+default c_name = "Ca55ioP0X"
 
+# STORY FLOW
+
+default visited_f_golem = False
+default visited_f_healer = False
+default explored_valley = False
 
 # SCENE EFFECTS
 
@@ -462,7 +467,7 @@ label start:
     # "{size=*1.3}{s}Faulty{/s} segment in {i}Mₑₘₒᵣᵧ₋ₛₜₐcₖ₁{/i}."
     
 
-    jump s_a1_glitch
+    # jump s_a1_glitch
 
     call s_a1_f_start
 

@@ -253,7 +253,7 @@ label a2_knight_conversation_menu_1:
             show stan neu at step_back
             "His face relaxes a little, and he almost lights up as he takes another sip of his Nine Mills."
             stan "The rest of these kids... They've still got a lot to learn before they make it as mercs in this place."
-            stan "Most of them have never set foot outside the middle levels of the Arcology."
+            stan "Most of them have never set foot outside the middle levels of the Sector."
             stan "Let alone gotten the kind of experience it takes to secure a corporate trooper contract."
             
             show stan sad at look_down

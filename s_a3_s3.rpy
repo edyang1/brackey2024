@@ -1,3 +1,6 @@
+default seen_diagnostics = False
+default seen_partition = False
+
 label s_a3_s3:
     $ artstyle = "cyber"
 
@@ -17,7 +20,9 @@ label s_a3_s3:
 
 label a3_s3_1:
     menu:
-        "System diagnostics tool":
+        "System diagnostics tool" if not seen_diagnostics:
+            $ seen_diagnostics = True
+
             "You press the button, and with a sputter of life, the surrounding displays flicker on."
             "A string of messages scrolls across the screen, their meaning hitting you like a blow."
             
@@ -32,7 +37,9 @@ label a3_s3_1:
             "You're returned to the main menu, your heart pounding."
             jump a3_s3_1
 
-        "Memory capacity partition":
+        "Memory capacity partition" if not seen_partition:
+            $ seen_partition = True
+
             "The screen flickers again, the cold light casting shadows that stretch impossibly long across the room."
             "More text rolls across the screen, though this time it feels heavier, like a sentence being passed."
 
@@ -206,7 +213,7 @@ label a3_s3_2:
             jump s_a3_del_cyber
 
         "You can't decide—paralyzed by fear":
-            stop music fadeout 2.0
+            stop music fadeout 2.0            
 
             "Your hand hovers over the panel, shaking, as your mind churns with indecision. The choice lies before you—two worlds, two fates—and yet... you can't move."
             "The memories of Iolkos, Stavros, Bass, and Callie flash before you in rapid succession, but no matter how hard you try, you can't decide."
@@ -224,6 +231,8 @@ label a3_s3_2:
                     "You pull back from the screen, hands trembling, heart pounding in your chest."
             "The weight of the decision crushes you, and for a moment, you wish someone else could choose for you."
             
+            play music "fantasy_casual_glitched.mp3" loop fadein 2.0
+
             menu:
                 "I can't do this... I can't destroy them... I can't...":
                     "But no one is here to make the choice. It's just you, trapped between two worlds, unable to save either."
@@ -315,5 +324,16 @@ label a3_s3_2:
             "{size=120}there's{/size}"
             "{size=130}nothing{/size}"
             "{size=140}left.{/size}"
+
+            scene black with flash
+
+            pause 3.0
+
+            python:
+                glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
+                for count in range (4): # how many times to play any sound
+                    random_sound = renpy.random.choice(glitch_sounds)
+                    renpy.sound.play(random_sound)
+                    renpy.pause(renpy.random.uniform(1, 2))
 
             jump s_a3_bad_ending

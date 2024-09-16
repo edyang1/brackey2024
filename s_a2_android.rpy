@@ -148,7 +148,7 @@ label a2_android_conversation_menu_2:
             show b neu at subtle_breathe
             b "The Office? That's where I'm from."
             "Its voice shifts, almost as if reminiscing."
-            b "Back on Level 12 of the Arcology. One of the big research facilities the corporation has here on the East Coast."
+            b "Back on Level 12 of the Sector. One of the big research facilities the corporation has here on the East Coast."
             "The android's eyes flicker briefly, like it's running through old data."
             b "It's one of the main ones. Explains why security was such a hassle to get past."
             show b neu at lean_in
@@ -208,10 +208,10 @@ label a2_android_conversation_menu_3:
             "It gestures at the photo, its metallic finger tracing the image."
             show b neu at nod
             b "There's a very skilled doctor on duty there twice a week. Offers healthcare assistance for free."
-            b "Famous enough that even the Arcology Monitor wrote about it. Not exactly in a good light, though."
+            b "Famous enough that even the Sector Monitor wrote about it. Not exactly in a good light, though."
             "You step closer to the cutout, squinting to make out the words."
             "It's a vitriol-filled rant, accusing the clinic of aiding criminals and gang members—offering them free care despite the charges they face."
-            "The doctor, Callie Wollerback, is quoted as saying the clinic is for those who can't afford even the cheapest insurance in the Arcology."
+            "The doctor, Callie Wollerback, is quoted as saying the clinic is for those who can't afford even the cheapest insurance in the Sector."
             show b neu at subtle_breathe
             "Bass's eyes flicker as it continues."
             b "She's a handful, no doubt. But she's got a good heart. I'm sure she could help you, or at least know someone who might."

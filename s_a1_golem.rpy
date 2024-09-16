@@ -1,9 +1,11 @@
 label s_a1_golem:
     $ artstyle = "fantasy"
 
+    $ visited_f_golem = True
+
     scene fantasy_golem with fade
     play music "fantasy_casual.mp3" loop fadein 1.0
-    play sound "a_fantasy.mp3" loop fadein 2.0
+    play sound "a_town.mp3" loop fadein 2.0
 
     "Finally, through the trees, you spot a weathered structure, sagging under the weight of moss and ivy."
     "The door is closed, though the building feels alive with a strange energy."
@@ -316,7 +318,7 @@ default golem_oldman_convo3 = False
 
 label a1_golem_conversation_menu3:
     menu:
-        "Head for the hospice Iolkos mentioned.":
+        "Head for the hospice Iolkos mentioned." if not visited_f_healer:
             call a1_golem1
 
             stop music fadeout 2.0
@@ -325,7 +327,7 @@ label a1_golem_conversation_menu3:
 
             jump s_a1_healer
 
-        "Explore Everdusk Valley.": 
+        "Explore Everdusk Valley." if not explored_valley: 
             call a1_golem1
 
             stop music fadeout 2.0

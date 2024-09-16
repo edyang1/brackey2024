@@ -4,8 +4,8 @@
 ## them. Lines beginning with a single '#' mark are commented-out code, and you
 ## may want to uncomment them when appropriate.
 
-define config.default_music_volume = 0.25
-define config.default_sfx_volume = 0.25
+define config.default_music_volume = 0.69
+define config.default_sfx_volume = 0.69
 define config.default_voice_volume = 1.0
 
 define config.default_text_cps = 50
@@ -46,7 +46,7 @@ Eddie - Programmer, Writer, Designer
 
 https://subspace1.itch.io/
 
-Memnyo - Music
+Memnyo - Composer (out fishing with his dad)
 
 RavenCount - Character Design, World Building, Writer
 

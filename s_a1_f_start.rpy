@@ -5,6 +5,7 @@ label s_a1_f_start:
 
     scene fantasy_knight with fade
     play music "fantasy_casual.mp3" loop fadein 1.0
+    play sound "a_fantasy.mp3" loop fadein 1.0
     
     "The wind whispers through the tall grass, carrying the lingering scent of the damp forest behind you."
     "You are lulled into a sense of security by the warmth of the sun on your back."
