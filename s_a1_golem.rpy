@@ -87,9 +87,18 @@ label s_a1_golem:
     i "But enough about that. What were you doing before? I could sense you were in a bad situation."
     jump a1_golem_conversation_menu1
 
+default golem_memory_convo = False
+default golem_alone_convo = False
+default golem_oldman_convo = False
+default golem_move_convo = False
+
 label a1_golem_conversation_menu1:
     menu:
-        "Explain how you have little memories of what led you here.":
+        "What do you ask the strange figure?"
+
+        "Explain how you have little memories of what led you here." if not golem_memory_convo:
+            $ golem_memory_convo = True
+
             show i sup at tilt_right
             "The statue's eyes shift, narrowing into thoughtful slits as it listens to you, lost in contemplation."
             show i neu at subtle_breathe
@@ -109,7 +118,9 @@ label a1_golem_conversation_menu1:
             i "My name is Iolkos. The old man told me that's what I should say when introducing myself."
             jump a1_golem_conversation_menu1
         
-        "Ask why it's alone in this building. It doesn't seem a great place to be.":
+        "Ask why it's alone in this building. It doesn't seem a great place to be." if not golem_alone_convo:
+            $ golem_alone_convo = True
+
             show i sup at lean_back
             "The statue looks at you, confusion flickering in its gaze."
             show i neu at tilt_left
@@ -130,7 +141,9 @@ label a1_golem_conversation_menu1:
             i "They always get tangled in the frame. Frustrating, right?"
             jump a1_golem_conversation_menu1
 
-        "Inquire more about the old man it mentioned.":
+        "Inquire more about the old man it mentioned." if not golem_oldman_convo:
+            $ golem_oldman_convo = True
+
             show i neu at nod
             i "He's the one who told me what to do here. He's also the one who collected all these books you see."
             "The golem gestures toward the bookshelves on the upper floor, extending a hand."
@@ -159,7 +172,9 @@ label a1_golem_conversation_menu1:
             i "I just... need to figure out what."
             jump a1_golem_conversation_menu1
 
-        "Ask about how it managed to take you here.":
+        "Ask about how it managed to take you here." if not golem_move_convo:
+            $ golem_move_convo = True
+
             show i neu at tilt_right
             i "Oh, that? It's something I can do pretty easily with these."
             "The golem lifts its wrists, twisting them slightly to reveal the delicate threads extending from its joints."
@@ -180,16 +195,23 @@ label a1_golem_conversation_menu1:
             i "Maybe there's something in one of the books he left behind."
             jump a1_golem_conversation_menu1
 
-        "Exit":
+        "Change the subject.":
             show i neu at subtle_breathe
             "He moves with careful precision, his delicate threads guiding the ladle to his lips as he takes a slow sip of the soup."
             "The faint glow of the nearby candlelight reflects off his polished skin,"
             "casting intricate patterns across his face, the threads shimmering as they catch the light."
             jump a1_golem_conversation_menu2
 
+default golem_disease_convo = False
+default golem_fun_convo = False
+default golem_oldman_convo2 = False
+default golem_threads_convo = False
+
 label a1_golem_conversation_menu2:
     menu:
-        "State that maybe your memory problem may be caused by some disease you caught on the way here.":
+        "State that maybe your memory problem may be caused by some disease you caught on the way here." if not golem_disease_convo:
+            $ golem_disease_convo = True
+
             show i neu at subtle_breathe
             i "Well, it could be. It seems that humans and other similar species can contract diseases from all sorts of sources—water, air, food, plants..."
             "Iolkos begins rattling off an extensive list of contagion methods, each ailment sounding progressively worse."
@@ -205,7 +227,9 @@ label a1_golem_conversation_menu2:
             i "He might know what's wrong with you—it's definitely worth checking out!"
             jump a1_golem_conversation_menu2
 
-        "Ask what exactly it means by 'fun'.":
+        "Ask what exactly it means by 'fun'." if not golem_fun_convo:
+            $ golem_fun_convo = True
+
             show i ang at subtle_breathe
             "The golem's expression darkens, a hint of frustration in its eyes."
             i "There's plenty of fun to be had here, you know!"
@@ -248,7 +272,9 @@ label a1_golem_conversation_menu2:
             "this place, wasn't meant for it alone."
             jump a1_golem_conversation_menu2
 
-        "Question it about where the old man may be now.":
+        "Question it about where the old man may be now." if not golem_oldman_convo2:
+            $ golem_oldman_convo2 = True
+
             show i sad at look_down
             "The golem's expression darkens, uncertainty clouding its features."
             i "I... I don't know."
@@ -264,7 +290,9 @@ label a1_golem_conversation_menu2:
             i "I'd love to know when he's coming back... but I also want to find a way to walk outside with my own feet, not just through these threads."
             jump a1_golem_conversation_menu2
 
-        "Ask for more information about the strange threads.":
+        "Ask for more information about the strange threads." if not golem_threads_convo:
+            $ golem_threads_convo = True
+
             show i neu at nod
             i "I'm sure they work with my body because I can only use them to interact with things if a part of me is touching them."
             "You recall the golem always keeping its feet on the ground while manipulating the cookware with its threads."
@@ -279,10 +307,12 @@ label a1_golem_conversation_menu2:
             i "The old man said that one day I'd have to go outside and see the world."
             jump a1_golem_conversation_menu2
 
-        "Exit":
+        "Change the subject.":
             show i neu at subtle_breathe
             "The golem's eyes study you lazily."
             jump a1_golem_conversation_menu3
+
+default golem_oldman_convo3 = False
 
 label a1_golem_conversation_menu3:
     menu:
@@ -304,7 +334,9 @@ label a1_golem_conversation_menu3:
 
             jump s_a1_glitch
 
-        "Ask how it can be certain that the old man will come back.":
+        "Ask how it can be certain that the old man will come back." if not golem_oldman_convo3:
+            $ golem_oldman_convo3 = True
+
             show i sup at subtle_breathe
             "The golem's expression shifts from bubbling excitement to meek uncertainty as you pose your question."
 
@@ -353,6 +385,7 @@ label a1_golem_conversation_menu3:
             "The sudden surge of enthusiasm seems to banish the earlier dread,"
             "pushing it back into the shadows as the golem's eyes sparkle with an iridescent curiosity and intellect."
             jump a1_golem_conversation_menu3
+            
 label a1_golem1:
     "You drift into a restless sleep, the strange energy of the inn lingering in your thoughts."
 

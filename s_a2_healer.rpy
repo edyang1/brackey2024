@@ -59,9 +59,16 @@ label s_a2_healer:
     
     jump a2_healer_conversation_menu_1
 
+default cal_why_convo = False
+default cal_loss_convo = False
+default cal_morals_convo = False
+
 label a2_healer_conversation_menu_1:
     menu:
-        "Why do you work here, offering free care in a place like this?":
+        "What do you ask Callie?"
+        "Why do you work here, offering free care in a place like this?" if not cal_why_convo:
+            $ cal_why_convo = True
+
             show cal neu at subtle_breathe
             cal "Why do I work here?"
             cal "In a place like this?"
@@ -98,7 +105,9 @@ label a2_healer_conversation_menu_1:
             
             jump a2_healer_conversation_menu_1
 
-        "How do you handle losing patients, especially when you've done everything you can?":
+        "How do you handle losing patients, especially when you've done everything you can?" if not cal_loss_convo:
+            $ cal_loss_convo = True
+
             show cal neu at subtle_breathe
             cal "Have I ever lost someone?"
 
@@ -153,7 +162,9 @@ label a2_healer_conversation_menu_1:
 
             jump a2_healer_conversation_menu_1
 
-        "Is it ever difficult to hold onto your ideals in a place like this?":
+        "Is it ever difficult to hold onto your ideals in a place like this?" if not cal_morals_convo:
+            $ cal_morals_convo = True
+
             show cal neu at subtle_breathe
             cal "Struggle with my morals?"
 
@@ -207,7 +218,7 @@ label a2_healer_conversation_menu_1:
 
             jump a2_healer_conversation_menu_1
 
-        "Exit":
+        "Change the subject":
             jump a2_healer_conversation_menu_2
 
 label a2_healer_conversation_menu_2:
