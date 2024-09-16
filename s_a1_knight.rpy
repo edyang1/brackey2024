@@ -57,9 +57,9 @@ label s_a1_knight:
     "After taking out a plate with wooden cutlery, he sets it on the table before pouring you a cup of warm, sweet wine from a terracotta ewer sitting by the fire."
     show stav sad at look_down
     "Then, he dishes out two bowls of thick soup, the hearty smell of chestnuts, onions, and dried venison rising with the steam."
-    stav "[f_name]. What are you doing out here?"
 
     menu:
+        stav "[f_name]. What are you doing out here?"
         "I'm a traveler on a search for adventure. I've been wandering for a while now.":
             jump a1_knight1
         "I got lost in the forest. I wasn't expecting to end up here.":
@@ -72,9 +72,9 @@ label a1_knight1:
     stav "These mountains can be unforgiving, and winter's only just starting to settle in."
     show stav neu at lean_in
     "He pauses, studying you for a moment."
-    stav "Where are you from?"
 
     menu:
+        stav "Where are you from?"
         "I don't know, I don't recall how I got here.":
             show stav sup at tilt_right
             stav "You mean you don't remember whence you came? And just how did you manage to get this far?"
@@ -82,9 +82,16 @@ label a1_knight1:
             "You take a moment to look around his home."
             jump a1_knight_conversation_menu1
 
+default knight_name_trade_convo = False
+default knight_shield_convo = False
+default knight_cemetery_convo = False
+default knight_carving_convo = False
+
 label a1_knight_conversation_menu1:
     menu:
-        "Ask him about his name and trade.":
+        "Ask him about his name and trade." if not knight_name_trade_convo:
+            $ knight_name_trade_convo = True
+
             show stav ang at lean_back
             "The man seems taken aback by your question, his brows furrowing in brief confusion. But the moment passes quickly, and he regains his composure."
             show stav neu at subtle_breathe
@@ -102,7 +109,9 @@ label a1_knight_conversation_menu1:
             stav "Memory's a complicated thing, isn't it?"
             jump a1_knight_conversation_menu1
 
-        "Point at the shield. There must be a story behind that.":
+        "Point at the shield. There must be a story behind that." if not knight_shield_convo:
+            $ knight_shield_convo = True
+
             show stav hap at lean_in
             "The man's eyes brighten for a moment, a rare spark lighting up his otherwise gruff demeanor as you mention the shield."
             stav "Ah, that old thing."
@@ -136,7 +145,9 @@ label a1_knight_conversation_menu1:
             stav "Enough about the past. Doesn't do much good to dwell on it, eh?"
             jump a1_knight_conversation_menu1
 
-        "Ask him about the cemetery.":
+        "Ask him about the cemetery." if not knight_cemetery_convo:
+            $ knight_cemetery_convo = True
+
             show stav sad at look_away
             "The man turns his face to the window, his gaze drifting beyond the rough glass panels."
             "He shifts slightly in his chair."
@@ -168,7 +179,9 @@ label a1_knight_conversation_menu1:
             stav "It's the least we can do to keep their memory alive."
             jump a1_knight_conversation_menu1
 
-        "Ask about the woodcarving implements on the far side of the room.":
+        "Ask about the woodcarving implements on the far side of the room." if not knight_carving_convo:
+            $ knight_carving_convo = True
+
             show stav hap at subtle_breathe
             "The man glances down at the scattered wood shavings beneath the bench, his lips curling into a small, crooked smirk."
             stav "That's what keeps me busy these days."
@@ -178,14 +191,21 @@ label a1_knight_conversation_menu1:
             stav "Made all of these myself over the years. Keeps the hands busy… what's left of them, anyway."
             jump a1_knight_conversation_menu1
 
-        "Exit":
+        "Change the subject.":
             show stav sad at subtle_breathe
             "He sighs deeply, taking a long sip of the soup and leaning back in his chair."
             jump a1_knight_conversation_menu2
 
+default knight_ailment_convo = False
+default knight_kestrels_convo = False
+default knight_caretaker_convo = False
+default knight_whittling_convo = False
+
 label a1_knight_conversation_menu2:
     menu:
-        "Ask about the other person suffering from your same ailment.":
+        "Ask about the other person suffering from your same ailment." if not knight_ailment_convo:
+            $ knight_ailment_convo = True
+
             show stav neu at tilt_right
             stav "He's an odd one, no doubt, but a decent sort. Stays over at an inn not too far from here."
             show stav sup at subtle_breathe
@@ -194,7 +214,9 @@ label a1_knight_conversation_menu2:
             stav "Who knows—maybe there's something that can be done for both of you."
             jump a1_knight_conversation_menu2
 
-        "Inquire more about the Kestrels he mentioned earlier.":
+        "Inquire more about the Kestrels he mentioned earlier." if not knight_kestrels_convo:
+            $ knight_kestrels_convo = True
+
             show stav sad at look_away
             "Stavros leans back in his chair, settling in with a slow sip of the sweetened wine."
             "He pauses for a long time, his gaze fixed on the flames dancing in the hearth."
@@ -224,7 +246,9 @@ label a1_knight_conversation_menu2:
             stav "One old man trying to hold onto something that's long gone."
             jump a1_knight_conversation_menu2
 
-        "Ask why he's chosen to stay and take care of the graveyard.":
+        "Ask why he's chosen to stay and take care of the graveyard." if not knight_caretaker_convo:
+            $ knight_caretaker_convo = True
+
             show stav neu at nod
             stav "After the battle at the plateau, the Marquis makes me a knight."
             stav "Calls me an 'honorable hero of the region,' and offers me a peaceful retirement—"
@@ -257,7 +281,9 @@ label a1_knight_conversation_menu2:
             stav "For losing an arm, and all the rest of it."
             jump a1_knight_conversation_menu2
 
-        "Ask for how long he's been practicing whittling, since he's very good at it.":
+        "Ask for how long he's been practicing whittling, since he's very good at it." if not knight_whittling_convo:
+            $ knight_whittling_convo = True
+
             show stav neu at subtle_breathe
             stav "That was my trade once."
             "His voice softens, a hint of nostalgia in his words."
@@ -280,11 +306,13 @@ label a1_knight_conversation_menu2:
             stav "Figure the battlefield is better company than an empty workshop."
             jump a1_knight_conversation_menu2
 
-        "Exit":
+        "Change the subject.":
             show stav sad at subtle_breathe
             "He takes a slow, deliberate sip of the soup, savoring the warmth as it spreads through him."
             "The flickering firelight dances across his weathered face, casting long shadows that cling to the lines of his brow."
             jump a1_knight_conversation_menu3
+
+default knight_battle_convo = False
 
 label a1_knight_conversation_menu3:
     menu:
@@ -314,7 +342,9 @@ label a1_knight_conversation_menu3:
             stav "If you're ever back this way… there's room here. Not many travelers these days."
             jump a1_knight3
 
-        "Ask about the battle he's just mentioned.":
+        "Ask about the battle he's just mentioned." if not knight_battle_convo:
+            $ knight_battle_convo = True
+
             show stav sad at look_down
             "Stavros' face darkens, his expression hardening as turbulent memories rise to the surface."
             stav "Years ago, the Marquis set his sights on expanding control over the western mountains."
