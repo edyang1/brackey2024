@@ -261,12 +261,14 @@ label a3_s2_2:
     "no no no NO no stop STOP stop STOP—"
     "StOpStoPSTOPSTOPSTOPstopSTOPSTOPStOpSTOPSTOP—"
 
+    scene cyber_healer_g
+
     python:
         for count in range (50):
             renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
             renpy.pause(renpy.random.uniform(0.02, 0.1))
 
-    scene cyber_console with flash
+    scene cyber_console_g with flash
 
     "{size=*1.7}{b}{color=#ff4500}Segmentation fault. Memory access violation. Reboot required...{/color}{/b}"
     
@@ -297,7 +299,7 @@ label a3_s2_2:
             renpy.sound.play(random_sound)
             renpy.pause(renpy.random.uniform(1, 2))
 
-    scene fantasy_knight with flash
+    scene fantasy_knight_g with flash
 
     "pleaSEpleaSEpLEASEpleasePLZ—"
     
@@ -305,7 +307,7 @@ label a3_s2_2:
     
     "NO!NO!NO!NO!noNONONONOnoNONOnononoNONO—"
 
-    scene fantasy_cottage with flash
+    scene fantasy_cottage_g with flash
 
     "STOPSTOpSToPstopSTOPstOpSTOPSTOPSTOP—"
 
@@ -319,7 +321,7 @@ label a3_s2_2:
     "{size=+6}{color=#ff4500}DISK F@ILURE{/color}"
     "{size=*1.3}Invalid memory read at address {size=*0.8}{u}{color=#4682b4}0x0000FFFF{/color}{/u}"
     
-    scene fantasy_golem with flash
+    scene fantasy_golem_g with flash
 
     python:
         glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]

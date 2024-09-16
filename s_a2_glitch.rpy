@@ -19,8 +19,12 @@ label s_a2_glitch:
     
     "What once felt alien now feels familiar. The flashing lights, the sharp hum of powerlines, the mechanical hum of vehicles—it all blends into the rhythm of the city, a living organism breathing beneath your feet."
 
+    scene cyber_healer_g
+
     "{b}MEMORY ERROR: Stack overflow detected. Process limit exceeded{/b}"
     
+    scene fantasy_cottage_g
+
     python:
         for count in range(20):
             renpy.music.set_pause(True)
@@ -32,10 +36,13 @@ label s_a2_glitch:
     "The colors, the noise—they no longer assault your senses. You've learned to tolerate the overwhelming pulse of this place."
     "The Everdusk nightlife surrounds you, though the lack of a visible sky leaves you uncertain of the time. Is it even night?"
 
+    scene cyber_healer
+
     "{b}WARNING: Memory fragmentation at address 0xF3A5{/b}"
 
     "A narrow alley catches your eye."
 
+    scene cyber_fighter_g
 
     python:
         glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
@@ -53,10 +60,14 @@ label s_a2_glitch:
 
     "{b}MEMORY ALLOCATION FAILURE: Unable to allocate memory block 0x0001F4{/b}"
 
+    scene cyber_android_g
+
     "A flicker catches your peripheral vision—a wall shifting unnaturally, like something glitched."
     "As the fog thickens, reality itself seems to distort. Signs dissolve into grids of grey squares, buildings blur and stretch."
 
     "{b}CRITICAL ERROR: Memory address out of bounds. Heap corruption detected.{/b}"
+
+    scene fantasy_cottage
 
     python:
         glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
@@ -78,11 +89,17 @@ label s_a2_glitch:
     "Staggering out of the fog, you're struck by a biting wind. The neon lights, the towering buildings—they're gone."
     "Instead, the dry mountain air fills your lungs. Trees loom ahead, but they don't feel real, their shapes shifting in your vision."
 
+    scene fantasy_golem
+
     "{b}MEMORY LEAK: Memory block 0xA7B2F inaccessible. Clearing cache... FAILED.{/b}"
 
     "Beneath your feet, the ground crumbles unnervingly, each step echoing with a hollow, discordant sound."
 
+    scene black
+
     "You move forward, but the forest feels wrong—unnatural. The trees shift like flat, painted panels, moving out of sync with the rest of the world."
+
+    scene cyber_healer
 
     "{b}eROrrrRRrrRR: MEMorY. aLLoc..aTION ERROooor{/b}"
 
@@ -104,6 +121,8 @@ label s_a2_glitch:
 
     "{b}MEMORY CORRUPTED: Unable tOooo resT0RE...{/b}"
 
+    scene cyber_healer_g
+
     "{b}eeEEEEEeRRR0rRRR: STACK OOOvErflW!!{/b}"
 
     python:
@@ -120,7 +139,11 @@ label s_a2_glitch:
             renpy.sound.play(random_sound)
             renpy.pause(renpy.random.uniform(1, 2))
 
+    scene cyber_android_g
+
     "{b}SYStEeM SHUttttDOWN INITTTTiated: MeMmMmORYYY UNDEeFfined... 10... 9...{/b}"
+
+    scene black
 
     stop music
     stop sound
