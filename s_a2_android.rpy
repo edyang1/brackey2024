@@ -82,9 +82,17 @@ label a2_android_conversation_menu_1:
     
     jump a2_android_conversation_menu_2
 
+default android_memory_convo = False
+default android_name_convo = False
+default android_office_convo = False
+default android_hide_convo = False
+
 label a2_android_conversation_menu_2:
     menu:
-        "Inquire about the memory issue he seems to be having.":
+        "What do you ask the android?"
+        "Inquire about the memory issue he seems to be having." if not android_memory_convo:
+            $ android_memory_convo = True
+
             show b neu at subtle_breathe
             "The android stares at you, thoughtful."
             b "You're having trouble with your memory? Sounds familiar."
@@ -112,7 +120,9 @@ label a2_android_conversation_menu_2:
             b "Maybe what you need is a medical practitioner, someone more familiar with your kind of circuitry."
             jump a2_android_conversation_menu_2
 
-        "Ask about his name; it sounds exotic.":
+        "Ask about his name; it sounds exotic." if not android_name_convo:
+            $ android_name_convo = True
+
             show b sup at tilt_right
             "The android tilts its head, its eyes flickering slightly."
             b "My name? It's nothing special."
@@ -132,7 +142,9 @@ label a2_android_conversation_menu_2:
             b "So, that's what I go by now."
             jump a2_android_conversation_menu_2
 
-        "Ask about the Office he mentioned earlier.":
+        "Ask about the Office he mentioned earlier." if not android_office_convo:
+            $ android_office_convo = True
+
             show b neu at subtle_breathe
             b "The Office? That's where I'm from."
             "Its voice shifts, almost as if reminiscing."
@@ -151,7 +163,9 @@ label a2_android_conversation_menu_2:
             "There's a flicker of what almost seems like pride in its voice."
             jump a2_android_conversation_menu_2
 
-        "Ask about why he's stuck inside; is it hiding?":
+        "Ask about why he's stuck inside; is it hiding?" if not android_hide_convo:
+            $ android_hide_convo = True
+
             show b sup at tilt_right
             "The machine raises one of its eyes at you, clearly puzzled."
             b "Well, yeah. Seems obvious to me, doesn't it?"
@@ -173,12 +187,20 @@ label a2_android_conversation_menu_2:
             "It smiles complacently, the pixelated eyebrows rising with a faint beep."
             jump a2_android_conversation_menu_2
 
-        "Exit.":
+        "Change the subject.":
             jump a2_android_conversation_menu_3
+
+default android_clinic_convo = False
+default android_migration_convo = False
+default android_escape_convo = False
+default android_safehouse_convo = False
 
 label a2_android_conversation_menu_3:
     menu:
-        "Ask for the name of the doctor he's mentioned for your problem.":
+        "What do you ask the android?"
+        "Ask for the name of the doctor he's mentioned for your problem." if not android_clinic_convo:
+            $ android_clinic_convo = True
+
             "Bass points at an odd news sheet cutout stuck on the wall facing the desk."
             "It pictures a small clinic and a paramedic pulling a stretcher inside."
             show b neu at lean_in
@@ -196,7 +218,9 @@ label a2_android_conversation_menu_3:
             b "Today's one of the days the clinic's open if you feel like paying her a visit."
             jump a2_android_conversation_menu_3
 
-        "Ask for more information about itself. What's a migration android?":
+        "Ask for more information about itself. What's a migration android?" if not android_migration_convo:
+            $ android_migration_convo = True
+
             show b neu at subtle_breathe
             b "It's a type of android you can buy and start programming years in advance."
             "Bass points at its head."
@@ -228,7 +252,9 @@ label a2_android_conversation_menu_3:
             b "Some people use them in case their biological bodies fail."
             jump a2_android_conversation_menu_3
 
-        "Ask how exactly he escaped from this Office. It sounded difficult.":
+        "Ask how exactly he escaped from this Office. It sounded difficult." if not android_escape_convo:
+            $ android_escape_convo = True
+
             show b hap at subtle_breathe
             b "It required some planning ahead, but I wouldn't say it was difficult."
             b "As soon as I knew I wanted to leave, I started figuring out how to escape the Office without being seen."
@@ -250,7 +276,9 @@ label a2_android_conversation_menu_3:
             "The android zips the hoodie a little higher, smiling to itself, clearly pleased with its own ingenuity."
             jump a2_android_conversation_menu_3
 
-        "Inquire what he's been doing this whole time inside this safehouse.":
+        "Inquire what he's been doing this whole time inside this safehouse." if not android_safehouse_convo:
+            $ android_safehouse_convo = True
+
             show b sup at lean_in
             "The android lets out a sharp beep, clearly annoyed."
             b "I've been trying not to get caught!"
@@ -270,15 +298,19 @@ label a2_android_conversation_menu_3:
             b "But it's strange that you, of all people, were the one to find it."
             jump a2_android_conversation_menu_3
 
-        "Exit.":
+        "Change the subject.":
             jump a2_android_conversation_menu_4
+
+default android_brain_convo = False
 
 label a2_android_conversation_menu_4:
     menu:
         "Head out, and reach the clinic he pointed you towards.":
             jump a2_android_conversation_menu_5
 
-        "Ask what he means when he says that you input a person's brain into a machine.":
+        "Ask what he means when he says that you input a person's brain into a machine." if not android_brain_convo:
+            $ android_brain_convo = True
+
             show b sad at subtle_breathe
             "Bass' expression darkens suddenly."
             b "It means you take a person's memories, personality, and knowledge, then shape another brain to accommodate them."

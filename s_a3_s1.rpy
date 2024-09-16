@@ -9,9 +9,16 @@ label s_a3_s1:
     scene fantasy_knight with fade
     jump a3_s1_1
 
+default investigated_stavros = False
+default investigated_caharel = False
+default investigated_iolkos = False
+
 label a3_s1_1:
     menu:
-        "Head for Stavros' house near the cemetery to check on him.":
+        "Who will you check on?"
+        "Head for Stavros' house near the cemetery to check on him." if not investigated_stavros:
+            $ investigated_stavros = True
+
             scene fantasy_cottage with fade
             play music "fantasy_suspense.mp3" loop fadein 1.0
 
@@ -96,7 +103,9 @@ label a3_s1_1:
             "Not a single tombstone remains standing—each one replaced by a flat, gray sheet of matte, opaque metal."
             jump a3_s1_1
 
-        "Go and check Caharel's hospice, further down the road.":
+        "Go and check Caharel's hospice, further down the road." if not investigated_caharel:
+            $ investigated_caharel = True
+
             scene fantasy_healer with fade
             play music "fantasy_suspense.mp3" loop fadein 1.0
 
@@ -146,7 +155,9 @@ label a3_s1_1:
             "The hospice is gone. It was never there."
             jump a3_s1_1
 
-        "Reach Iolkos' inn and see if everything's in order.":
+        "Reach Iolkos' inn and see if everything's in order." if not investigated_iolkos:
+            $ investigated_iolkos = True
+
             scene fantasy_golem with fade
             play music "fantasy_suspense.mp3" loop fadein 1.0
 

@@ -198,9 +198,16 @@ label s_a2_knight:
 
     jump a2_knight_conversation_menu_1
 
+default stan_about_convo = False
+default stan_cherub_convo = False
+default stan_gear_convo = False
+default stan_symbol_convo = False
+
 label a2_knight_conversation_menu_1:
     menu:
-        "Ask for more information about him.":
+        "Ask for more information about him." if not stan_about_convo:
+            $ stan_about_convo = True
+
             "The man shifts his weight on the stool, turning to face you."
             "You notice a half cape draped over his left shoulder, covering the stump where his arm once was."
             
@@ -227,7 +234,9 @@ label a2_knight_conversation_menu_1:
             "It's clear now—they're all mercenaries."
             jump a2_knight_conversation_menu_1
 
-        "Ask about the Cherub. The clientele don't seem very diverse.":
+        "Ask about the Cherub. The clientele don't seem very diverse." if not stan_cherub_convo:
+            $ stan_cherub_convo = True
+
             "The man chuckles softly."
             
             show stan hap at nod
@@ -259,7 +268,9 @@ label a2_knight_conversation_menu_1:
             stan "They could learn something from you."
             jump a2_knight_conversation_menu_1
 
-        "Mention that his gear looks impressive.":
+        "Mention that his gear looks impressive." if not stan_gear_convo:
+            $ stan_gear_convo = True
+
             show stan neu at nod
             stan "This stuff cost me a fortune, but it was credits well spent."
             stan "High-density polymer ballistic plates with a nanotubular carbon rod lattice as the base."
@@ -276,7 +287,9 @@ label a2_knight_conversation_menu_1:
             "It's clear this armor has seen action."
             jump a2_knight_conversation_menu_1
 
-        "Point out the strange symbol everyone seems to have.":
+        "Point out the strange symbol everyone seems to have." if not stan_symbol_convo:
+            $ stan_symbol_convo = True
+
             "The man reaches for a pocket inside his shirt and pulls out a jet-black plastic card."
             "Stamped on it in gold is the same symbol you noticed earlier—three rails converging into a cog,"
             "though here it's more crisp and stylized."
@@ -302,12 +315,19 @@ label a2_knight_conversation_menu_1:
             stan "like sourcing contracts or providing hardware."
             jump a2_knight_conversation_menu_1
 
-        "Exit":
+        "Change the subject.":
             jump a2_knight_conversation_menu_2
+
+default stan_person_convo = False
+default stan_org_convo = False
+default stan_corp_convo = False
+default stan_corp_name_convo = False
 
 label a2_knight_conversation_menu_2:
     menu:
-        "Ask for the name of the other person who doesn't belong.":
+        "Ask for the name of the other person who doesn't belong." if not stan_person_convo:
+            $ stan_person_convo = True
+
             "Stars takes another drink, his eyes drifting for a moment before he answers."
             
             show stan neu at subtle_breathe
@@ -327,7 +347,9 @@ label a2_knight_conversation_menu_2:
             stan "Maybe you two can help each other piece things together."
             jump a2_knight_conversation_menu_2
 
-        "Inquire more about this organization.":
+        "Inquire more about this organization." if not stan_org_convo:
+            $ stan_org_convo = True
+
             "The man stretches his remaining arm, massaging his neck."
             
             show stan neu at subtle_breathe
@@ -360,7 +382,9 @@ label a2_knight_conversation_menu_2:
             stan "Almost as bad as the muscle for hire, but less likely to stab you in the back. Truth be told."
             jump a2_knight_conversation_menu_2
 
-        "Question him about the corporation he mentioned earlier.":
+        "Question him about the corporation he mentioned earlier." if not stan_corp_convo:
+            $ stan_corp_convo = True
+
             show stan neu at nod
             stan "The ZFDS, huh? That's a major player in the arms industry. They handle private security too."
             stan "I've worked with them a few times over the years."
@@ -381,7 +405,9 @@ label a2_knight_conversation_menu_2:
             stan "They were on the wrong end of that hiring policy."
             jump a2_knight_conversation_menu_2
 
-        "Ask for clarification about the name of the organization. It sounds weird.":
+        "Ask for clarification about the name of the organization. It sounds weird." if not stan_corp_name_convo:
+            $ stan_corp_name_convo = True
+
             show stan neu at subtle_breathe
             stan "I have no idea what it means."
             stan "It's not a local name, that's for sure. Came from a guy out of West Germany years ago."
@@ -402,12 +428,16 @@ label a2_knight_conversation_menu_2:
             stan "Maybe it's got something to do with trains."
             jump a2_knight_conversation_menu_2
 
-        "Exit":
+        "Change the subject.":
             jump a2_knight_conversation_menu_3
+
+default stan_backstab_convo = False
 
 label a2_knight_conversation_menu_3:
     menu:
-        "Ask more about the life he's been talking about. Why the backstabbing?":
+        "Ask more about the life he's been talking about. Why the backstabbing?" if not stan_backstab_convo:
+            $ stan_backstab_convo = True
+
             "He laughs bitterly, almost amused by your question."
 
             show stan hap at lean_back

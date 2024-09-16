@@ -28,9 +28,16 @@ label s_a3_del_cyber:
     "Not until you know what happened to the people you've met, to the ones who shared this journey with you."
     jump a3_del_cyber_1
 
+default visited_stavros = False
+default visited_caharel = False
+default visited_iolkos = False
+
 label a3_del_cyber_1:
     menu:
-        "Visit Stavros":
+        "Who will you visit?"
+        "Visit Stavros" if not visited_stavros:
+            $ visited_stavros = True
+
             scene fantasy_cottage with fade
             
             "The hut sits as quietly as ever, nestled among the mountains. The air is still, and there's no smoke rising from the chimney."
@@ -66,7 +73,9 @@ label a3_del_cyber_1:
             scene black with fade
             jump a3_del_cyber_1
 
-        "Visit Caharel":
+        "Visit Caharel" if not visited_caharel:
+            $ visited_caharel = True
+
             scene fantasy_healer with fade
 
             "The hospice is bustling with life. A crowd has gathered outside, but something feels different—"
@@ -90,7 +99,9 @@ label a3_del_cyber_1:
             scene black with fade
             jump a3_del_cyber_1
 
-        "Visit Iolkos":
+        "Visit Iolkos" if not visited_iolkos:
+            $ visited_iolkos = True
+
             scene fantasy_golem with fade
 
             "The inn remains tucked away in the forest, as it always has been,"
@@ -116,7 +127,7 @@ label a3_del_cyber_1:
             scene black with fade
             jump a3_del_cyber_1
 
-        "Exit":
+        "Leave and contemplate.":
             scene black with fade
             stop sound fadeout 2.0
 
