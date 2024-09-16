@@ -49,6 +49,8 @@ label a1_glitch1:
 
     "The ground beneath your feet shudders, and the sky seems to ripple like water, distorting the landscape."
 
+    scene cyber_fighter_g
+
     "Reality splinters as the village dissolves, replaced by jagged, shifting fragments of what once was."
 
     python:
@@ -74,7 +76,11 @@ label a1_glitch1:
 
     "The trees stretch unnaturally, twisting into impossible angles as the ground beneath you splits open."
 
+    scene black
+
     "{b}rEboOtiNG... SYSTEM FAILURE{/b}"
+
+    scene fantasy_golem_g
 
     python:
         for count in range(5):
@@ -113,9 +119,13 @@ label a1_glitch1:
     
     "{b}Rebuilding n#n#-><-- ... //r€AL_ity....{/b}"
 
+    scene fantasy_cottage_g
+
     "The ground stabilizes for a moment, but your surroundings flicker, caught between what was and what is."
 
     "{b}SHuTtInG DowN iNN->ffñteEe.... 10... 9... 8...{/b}"
+
+    scene cyber_android_g
 
     python:
         glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
