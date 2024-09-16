@@ -15,9 +15,10 @@ label s_a1_forest_minigame:
 
 label forest_minigame_start:
     play music "fantasy_suspense.mp3" loop fadein 1.0
-
-    "Don't trip over the roots!"
+    
     menu:
+        "Don't trip over the roots!"
+
         "Root":
             "Your foot catches on a root, and you hit the ground hard, pain exploding in your ankle, leaving you unable to stand."
             jump forest_minigame_setback
@@ -31,8 +32,10 @@ label forest_minigame_start:
             jump forest_minigame_setback
 
 label forest_minigame_2:
-    "Don't trip!"
+    
     menu:
+        "Don't trip!"
+
         "Fox den":
             "You stumble over the entrance of a hidden fox den, falling to the ground and twisting your ankle painfully."
             jump forest_minigame_setback
@@ -50,8 +53,9 @@ label forest_minigame_2:
             jump forest_minigame_3
 
 label forest_minigame_3:
-    "Watch your step!"
     menu:
+        "Watch your step!"
+
         "Choose me!":
             "You step forward, but the ground shifts beneath you, and you lose your footing, tumbling to the ground."
             jump forest_minigame_setback
@@ -73,6 +77,8 @@ label forest_minigame_4: #plant quiz
     "You're tempted to eat, but you're not sure if it's safe."
 
     menu:
+        "What do you do?"
+
         "Eat the plant immediately":
             "You grab a handful and eat it without thinking."
             "Almost immediately, your stomach twists painfully, and you realize it was a bad choice."
@@ -103,9 +109,10 @@ label forest_minigame_5: #navigation. establish animal calls for later puzzle
 
     "As you listen, however, you realize you've lost track of your direction."
     "Panic begins to creep in as you recognize you're lost in the thick of the forest."
-    "How will you find your way?"
-
+    
     menu:
+        "How will you find your way?"
+
         "Follow the moss on trees, it always grows on the north side.":
             "While it's a common myth, moss doesn't always grow only on the north side. It tends to grow on the shadier, damper side of trees, but this can vary."
             "You follow the moss, but it leads you further into unfamiliar territory."
@@ -125,9 +132,9 @@ label forest_minigame_6: #animal calls puzzle
     "The forest seems to be shifting around you, its paths winding and confusing. You stop to listen closely."
     "The animal calls seem to echo in a specific pattern, drawing you toward something... but what?"
 
-    "You realize you need to follow the order of the calls to find your way through the forest."
-
     menu:
+        "You realize you need to follow the order of the calls to find your way through the forest."
+
         "Follow the two-toned yip of the fox first.":
             "You follow the fox's call, but it echoes strangely, leading you in circles."
             jump forest_minigame_6
@@ -141,9 +148,9 @@ label forest_minigame_6: #animal calls puzzle
             jump forest_minigame_6
 
 label forest_minigame_7: #animal calls puzzle 2
-    "You've chosen wisely. The path opens up slightly, but the forest is still thick ahead."
-    
     menu:
+        "You've chosen wisely. The path opens up slightly, but the forest is still thick ahead."
+
         "Follow the owl's hoot.":
             "You follow the hoot of the owl, and the forest feels still, almost as if it's watching you. The trees part just enough to let you through."
             jump forest_minigame_8
@@ -154,9 +161,10 @@ label forest_minigame_7: #animal calls puzzle 2
 
 label forest_minigame_8: #animal calls puzzle 3
     "With the owl guiding you, the forest begins to feel less oppressive."
-    "Now, the two-toned yip of the fox sounds closer, clearer."
 
     menu:
+        "Now, the two-toned yip of the fox sounds closer, clearer."
+
         "Follow the fox's two-toned call.":
             "You follow the fox's call, and the forest finally opens up into a wide clearing."
             "The air is crisp, and you feel the magic of the forest all around."

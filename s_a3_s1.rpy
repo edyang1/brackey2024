@@ -109,8 +109,6 @@ label a3_s1_1:
             scene fantasy_healer with fade
             play music "fantasy_suspense.mp3" loop fadein 1.0
 
-            "With uncertainty weighing heavily on your heart, you struggle to recall the way to the former knight's hut."
-            "Your footsteps no longer screech as they did before, but the sense of unease clings to you all the same."
             "Your soles dig into the soft ground, almost slipping as you steady yourself on the stone wall running beside the road."
             "But as you get closer, you notice something off—the familiar square stones have been replaced by rough, uneven cubes."
             "They glitter strangely, their angles shifting as you pass, catching the light at odd moments."

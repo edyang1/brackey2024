@@ -9,7 +9,7 @@ label s_a3_del_fantasy:
     "The hum of the city drags you from restless sleep. You twitch in your seat, unsettled by the relentless lights and sounds."
     "Your head knocks against the cold metal of the car, and for a moment, you're almost glad to feel the dull ache."
 
-    "As your vision clears, you take in the overwhelming neon glow outside the canopy. Below the gleaming spires of the Arcology, the tidal wave of people moves like clockwork through the streets—alive, unaware, endlessly churning beneath the city's brilliant facade."
+    "As your vision clears, you take in the overwhelming neon glow outside the canopy. Below the gleaming spires of the Sector, the tidal wave of people moves like clockwork through the streets—alive, unaware, endlessly churning beneath the city's brilliant facade."
 
     "You stretch your limbs, your muscles stiff from the journey. The car's display starts to beep, and the phone in your pocket vibrates, both demanding attention."
     "Your fingers trace the edges of every item in the car's console—like you're discovering them for the first time."

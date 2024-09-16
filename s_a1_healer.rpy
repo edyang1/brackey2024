@@ -1,6 +1,8 @@
 label s_a1_healer:
     $ artstyle = "fantasy"
 
+    $ visited_f_healer = True
+
     scene fantasy_healer with fade
     play music "fantasy_casual.mp3" loop fadein 1.0
     play sound "a_town.mp3" loop fadein 2.0
@@ -29,16 +31,10 @@ label s_a1_healer:
     
     "He sighs, setting the box on the floor with a soft clink, before turning his attention to you, the air of professionalism never leaving his movements."
     
-    show cah neu at subtle_breathe
-    cah "Well then, let's see what mess you've dragged yourself into this time."
-    
-    "His voice carries a note of weary disinterest, but his hands move with practiced efficiency as he places a small, weathered box of tools beside your bed."
-    "The tools clink faintly as they settle, and Caharel sighs, more out of routine than exasperation."
-    
     show cah neu at look_down
-    cah "Tell me, what exactly happened?"
 
     menu:
+        cah "Tell me, what exactly happened?"
         "I was traveling along the road when exhaustion took over.":
             show cah neu at lean_back
             cah "Ah, yes, wandering into the cold. A choice neither wise nor brave."
@@ -52,13 +48,6 @@ label s_a1_healer:
             
             show cah neu at subtle_breathe
             cah "Still, you'll be fine. A few days' rest and you should be right as rain."
-            
-            # Caharel pauses, noticing something about the player.
-            show cah sup at lean_in
-            cah "You don't look familiar."
-            "You tell him your name, and he nods, though his expression remains unreadable."
-            show cah neu at nod
-            cah "Nice to meet you, [f_name]. I'm Caharel."
 
         "It was too cold, I thought my time had come.":
             show cah neu at lean_back
@@ -148,8 +137,9 @@ label a1_healer_conversation_menu1:
 
             show cah neu at subtle_breathe
             cah "They don't like to think too much about the cost of being saved."
-            cah "The cost to them, the cost to me. After all,"
-            cah "if you start thinking about what it really takes to stand on the edge between life and death, you might not want to face it at all."
+            cah "The cost to them, the cost to me."
+            cah "After all, if you start thinking about what it really takes to stand on the edge between life and death,"
+            cah "you might not want to face it at all."
 
             show cah neu at lean_back
             "He leans back slightly, studying you for a moment longer than necessary, his expression unreadable."
@@ -236,6 +226,8 @@ label a1_healer_conversation_menu1:
             cah "You just… do the work."
             cah "Because it's what's expected of you."
             cah "Because it's all you know how to do."
+            cah "A whole life..."
+            cah "spent sleepwalking."
 
             show cah sad at look_down
             "There's a heavy silence that follows his words, as if he's said too much and is retreating back into himself."
@@ -307,6 +299,7 @@ label a1_healer_conversation_menu1:
             jump a1_healer1
 
 label a1_healer1:
+    hide cah
     "Days pass slowly in the hospice, each one blurring into the next."
     "The faint scent of pine and sage lingers in the air, mixing with the constant,"
     "comforting crackle of the hearth at the far end of the room."
@@ -345,7 +338,7 @@ label a1_healer1:
     "The smallest sign that, despite everything, your recovery means something. Even if he would never say it."
 
     menu:
-        "Resume your search for the mysterious stranger Stavros mentioned.":
+        "Resume your search for the mysterious stranger Stavros mentioned." if not visited_f_golem:
             "After resting for a few more hours, you feel your strength return. The weight of Stavros' words lingers in your mind, urging you onward."
             "You gather your belongings, the familiar chill of the forest wrapping around you as you step back onto the worn path."
             "The trees close in once more, their twisted branches arching above like a dark canopy, and the distant calls of forest creatures echo through the woods."
@@ -357,7 +350,7 @@ label a1_healer1:
             scene black with fade
             jump s_a1_golem
 
-        "Explore Everdusk Valley.":
+        "Explore Everdusk Valley." if not explored_valley:
             stop music fadeout 1.0
             stop sound fadeout 1.0
             scene black with fade

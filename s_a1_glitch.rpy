@@ -34,6 +34,7 @@ label a1_glitch1:
         for count in range (50):
             renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
             renpy.pause(renpy.random.uniform(0.02, 0.1))
+        renpy.music.set_pan(0, 0, 0)
 
     "Your vision blurs as the village around you seems to warp, the trees flickering in and out of existence."
 

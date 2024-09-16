@@ -198,7 +198,7 @@ label a1_knight_conversation_menu1:
 
 default knight_ailment_convo = False
 default knight_kestrels_convo = False
-default knight_caretaker_convo = False
+# default knight_caretaker_convo = False
 default knight_whittling_convo = False
 
 label a1_knight_conversation_menu2:
@@ -246,40 +246,40 @@ label a1_knight_conversation_menu2:
             stav "One old man trying to hold onto something that's long gone."
             jump a1_knight_conversation_menu2
 
-        "Ask why he's chosen to stay and take care of the graveyard." if not knight_caretaker_convo:
-            $ knight_caretaker_convo = True
+        # "Ask why he's chosen to stay and take care of the graveyard." if not knight_caretaker_convo:
+        #     $ knight_caretaker_convo = True
 
-            show stav neu at nod
-            stav "After the battle at the plateau, the Marquis makes me a knight."
-            stav "Calls me an 'honorable hero of the region,' and offers me a peaceful retirement—"
-            "a plot of land, the means to live comfortably."
-            show stav sad at look_down
-            stav "A reward for all the blood I've spilled, I suppose."
-            "He pauses, his tone turning bitter."
-            show stav ang at shake_head
-            stav "All while my comrades lay dead in the dirt."
-            show stav sad at look_away
-            "Stavros raises his sole hand, gesturing at the walls around him, as if they are more a prison than a home."
-            stav "I refuse at first."
-            stav "Tell the Marquis that four walls and a roof can never compare to the lives of the men I lost."
-            stav "What good is peace when your brothers-in-arms are gone?"
-            "He shakes his head, his expression hardening."
-            show stav sad at look_down
-            stav "But the Marquis... well, he convinces me to take it, eventually."
-            show stav neu at subtle_breathe
-            "There is a heaviness in his voice, and then he adds, quieter, but with conviction."
-            stav "But I make one demand. My comrades—they have to come with me."
-            "His gaze sweeps to the window, where the gravestones stand like silent sentinels."
-            show stav sup at step_forward
-            stav "I have them build this house, and with it, the cemetery."
-            show stav sad at look_down
-            stav "I become their guardian. Their warden."
-            "He falls silent for a long moment, the weight of the years pressing down on him."
-            stav "Now I wait."
-            stav "Watch over them until my time comes... and I can join them, one last time."
-            stav "It's the price I pay, for surviving."
-            stav "For losing an arm, and all the rest of it."
-            jump a1_knight_conversation_menu2
+        #     show stav neu at nod
+        #     stav "After the battle at the plateau, the Marquis makes me a knight."
+        #     stav "Calls me an 'honorable hero of the region,' and offers me a peaceful retirement—"
+        #     "a plot of land, the means to live comfortably."
+        #     show stav sad at look_down
+        #     stav "A reward for all the blood I've spilled, I suppose."
+        #     "He pauses, his tone turning bitter."
+        #     show stav ang at shake_head
+        #     stav "All while my comrades lay dead in the dirt."
+        #     show stav sad at look_away
+        #     "Stavros raises his sole hand, gesturing at the walls around him, as if they are more a prison than a home."
+        #     stav "I refuse at first."
+        #     stav "Tell the Marquis that four walls and a roof can never compare to the lives of the men I lost."
+        #     stav "What good is peace when your brothers-in-arms are gone?"
+        #     "He shakes his head, his expression hardening."
+        #     show stav sad at look_down
+        #     stav "But the Marquis... well, he convinces me to take it, eventually."
+        #     show stav neu at subtle_breathe
+        #     "There is a heaviness in his voice, and then he adds, quieter, but with conviction."
+        #     stav "But I make one demand. My comrades—they have to come with me."
+        #     "His gaze sweeps to the window, where the gravestones stand like silent sentinels."
+        #     show stav sup at step_forward
+        #     stav "I have them build this house, and with it, the cemetery."
+        #     show stav sad at look_down
+        #     stav "I become their guardian. Their warden."
+        #     "He falls silent for a long moment, the weight of the years pressing down on him."
+        #     stav "Now I wait."
+        #     stav "Watch over them until my time comes... and I can join them, one last time."
+        #     stav "It's the price I pay, for surviving."
+        #     stav "For losing an arm, and all the rest of it."
+        #     jump a1_knight_conversation_menu2
 
         "Ask for how long he's been practicing whittling, since he's very good at it." if not knight_whittling_convo:
             $ knight_whittling_convo = True
@@ -287,23 +287,23 @@ label a1_knight_conversation_menu2:
             show stav neu at subtle_breathe
             stav "That was my trade once."
             "His voice softens, a hint of nostalgia in his words."
-            stav "My father teaches me when I am just a boy."
+            stav "My father taught me when I was just a boy."
             show stav hap at nod
-            stav "I spend my younger years honing the craft, day after day."
+            stav "I spent my younger years honing the craft, day after day."
             stav "Carvings of horses, birds, mountains, you name it."
-            stav "They are terrible, of course, but I keep at it."
-            stav "Carving, shaping—figure it'd be my life's work."
+            stav "They were terrible, of course, but I keep at it."
+            stav "I figured-carving, shaping—figure it'd be my life's work."
             "He pauses, his gaze turning to the chimney, where two finely polished stone statuettes sit,"
             "their features carved in grey marble—a man and a woman."
             show stav sad at look_away
             stav "But things change."
-            stav "The plague comes through, takes my parents with it."
-            stav "Leaves me with nothing but stone and silence."
+            stav "The plague came through, took my parents with it."
+            stav "Left me with nothing but stone and silence."
             "He glances at the statuettes again, the weight of the memory pulling at his words."
-            stav "That's when I leave it all behind."
-            stav "Join the Kestrels."
+            stav "That's when I left it all behind."
+            stav "Joined the Kestrels."
             show stav neu at nod
-            stav "Figure the battlefield is better company than an empty workshop."
+            stav "Figured the battlefield is better company than an empty workshop."
             jump a1_knight_conversation_menu2
 
         "Change the subject.":
@@ -321,6 +321,7 @@ label a1_knight_conversation_menu3:
             "You fall into a deep sleep, the warmth of Stavros' cottage and the crackling fire lulling you into rest."
 
             stop music fadeout 1.0
+            stop sound fadeout 1.0
             scene black with fade
             "... ..."
             "... ..."
@@ -329,6 +330,8 @@ label a1_knight_conversation_menu3:
             "..."
 
             play music "fantasy_casual.mp3" loop fadein 1.0
+            play sound "a_fantasy.mp3" loop fadein 1.0
+
             scene fantasy_cottage with dissolve
 
             "Morning comes quietly. You wake to the smell of porridge cooking, and see Stavros at the fire."

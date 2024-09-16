@@ -12,7 +12,7 @@ Lines of code (approximately): 5147
 
 Eddie - Programmer, Writer, Designer (https://subspace1.itch.io/)
 
-Memnyo - Music
+Memnyo - Composer (out fishing with his dad)
 
 RavenCount - Character Design, World Building, Writer
 
