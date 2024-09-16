@@ -18,9 +18,16 @@ label s_a3_s2:
 
     jump a3_s2_1
 
+default investigated_stars = False
+default investigated_callie = False
+default investigated_bass = False
+
 label a3_s2_1:
     menu:
-        "Head for the Cherub, to check on Stars.":
+        "Who will you check on?"
+        "Head for the Cherub, to check on Stars." if not investigated_stars:
+            $ investigated_stars = True
+
             scene cyber_fighter with fade
             play music "cyber_suspense.mp3" loop fadein 1.0
 
@@ -88,7 +95,9 @@ label a3_s2_1:
                     "The bar remains empty and silent, populated only by the dull hum of its appliances."
                     jump a3_s2_1
             
-        "Go straight to Temple Quay and see if Callie is still there.":
+        "Go straight to Temple Quay and see if Callie is still there." if not investigated_callie:
+            $ investigated_callie = True
+
             scene cyber_healer with fade
             play music "cyber_suspense.mp3" loop fadein 1.0
 
@@ -141,7 +150,9 @@ label a3_s2_1:
             "And then she's gone, swallowed by the fog."
             jump a3_s2_1
 
-        "Drive to the safehouse to meet with Bass.":
+        "Drive to the safehouse to meet with Bass." if not investigated_bass:
+            $ investigated_bass = True
+
             scene cyber_android with fade
             play music "cyber_suspense.mp3" loop fadein 1.0
 
@@ -225,7 +236,7 @@ label a3_s2_1:
 
             jump a3_s1_1
 
-        "Exit.":
+        "Move on.":
             jump a3_s2_2
 
 label a3_s2_2:

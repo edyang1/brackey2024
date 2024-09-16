@@ -17,9 +17,16 @@ label s_a3_del_fantasy:
     "This world is safe. But you can't rest yet. Not until you see for yourself what happened to the people you've met."
     jump a3_del_fantasy_1
 
+default visited_stars = False
+default visited_callie = False
+default visited_bass = False
+
 label a3_del_fantasy_1:
     menu:
-        "Visit Stars":
+        "Who will you visit?"
+        "Visit Stars" if not visited_stars:
+            $ visited_stars = True
+
             scene cyber_fighter with fade
             "The Cherub is alive with energy, the familiar hum of conversation and the clinking of glasses filling the air."
             "Every corner is occupied by members of the Eisenbahn, lounging at the tables, their easy confidence matched by the club's signature atmosphere."
@@ -33,7 +40,9 @@ label a3_del_fantasy_1:
             "You raise your hand in return, acknowledging the gesture before turning away, stepping back into the familiar shadows of the club."
             jump a3_del_fantasy_1
 
-        "Visit Callie":
+        "Visit Callie" if not visited_callie:
+            $ visited_callie = True
+
             scene cyber_healer with fade
 
             "The clinic bustles with activity, a crowd gathered outside while construction vehicles line the street."
@@ -47,7 +56,9 @@ label a3_del_fantasy_1:
             "You let a soft smile play on your lips, watching her in her element before turning back toward the road, your heart lighter than before."
             jump a3_del_fantasy_1
 
-        "Visit Bass":
+        "Visit Bass" if not visited_bass:
+            $ visited_bass = True
+            
             scene cyber_android with fade
 
             "The safehouse sits tucked away in its usual alley, just as hidden as you remember."
@@ -64,7 +75,7 @@ label a3_del_fantasy_1:
             "A knowing smile crosses your face as you step back, retracing your path with a quiet sense of understanding."
             jump a3_del_fantasy_1
 
-        "Exit":
+        "Leave and contemplate.":
             scene black with fade
             stop sound fadeout 2.0
 

@@ -99,9 +99,16 @@ label s_a1_healer:
     cah "Any questions about your treatment? Any questions at all, really."
     jump a1_healer_conversation_menu1
 
+default healer_plague_convo = False
+default healer_mentor_convo = False
+default healer_calm_convo = False
+
 label a1_healer_conversation_menu1:
     menu:
-        "What can you tell me about the plague? Or the kind of work you do here?":
+        "What do you ask Caharel?"
+        "What can you tell me about the plague? Or the kind of work you do here?" if not healer_plague_convo:
+            $ healer_plague_convo = True
+
             "Caharel's fingers pause over the instruments in his hands, and for a moment, his eyes narrow, as if he's considering whether to give you a proper answer or just brush it aside."
             "Then, he lets out a breath, a slow, controlled exhalation."
 
@@ -164,7 +171,9 @@ label a1_healer_conversation_menu1:
             cah "But you're not here for philosophy. You'll be fine. A little rest, and you'll be on your way."
             jump a1_healer_conversation_menu1
 
-        "Tell me about your mentor. About Xantos.":
+        "Tell me about your mentor. About Xantos." if not healer_mentor_convo:
+            $ healer_mentor_convo = True
+
             "Caharel's movements slow for a moment, his hand hesitating over the tools on the tray beside him."
             "His sharp eyes grow distant, as if reaching back to a memory he's not sure he wants to revisit."
 
@@ -252,7 +261,9 @@ label a1_healer_conversation_menu1:
             cah "There's no point dwelling on the dead."
             jump a1_healer_conversation_menu1
 
-        "How can you be so calm about it all? Life, death... doesn't it affect you?":
+        "How can you be so calm about it all? Life, death... doesn't it affect you?" if not healer_calm_convo:
+            $ healer_calm_convo = True
+
             "Caharel's expression remains unreadable for a moment, his gaze shifting slightly, though not meeting yours."
             "He seems to weigh your question before responding, the air around him thick with the weight of unspoken thoughts."
 
@@ -292,7 +303,7 @@ label a1_healer_conversation_menu1:
             cah "If I let every loss break me, I wouldn't be able to help the next person. And there's always a next person."
             jump a1_healer_conversation_menu1
         
-        "Exit.":
+        "Change the subject.":
             jump a1_healer1
 
 label a1_healer1:
