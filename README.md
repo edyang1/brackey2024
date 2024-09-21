@@ -1,4 +1,4 @@
-A visual novel about two world colliding. And foxes.
+A visual novel about two worlds colliding. And foxes.
 
 **Statistics:**
 
