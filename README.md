@@ -4,7 +4,7 @@ A visual novel about two worlds colliding. And foxes.
 
 All nighters pulled (collectively): 2
 
-Git commits: 85
+Git commits: 104
 
 Lines of code (approximately): 5147
 
