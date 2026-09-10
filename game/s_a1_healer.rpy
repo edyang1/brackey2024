@@ -36,32 +36,10 @@ label s_a1_healer:
     menu:
         cah "Tell me, what exactly happened?"
         "I was traveling along the road when exhaustion took over.":
-            show cah neu at lean_back
-            cah "Ah, yes, wandering into the cold. A choice neither wise nor brave."
-            show cah neu at shake_head
-            cah "It's astonishing what people are willing to risk for the illusion of adventure."
-            
-            "He doesn't look up as he speaks, his hands already moving with quick, methodical precision as he begins his examination."
-            "You feel the cool touch of metal against your skin as Caharel inspects your ears, then your mouth, his strange, intricate tools revealing his sharp attention to detail despite the dismissive tone of his words."
-            
-            "There's a professionalism in his movements, but it's distant, as though you're just another patient in a long, endless line. He's not unkind, just... detached."
-            
-            show cah neu at subtle_breathe
-            cah "Still, you'll be fine. A few days' rest and you should be right as rain."
+            call a1_healer_exposure_exam
 
         "It was too cold, I thought my time had come.":
-            show cah neu at lean_back
-            cah "Ah, yes, wandering into the cold. A choice neither wise nor brave."
-            show cah neu at shake_head
-            cah "It's astonishing what people are willing to risk for the illusion of adventure."
-            
-            "He doesn't look up as he speaks, his hands already moving with quick, methodical precision as he begins his examination."
-            "You feel the cool touch of metal against your skin as Caharel inspects your ears, then your mouth, his strange, intricate tools revealing his sharp attention to detail despite the dismissive tone of his words."
-            
-            "There's a professionalism in his movements, but it's distant, as though you're just another patient in a long, endless line. He's not unkind, just... detached."
-            
-            show cah neu at subtle_breathe
-            cah "Still, you'll be fine. A few days' rest and you should be right as rain."
+            call a1_healer_exposure_exam
 
         "It was just an accident. I tripped.":
             show cah sup at tilt_left
@@ -350,8 +328,26 @@ label a1_healer1:
             scene black with fade
             jump s_a1_golem
 
-        "Explore Everdusk Valley." if not explored_valley:
+        "Explore Everdusk Valley.":
             stop music fadeout 1.0
             stop sound fadeout 1.0
             scene black with fade
             jump s_a1_glitch
+
+# Caharel's examination, shared by the two answers that both describe
+# succumbing to the cold. Previously duplicated verbatim under each.
+
+label a1_healer_exposure_exam:
+    show cah neu at lean_back
+    cah "Ah, yes, wandering into the cold. A choice neither wise nor brave."
+    show cah neu at shake_head
+    cah "It's astonishing what people are willing to risk for the illusion of adventure."
+
+    "He doesn't look up as he speaks, his hands already moving with quick, methodical precision as he begins his examination."
+    "You feel the cool touch of metal against your skin as Caharel inspects your ears, then your mouth, his strange, intricate tools revealing his sharp attention to detail despite the dismissive tone of his words."
+
+    "There's a professionalism in his movements, but it's distant, as though you're just another patient in a long, endless line. He's not unkind, just... detached."
+
+    show cah neu at subtle_breathe
+    cah "Still, you'll be fine. A few days' rest and you should be right as rain."
+    return

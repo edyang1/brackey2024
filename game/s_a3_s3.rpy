@@ -330,7 +330,6 @@ label a3_s3_2:
             pause 3.0
 
             python:
-                glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
                 for count in range (4): # how many times to play any sound
                     random_sound = renpy.random.choice(glitch_sounds)
                     renpy.sound.play(random_sound)

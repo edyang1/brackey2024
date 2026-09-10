@@ -34,7 +34,7 @@ label a1_glitch1:
         for count in range (50):
             renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
             renpy.pause(renpy.random.uniform(0.02, 0.1))
-        renpy.music.set_pan(0, 0, 0)
+        renpy.music.set_pan(0, 0)
 
     "Your vision blurs as the village around you seems to warp, the trees flickering in and out of existence."
 
@@ -65,7 +65,6 @@ label a1_glitch1:
     "{b}m€mø®¥ Øverfłøw{/b}"
 
     python:
-        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
         for count in range (1): # how many times to play any sound
             random_sound = renpy.random.choice(glitch_sounds)
             renpy.sound.play(random_sound)
@@ -129,7 +128,6 @@ label a1_glitch1:
     scene cyber_android_g
 
     python:
-        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
         for count in range(3):
             renpy.music.set_pause(True)
             random_sound = renpy.random.choice(glitch_sounds)
@@ -148,31 +146,3 @@ label a1_glitch1:
     pause 5.0
 
     jump s_a2_knight
-
-"""
-PAUSE/PLAY GLITCH
-
-    python:
-        for count in range(2):
-            renpy.music.set_pause(True)
-            renpy.pause(renpy.random.uniform(0.1, 0.3))  
-            
-            renpy.music.set_pause(False)
-            renpy.pause(renpy.random.uniform(0.05, 0.2))
-
-SOUNDS GLITCH
-
-    python:
-        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
-        for count in range (5): # how many times to play any sound
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(3, 5))
-
-PITCH GLITCH
-
-    python:
-        for count in range (50):
-            renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
-            renpy.pause(renpy.random.uniform(0.02, 0.1))
-"""

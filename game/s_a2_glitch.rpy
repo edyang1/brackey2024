@@ -45,7 +45,6 @@ label s_a2_glitch:
     scene cyber_fighter_g
 
     python:
-        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
         for count in range (2): # how many times to play any sound
             random_sound = renpy.random.choice(glitch_sounds)
             renpy.sound.play(random_sound)
@@ -70,7 +69,6 @@ label s_a2_glitch:
     scene fantasy_cottage
 
     python:
-        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
         renpy.music.set_pause(True)
         random_sound = renpy.random.choice(glitch_sounds)
         renpy.sound.play(random_sound)
@@ -104,7 +102,6 @@ label s_a2_glitch:
     "{b}eROrrrRRrrRR: MEMorY. aLLoc..aTION ERROooor{/b}"
 
     python:
-        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
         for count in range(5):
             renpy.music.set_pause(True)
             random_sound = renpy.random.choice(glitch_sounds)
@@ -126,7 +123,6 @@ label s_a2_glitch:
     "{b}eeEEEEEeRRR0rRRR: STACK OOOvErflW!!{/b}"
 
     python:
-        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
         for count in range(10):
             renpy.music.set_pause(True)
             random_sound = renpy.random.choice(glitch_sounds)
@@ -151,31 +147,3 @@ label s_a2_glitch:
     pause 5.0
 
     jump s_a3_s1
-
-"""
-PAUSE/PLAY GLITCH
-
-    python:
-        for count in range(2):
-            renpy.music.set_pause(True)
-            renpy.pause(renpy.random.uniform(0.1, 0.3))  
-            
-            renpy.music.set_pause(False)
-            renpy.pause(renpy.random.uniform(0.05, 0.2))
-
-SOUNDS GLITCH
-
-    python:
-        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
-        for count in range (5): # how many times to play any sound
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(3, 5))
-
-PITCH GLITCH
-
-    python:
-        for count in range (50):
-            renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
-            renpy.pause(renpy.random.uniform(0.02, 0.1))
-"""

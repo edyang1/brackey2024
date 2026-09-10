@@ -84,7 +84,7 @@ label forest_minigame_4: #plant quiz
             "Almost immediately, your stomach twists painfully, and you realize it was a bad choice."
 
             "Disclaimer: take our survival advice with a grain of salt."
-            "Please do your due dilligence before exploring the wilderness."
+            "Please do your due diligence before exploring the wilderness."
             jump forest_minigame_setback
 
         "If animals are eating it, it must be safe":
@@ -92,7 +92,7 @@ label forest_minigame_4: #plant quiz
             "Unfortunately, what's safe for animals isn't always safe for humans, and soon you feel dizzy."
 
             "Disclaimer: take our survival advice with a grain of salt."
-            "Please do your due dilligence before exploring the wilderness."
+            "Please do your due diligence before exploring the wilderness."
             jump forest_minigame_setback
 
         "Perform an edibility test (rub it on skin first)":
@@ -100,7 +100,7 @@ label forest_minigame_4: #plant quiz
             "It seems safe to taste a small piece."
 
             "Disclaimer: take our survival advice with a grain of salt."
-            "Please do your due dilligence before exploring the wilderness."
+            "Please do your due diligence before exploring the wilderness."
             jump forest_minigame_5
 
 label forest_minigame_5: #navigation. establish animal calls for later puzzle

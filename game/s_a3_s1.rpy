@@ -183,7 +183,7 @@ label a3_s1_1:
             "As you step closer, something stirs within the darkness—small, almost childlike, skittering along the edge of the doorframe."
             "A thin figure emerges, clutching the wooden beams of the entrance. Its bright, pearl-like eyes and crafted metallic body glint faintly in the dim light."
 
-            show i neu at subtle_breathe
+            show iol neu at subtle_breathe
 
             python:
                 for count in range(5):
@@ -193,7 +193,7 @@ label a3_s1_1:
                     renpy.music.set_pause(False)
                     renpy.pause(renpy.random.uniform(0.05, 0.2))
 
-            i "Who are you? What are you doing here?"
+            iol "Who are you? What are you doing here?"
 
             "The golem's voice trembles with fear, its frame barely visible as it peers out from behind the wall."
 
@@ -201,36 +201,36 @@ label a3_s1_1:
                 "Iolkos, it's me. We talked before, remember? You even had me taste your soup.":
                     "You inch closer, your voice gentle, but with every step, the golem retreats further into the shadows."
 
-            show i sup at lean_back
+            show iol sup at lean_back
 
-            i "I don't remember you! I don't know who you are!"
+            iol "I don't remember you! I don't know who you are!"
 
             scene cyber_console with flash
-            show i ang at jitter
+            show iol ang at jitter
             scene fantasy_golem with flash
 
             "Iolkos cries out, his voice rising in fear."
 
-            i "I'm always alone! No one ever comes here! You're lying!"
+            iol "I'm always alone! No one ever comes here! You're lying!"
 
             "The golem's pearl eyes twist into oblique lines, glowing with anger."
 
-            show i ang at tilt_right
+            show iol ang at tilt_right
 
-            i "You're bad! You're a liar! No one has ever been in here with me!"
-            i "People only come by to break things and steal from the outside!"
+            iol "You're bad! You're a liar! No one has ever been in here with me!"
+            iol "People only come by to break things and steal from the outside!"
 
-            show i ang at step_back
+            show iol ang at step_back
 
             "The automaton scuttles toward the door, its small frame moving with frantic energy as it slams the door shut."
 
-            show i ang at subtle_breathe
+            show iol ang at subtle_breathe
 
-            i "Don't come any closer! I want to be alone!"
+            iol "Don't come any closer! I want to be alone!"
 
             "Iolkos yells one final time before slamming the door, locking himself inside the decaying inn."
 
-            show i neu at look_down
+            show iol neu at look_down
 
             "You're left standing alone beneath the trees. Before the door shut, you noticed something odd—"
             "A purple outline surrounded Iolkos' small frame, with two colored bars hovering above him and two squares."

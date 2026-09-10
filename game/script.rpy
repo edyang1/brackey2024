@@ -1,7 +1,7 @@
 ﻿# CHARACTERS
 define stav = Character("Stavros", color="#fdea11", image="stav")  # Stavros Attelides
 define cah = Character("Caharel", color="#2b43c9", image="cah")  # Caharel (they)
-define i = Character("Iolkos", color = "#3c8734", image="i")  # Iolkos
+define iol = Character("Iolkos", color="#3c8734", image="iol")  # Iolkos
 
 define fox = Character("Two-tailed fox", color="#ff7f00", image="fox")  # Fox
 
@@ -17,11 +17,50 @@ default c_name = "Ca55ioP0X"
 
 default visited_f_golem = False
 default visited_f_healer = False
-default explored_valley = False
+
+# ART STYLE
+# Selects the dialogue box art in screens.rpy. Each scene sets this on entry;
+# the default keeps the ConditionSwitch valid on any path that reaches a say
+# screen without passing through start (loading a save, jumping to a label).
+
+default artstyle = "fantasy"
 
 # SCENE EFFECTS
 
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
+
+# The pool the glitch sequences draw from. Previously re-assigned inside a
+# python block at each use site, which left it undefined on any path that
+# reached a later block without running an earlier one.
+
+define glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
+
+# GLITCH EFFECT REFERENCE
+#
+# The three building blocks the glitch sequences are assembled from. These
+# used to sit at the bottom of s_a1_glitch.rpy and s_a2_glitch.rpy as bare
+# triple-quoted strings, which Ren'Py parsed as unreachable say statements.
+#
+# PAUSE/PLAY
+#     python:
+#         for count in range(2):
+#             renpy.music.set_pause(True)
+#             renpy.pause(renpy.random.uniform(0.1, 0.3))
+#             renpy.music.set_pause(False)
+#             renpy.pause(renpy.random.uniform(0.05, 0.2))
+#
+# SOUNDS
+#     python:
+#         for count in range(5):
+#             renpy.sound.play(renpy.random.choice(glitch_sounds))
+#             renpy.pause(renpy.random.uniform(3, 5))
+#
+# PANNING
+#     python:
+#         for count in range(50):
+#             renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
+#             renpy.pause(renpy.random.uniform(0.02, 0.1))
+#         renpy.music.set_pan(0, 0)   # note: two arguments, not three
 
 # TRANSFORM GUIDE
 

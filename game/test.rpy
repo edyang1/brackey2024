@@ -33,18 +33,18 @@ label char_test:
     cah "Seeya!"
     hide cah
 
-    show i hap
-    i "Hi, I'm Iolkos!"
-    show i sad
-    i "I'm sad."
-    show i ang
-    i "I'm angry."
-    show i sup
-    i "I'm surprised."
-    show i neu
-    i "I'm neutral."
-    i "Seeya!"
-    hide i
+    show iol hap
+    iol "Hi, I'm Iolkos!"
+    show iol sad
+    iol "I'm sad."
+    show iol ang
+    iol "I'm angry."
+    show iol sup
+    iol "I'm surprised."
+    show iol neu
+    iol "I'm neutral."
+    iol "Seeya!"
+    hide iol
     
     $ artstyle = "cyber"
 
@@ -210,9 +210,9 @@ label pos_test:
     cah "I'm neutral and close to the camera."
     hide cah
 
-    show i neu at close_to_camera
-    i "I'm neutral and close to the camera."
-    hide i
+    show iol neu at close_to_camera
+    iol "I'm neutral and close to the camera."
+    hide iol
 
     "Lets go over to the cyber world."
     $ artstyle = "cyber"
@@ -282,7 +282,6 @@ label fx_test:
     "Glitch it with random sound effects."
 
     python:
-        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
         for count in range (5): # how many times to play any sound
             random_sound = renpy.random.choice(glitch_sounds)
             renpy.sound.play(random_sound)

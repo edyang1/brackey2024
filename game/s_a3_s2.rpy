@@ -279,7 +279,6 @@ label a3_s2_2:
     "plEaSePLEASEpleASEplEASEplease—NO—NO!"
 
     python:
-        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
         for count in range (2): # how many times to play any sound
             random_sound = renpy.random.choice(glitch_sounds)
             renpy.sound.play(random_sound)
@@ -288,7 +287,6 @@ label a3_s2_2:
     "STOPSTOPSTOPstopSTOPSSTOPstpSTOPSTOPSTOP—"
 
     python:
-        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
         for count in range(7):
             renpy.music.set_pause(True)
             random_sound = renpy.random.choice(glitch_sounds)
@@ -314,7 +312,6 @@ label a3_s2_2:
     "STOPSTOpSToPstopSTOPstOpSTOPSTOPSTOP—"
 
     python:
-        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
         for count in range (3): # how many times to play any sound
             random_sound = renpy.random.choice(glitch_sounds)
             renpy.sound.play(random_sound)
@@ -326,7 +323,6 @@ label a3_s2_2:
     scene fantasy_golem_g with flash
 
     python:
-        glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
         for count in range(10):
             renpy.music.set_pause(True)
             random_sound = renpy.random.choice(glitch_sounds)
