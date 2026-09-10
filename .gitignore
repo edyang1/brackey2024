@@ -1,0 +1,37 @@
+# ---- Ren'Py generated ----------------------------------------------------
+# Compiled bytecode. Regenerated from the .rpy sources on every launch.
+*.rpyc
+*.rpymc
+*.rpyb
+
+# Per-project bytecode / analysis cache.
+game/cache/
+
+# Local playtest saves and persistent data. Machine-specific.
+game/saves/
+
+# Editor backups and Ren'Py's own pre-edit copies.
+*.bak
+*~
+
+# ---- Ren'Py runtime output -----------------------------------------------
+# Written to the project root by the engine on each run.
+log.txt
+errors.txt
+traceback.txt
+files.txt
+image_cache.txt
+text_overflow.txt
+dialogue.txt
+dialogue.tab
+profile_screen.txt
+
+# ---- Build output --------------------------------------------------------
+*-dists/
+*.rpa
+
+# ---- Editor / OS ---------------------------------------------------------
+.DS_Store
+Thumbs.db
+thumbs.db
+desktop.ini
