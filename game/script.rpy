@@ -35,32 +35,60 @@ define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 
 define glitch_sounds = ["glitch1.mp3", "glitch2.mp3", "glitch3.mp3", "glitch4.mp3"]
 
-# GLITCH EFFECT REFERENCE
+# GLITCH EFFECTS
 #
-# The three building blocks the glitch sequences are assembled from. These
-# used to sit at the bottom of s_a1_glitch.rpy and s_a2_glitch.rpy as bare
-# triple-quoted strings, which Ren'Py parsed as unreachable say statements.
-#
-# PAUSE/PLAY
-#     python:
-#         for count in range(2):
-#             renpy.music.set_pause(True)
-#             renpy.pause(renpy.random.uniform(0.1, 0.3))
-#             renpy.music.set_pause(False)
-#             renpy.pause(renpy.random.uniform(0.05, 0.2))
-#
-# SOUNDS
-#     python:
-#         for count in range(5):
-#             renpy.sound.play(renpy.random.choice(glitch_sounds))
-#             renpy.pause(renpy.random.uniform(3, 5))
-#
-# PANNING
-#     python:
-#         for count in range(50):
-#             renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
-#             renpy.pause(renpy.random.uniform(0.02, 0.1))
-#         renpy.music.set_pan(0, 0)   # note: two arguments, not three
+# The building blocks the glitch sequences are assembled from. Each of these
+# was previously written out longhand at every use site -- 31 python blocks
+# across six files -- which is why the pan-reset bug only ever got fixed in
+# some of the copies.
+
+init python:
+
+    def glitch_stutter(times):
+        """Cut the music in and out."""
+
+        for _ in range(times):
+            renpy.music.set_pause(True)
+            renpy.pause(renpy.random.uniform(0.1, 0.3))
+            renpy.music.set_pause(False)
+            renpy.pause(renpy.random.uniform(0.05, 0.2))
+
+    def glitch_burst(times, gap=(3, 5)):
+        """Fire `times` random glitch samples, `gap` seconds apart."""
+
+        for _ in range(times):
+            renpy.sound.play(renpy.random.choice(glitch_sounds))
+            renpy.pause(renpy.random.uniform(*gap))
+
+    def glitch_stutter_burst(times):
+        """Cut the music in and out, firing a glitch sample on each edge."""
+
+        for _ in range(times):
+            renpy.music.set_pause(True)
+            renpy.sound.play(renpy.random.choice(glitch_sounds))
+            renpy.pause(renpy.random.uniform(1, 2))
+            renpy.music.set_pause(False)
+            renpy.sound.play(renpy.random.choice(glitch_sounds))
+            renpy.pause(renpy.random.uniform(1, 2))
+
+    def glitch_pan(times=50, reset=False):
+        """Sweep the music across the stereo field.
+
+        `reset` re-centres the channel afterwards. Most call sites rely on
+        the next scene's own set_pan(0, 0) to do that instead.
+        """
+
+        for _ in range(times):
+            renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
+            renpy.pause(renpy.random.uniform(0.02, 0.1))
+
+        if reset:
+            renpy.music.set_pan(0, 0)
+
+    def ask_name(prompt, fallback):
+        """Prompt for a name, falling back when the player enters nothing."""
+
+        return renpy.input(prompt, default=fallback).strip() or fallback
 
 # TRANSFORM GUIDE
 

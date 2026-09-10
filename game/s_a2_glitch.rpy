@@ -9,13 +9,7 @@ label s_a2_glitch:
     "You once again find yourself wandering the towering streets of the Everdusk Sector, dwarfed by endless buildings and artificial suns."
     "Your restless desire for exploration pushes you forward, just as it did in the mountains—alone, searching for something beyond these looming shadows."
     
-    python:
-        for count in range(10):
-            renpy.music.set_pause(True)
-            renpy.pause(renpy.random.uniform(0.1, 0.3))  
-            
-            renpy.music.set_pause(False)
-            renpy.pause(renpy.random.uniform(0.05, 0.2))
+    $ glitch_stutter(10)
     
     "What once felt alien now feels familiar. The flashing lights, the sharp hum of powerlines, the mechanical hum of vehicles—it all blends into the rhythm of the city, a living organism breathing beneath your feet."
 
@@ -25,13 +19,7 @@ label s_a2_glitch:
     
     scene fantasy_cottage_g
 
-    python:
-        for count in range(20):
-            renpy.music.set_pause(True)
-            renpy.pause(renpy.random.uniform(0.1, 0.3))  
-            
-            renpy.music.set_pause(False)
-            renpy.pause(renpy.random.uniform(0.05, 0.2))
+    $ glitch_stutter(20)
 
     "The colors, the noise—they no longer assault your senses. You've learned to tolerate the overwhelming pulse of this place."
     "The Everdusk nightlife surrounds you, though the lack of a visible sky leaves you uncertain of the time. Is it even night?"
@@ -44,11 +32,7 @@ label s_a2_glitch:
 
     scene cyber_fighter_g
 
-    python:
-        for count in range (2): # how many times to play any sound
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(3, 5))
+    $ glitch_burst(2)
 
     "Steam rises from a nearby vent, lingering unnaturally low, swirling like a coiled serpent."
     "Your chest tightens as familiar memories surge—memories of this fog, this exact sensation. It pulls you in."
@@ -68,17 +52,7 @@ label s_a2_glitch:
 
     scene fantasy_cottage
 
-    python:
-        renpy.music.set_pause(True)
-        random_sound = renpy.random.choice(glitch_sounds)
-        renpy.sound.play(random_sound)
-        renpy.pause(renpy.random.uniform(1, 2))
-        
-        renpy.music.set_pause(False)
-
-        random_sound = renpy.random.choice(glitch_sounds)
-        renpy.sound.play(random_sound)
-        renpy.pause(renpy.random.uniform(1, 2))
+    $ glitch_stutter_burst(1)
 
     "The city's hum fractures into chaotic screeches that pierce your skull."
 
@@ -101,18 +75,7 @@ label s_a2_glitch:
 
     "{b}eROrrrRRrrRR: MEMorY. aLLoc..aTION ERROooor{/b}"
 
-    python:
-        for count in range(5):
-            renpy.music.set_pause(True)
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(1, 2))
-            
-            renpy.music.set_pause(False)
-
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(1, 2))
+    $ glitch_stutter_burst(5)
 
     "Panic rises as you press on, desperate to reach the familiar road, but the deeper you go, the more the world warps around you."
 
@@ -122,18 +85,7 @@ label s_a2_glitch:
 
     "{b}eeEEEEEeRRR0rRRR: STACK OOOvErflW!!{/b}"
 
-    python:
-        for count in range(10):
-            renpy.music.set_pause(True)
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(1, 2))
-            
-            renpy.music.set_pause(False)
-
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(1, 2))
+    $ glitch_stutter_burst(10)
 
     scene cyber_android_g
 

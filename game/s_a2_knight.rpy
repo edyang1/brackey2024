@@ -6,11 +6,7 @@ label s_a2_knight:
     scene black
     play music "cyber_suspense.mp3" loop
 
-    python:
-        c_name = renpy.input("ENTER YOUR ALIAS", default = "Ca55ioP0X")
-        c_name = c_name.strip()
-        if c_name == "":
-            c_name = "Ca55ioP0X"
+    $ c_name = ask_name("ENTER YOUR ALIAS", "Ca55ioP0X")
 
     "READY?"
 

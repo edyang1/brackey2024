@@ -30,21 +30,11 @@ label s_a1_glitch:
     jump a1_glitch1
 
 label a1_glitch1:
-    python:
-        for count in range (50):
-            renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
-            renpy.pause(renpy.random.uniform(0.02, 0.1))
-        renpy.music.set_pan(0, 0)
+    $ glitch_pan(reset=True)
 
     "Your vision blurs as the village around you seems to warp, the trees flickering in and out of existence."
 
-    python:
-        for count in range(2):
-            renpy.music.set_pause(True)
-            renpy.pause(renpy.random.uniform(0.1, 0.3))  
-            
-            renpy.music.set_pause(False)
-            renpy.pause(renpy.random.uniform(0.05, 0.2))
+    $ glitch_stutter(2)
 
     "{b}MEMORY LEAK: Invalid memory reference at 0x0000FF. Core dump initiated.{/b}"
 
@@ -54,21 +44,11 @@ label a1_glitch1:
 
     "Reality splinters as the village dissolves, replaced by jagged, shifting fragments of what once was."
 
-    python:
-        for count in range(10):
-            renpy.music.set_pause(True)
-            renpy.pause(renpy.random.uniform(0.1, 0.3))  
-            
-            renpy.music.set_pause(False)
-            renpy.pause(renpy.random.uniform(0.05, 0.2))
+    $ glitch_stutter(10)
 
     "{b}m€mø®¥ Øverfłøw{/b}"
 
-    python:
-        for count in range (1): # how many times to play any sound
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(3, 5))
+    $ glitch_burst(1)
 
     "You stumble, the world around you collapsing into a chaotic swirl of colors and shapes."
 
@@ -82,18 +62,7 @@ label a1_glitch1:
 
     scene fantasy_golem_g
 
-    python:
-        for count in range(5):
-            renpy.music.set_pause(True)
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(1, 2))
-            
-            renpy.music.set_pause(False)
-
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(1, 2))
+    $ glitch_stutter_burst(5)
             
 
     "Suddenly, everything goes black."
@@ -104,18 +73,7 @@ label a1_glitch1:
 
     "{b}eRr0rrrRrrRR: CoRruptED pAThWay{/b}"
     
-    python:
-        for count in range(3):
-            renpy.music.set_pause(True)
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(1, 2))
-            
-            renpy.music.set_pause(False)
-
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(1, 2))
+    $ glitch_stutter_burst(3)
     
     "{b}Rebuilding n#n#-><-- ... //r€AL_ity....{/b}"
 
@@ -127,18 +85,7 @@ label a1_glitch1:
 
     scene cyber_android_g
 
-    python:
-        for count in range(3):
-            renpy.music.set_pause(True)
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(1, 2))
-            
-            renpy.music.set_pause(False)
-
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(1, 2))
+    $ glitch_stutter_burst(3)
 
     stop music
     stop sound

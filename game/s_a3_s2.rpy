@@ -78,13 +78,7 @@ label a3_s2_1:
 
                     stan "I've always been alone."
 
-                    python:
-                        for count in range(5):
-                            renpy.music.set_pause(True)
-                            renpy.pause(renpy.random.uniform(0.1, 0.3))  
-                            
-                            renpy.music.set_pause(False)
-                            renpy.pause(renpy.random.uniform(0.05, 0.2))
+                    $ glitch_stutter(5)
 
                     "No matter how much you call his name, Stephen Hatterlode no longer responds. His attention is elsewhere, locked onto his drink."
 
@@ -130,13 +124,7 @@ label a3_s2_1:
             
             "There's no response. Her vehicle only accelerates, pulling ahead as you struggle to keep up."
             
-            python:
-                for count in range(5):
-                    renpy.music.set_pause(True)
-                    renpy.pause(renpy.random.uniform(0.1, 0.3))  
-                    
-                    renpy.music.set_pause(False)
-                    renpy.pause(renpy.random.uniform(0.05, 0.2))
+            $ glitch_stutter(5)
 
             "Both of your transports are following the same road, and soon you realize where she's headed."
             "Callie is driving straight towards a ring of gray mist, slowly closing in on the city."
@@ -202,13 +190,7 @@ label a3_s2_1:
 
             b "You said something before, like a name? Was that my name?"
 
-            python:
-                for count in range(5):
-                    renpy.music.set_pause(True)
-                    renpy.pause(renpy.random.uniform(0.1, 0.3))  
-                    
-                    renpy.music.set_pause(False)
-                    renpy.pause(renpy.random.uniform(0.05, 0.2))
+            $ glitch_stutter(5)
 
             menu:
                 "Yes, Bass. That's your name. You told me that.":
@@ -250,10 +232,7 @@ label a3_s2_2:
     
     scene fantasy_cottage with flash
 
-    python:
-        for count in range (50):
-            renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
-            renpy.pause(renpy.random.uniform(0.02, 0.1))
+    $ glitch_pan()
 
     "{size=*0.9}{i}{color=#ff1493}Page fault—insufficient memory resources{/color}{/i}"
     "{size=+5}{color=#ff6347}System HALT: Stack trace corrupted—cannot continue.{/color}"
@@ -265,10 +244,7 @@ label a3_s2_2:
 
     scene cyber_healer_g
 
-    python:
-        for count in range (50):
-            renpy.music.set_pan(renpy.random.uniform(-1, 1), 0)
-            renpy.pause(renpy.random.uniform(0.02, 0.1))
+    $ glitch_pan()
 
     scene cyber_healer_g with flash
 
@@ -278,26 +254,11 @@ label a3_s2_2:
 
     "plEaSePLEASEpleASEplEASEplease—NO—NO!"
 
-    python:
-        for count in range (2): # how many times to play any sound
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(3, 5))
+    $ glitch_burst(2)
 
     "STOPSTOPSTOPstopSTOPSSTOPstpSTOPSTOPSTOP—"
 
-    python:
-        for count in range(7):
-            renpy.music.set_pause(True)
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(1, 2))
-            
-            renpy.music.set_pause(False)
-
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(1, 2))
+    $ glitch_stutter_burst(7)
 
     scene fantasy_knight_g with flash
 
@@ -311,29 +272,14 @@ label a3_s2_2:
 
     "STOPSTOpSToPstopSTOPstOpSTOPSTOPSTOP—"
 
-    python:
-        for count in range (3): # how many times to play any sound
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(3, 5))
+    $ glitch_burst(3)
     
     "{size=+6}{color=#ff4500}DISK F@ILURE{/color}"
     "{size=*1.3}Invalid memory read at address {size=*0.8}{u}{color=#4682b4}0x0000FFFF{/color}{/u}"
     
     scene fantasy_golem_g with flash
 
-    python:
-        for count in range(10):
-            renpy.music.set_pause(True)
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(1, 2))
-            
-            renpy.music.set_pause(False)
-
-            random_sound = renpy.random.choice(glitch_sounds)
-            renpy.sound.play(random_sound)
-            renpy.pause(renpy.random.uniform(1, 2))
+    $ glitch_stutter_burst(10)
 
     "PLSPLSPLSPLSPLSPLS—NO NO—"
 

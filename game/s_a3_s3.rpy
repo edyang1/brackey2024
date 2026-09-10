@@ -329,10 +329,6 @@ label a3_s3_2:
 
             pause 3.0
 
-            python:
-                for count in range (4): # how many times to play any sound
-                    random_sound = renpy.random.choice(glitch_sounds)
-                    renpy.sound.play(random_sound)
-                    renpy.pause(renpy.random.uniform(1, 2))
+            $ glitch_burst(4, gap=(1, 2))
 
             jump s_a3_bad_ending

@@ -88,13 +88,7 @@ label a3_s1_1:
             "A cold shock rushes through you as you hear Stavros' words."
             "Your vision trembles, and your eyes blink uncontrollably. Stavros' body is outlined by a faint blue glow."
             
-            python:
-                for count in range(5):
-                    renpy.music.set_pause(True)
-                    renpy.pause(renpy.random.uniform(0.1, 0.3))  
-                    
-                    renpy.music.set_pause(False)
-                    renpy.pause(renpy.random.uniform(0.05, 0.2))
+            $ glitch_stutter(5)
             
             "A small panel with colored lines and a square appears above him. The number '50' is displayed next to the green and yellow bars."
             "For a brief moment, you spot the shape of a shield crossed by a blade before the image jitters and vanishes, leaving the box empty."
@@ -139,13 +133,7 @@ label a3_s1_1:
 
             "Whatever lies beyond the bend in the road is simply out of reach—an illusion,"
 
-            python:
-                for count in range(5):
-                    renpy.music.set_pause(True)
-                    renpy.pause(renpy.random.uniform(0.1, 0.3))  
-                    
-                    renpy.music.set_pause(False)
-                    renpy.pause(renpy.random.uniform(0.05, 0.2))
+            $ glitch_stutter(5)
 
             "a space that doesn't exist in the reality you're trapped in."
             "Each step toward it displaces you back to where you started, and as you walk,"
@@ -185,13 +173,7 @@ label a3_s1_1:
 
             show iol neu at subtle_breathe
 
-            python:
-                for count in range(5):
-                    renpy.music.set_pause(True)
-                    renpy.pause(renpy.random.uniform(0.1, 0.3))  
-                    
-                    renpy.music.set_pause(False)
-                    renpy.pause(renpy.random.uniform(0.05, 0.2))
+            $ glitch_stutter(5)
 
             iol "Who are you? What are you doing here?"
 

@@ -11,11 +11,7 @@ label s_a1_knight:
     show stav sup at lean_in
     "The knight raises his good arm in a welcoming gesture, though his tone carries a note of wariness."
 
-    python:
-        f_name = renpy.input("What's your name?", default = "Cassiopeia")
-        f_name = f_name.strip()
-        if f_name == "":
-            f_name = "Cassiopeia"
+    $ f_name = ask_name("What's your name?", "Cassiopeia")
 
     show stav neu at nod
     "He nods slightly, as if turning the name over in his mind."
