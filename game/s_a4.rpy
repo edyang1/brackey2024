@@ -1,6 +1,6 @@
 label s_a4:
     scene black with fade
-    stop sound fadeout 2.0
+    stop ambient fadeout 2.0
     play music "title_theme.mp3" loop fadein 5.0
 
     "The wind brushes past you as you stand at the edge of the world, lost in thought."

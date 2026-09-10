@@ -317,7 +317,7 @@ label a1_knight_conversation_menu3:
             "You fall into a deep sleep, the warmth of Stavros' cottage and the crackling fire lulling you into rest."
 
             stop music fadeout 1.0
-            stop sound fadeout 1.0
+            stop ambient fadeout 1.0
             scene black with fade
             "... ..."
             "... ..."
@@ -326,7 +326,7 @@ label a1_knight_conversation_menu3:
             "..."
 
             play music "fantasy_casual.mp3" loop fadein 1.0
-            play sound "a_fantasy.mp3" loop fadein 1.0
+            play ambient "a_fantasy.mp3" loop fadein 1.0
 
             scene fantasy_cottage with dissolve
 

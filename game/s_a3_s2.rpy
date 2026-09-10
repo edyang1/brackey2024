@@ -2,7 +2,7 @@ label s_a3_s2:
     $ artstyle = "cyber"
 
     play music "cyber_suspense.mp3" loop fadein 1.0
-    play sound "a_safehouse.mp3" loop fadein 1.0
+    play ambient "a_safehouse.mp3" loop fadein 1.0
 
     "You wake up in the same car as before, the one you found yourself in when this all started."
     "Your clothes have shifted once again to match those of the Everdusk Sector, the stark change only confirming your return."
@@ -284,7 +284,7 @@ label a3_s2_2:
     "PLSPLSPLSPLSPLSPLS—NO NO—"
 
     stop music
-    stop sound
+    stop ambient
     scene black with flash
 
     jump s_a3_s3

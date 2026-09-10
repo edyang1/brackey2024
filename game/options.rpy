@@ -8,10 +8,28 @@ define config.default_music_volume = 0.69
 define config.default_sfx_volume = 0.69
 define config.default_voice_volume = 1.0
 
-define config.default_text_cps = 50
+## Text speed is set by `default preferences.text_cps` further down. There was
+## also a `define config.default_text_cps = 50` here, which never took effect:
+## Ren'Py's preferences namespace writes config.default_text_cps itself when it
+## applies the default, so the 150 below overwrote the 50 before it could be
+## read. Removed rather than left as two contradicting values.
 
 init python:
     config.auto_voice = "voice/{id}.mp3"
+
+    ## A dedicated channel for the looping ambient beds (a_town, a_fantasy,
+    ## a_safehouse and friends).
+    ##
+    ## These used to play on the built-in sound channel, which the glitch
+    ## sequences also use via renpy.sound.play. Playing on a channel replaces
+    ## whatever is already there, so the first glitch sample silently killed
+    ## the ambient loop for the rest of the scene. Separating them lets the
+    ## bed keep running underneath the glitch effects.
+    ##
+    ## Mixed under sfx so it follows the existing sound volume slider rather
+    ## than adding a mixer to the preferences screen.
+
+    renpy.music.register_channel("ambient", mixer="sfx", loop=True, tight=True)
 
 ## Basics ######################################################################
 
@@ -209,6 +227,39 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+
+    ## Development-only files. These are third-party editor tools (Feniks'
+    ## Action Editor and the image/sound viewers) plus this project's own
+    ## scene-test scaffolding. They are gated behind config.developer at
+    ## runtime, so they are inert in a release build -- but they still get
+    ## packaged and still cost init time, so keep them out of the archive.
+
+    build.classify('game/ActionEditor.rpy', None)
+    build.classify('game/ActionEditor_config.rpy', None)
+    build.classify('game/ActionEditor_screens.rpy', None)
+    build.classify('game/00warper.rpy', None)
+    build.classify('game/ATL_functions.rpy', None)
+    build.classify('game/image_viewer.rpy', None)
+    build.classify('game/sound_viewer.rpy', None)
+    build.classify('game/menu_screen.rpy', None)
+    build.classify('game/keymap.rpy', None)
+    build.classify('game/test.rpy', None)
+    build.classify('game/testcases.rpy', None)
+
+    ## Compiled forms of the above, and the Action Editor's own translations,
+    ## which are for the tool's interface rather than for this game.
+
+    build.classify('game/ActionEditor*.rpyc', None)
+    build.classify('game/00warper.rpyc', None)
+    build.classify('game/ATL_functions.rpyc', None)
+    build.classify('game/image_viewer.rpyc', None)
+    build.classify('game/sound_viewer.rpyc', None)
+    build.classify('game/menu_screen.rpyc', None)
+    build.classify('game/keymap.rpyc', None)
+    build.classify('game/test.rpyc', None)
+    build.classify('game/testcases.rpyc', None)
+    build.classify('game/tl/chinese/**', None)
+    build.classify('game/tl/japanese/**', None)
 
     ## To archive files, classify them as 'archive'.
 

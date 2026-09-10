@@ -4,7 +4,7 @@ label s_a3_s1:
     $ renpy.music.set_pan(0, 0)
 
     play music "fantasy_suspense.mp3" loop fadein 1.0
-    play sound "a_town.mp3" loop fadein 1.0
+    play ambient "a_town.mp3" loop fadein 1.0
 
     scene fantasy_knight with fade
     jump a3_s1_1
@@ -249,6 +249,6 @@ label a3_s1_1:
             scene black with flash
 
             stop music
-            stop sound
+            stop ambient
 
             jump s_a3_s2

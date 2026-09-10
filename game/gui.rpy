@@ -53,16 +53,11 @@ define gui.hover_muted_color = '#005b7a'
 
 define gui.text_color = '#ffffff'
 
-# if artstyle == "fantasy":
-#     define gui.text_color = '#000000'
-# else:
-#     define gui.text_color = '#ffffff'
-
-# define gui.text_color = ConditionSwitch(
-#     "artstyle == 'fantasy'", '#000000',
-#     "artstyle == 'cyber'", '#ffffff',
-#     "True", '#ffffff'
-# )
+## Both dialogue boxes are dark behind the text, so white reads well on each:
+## measured worst case is 10.7:1 on the fantasy plank, which is opaque. The
+## cyber panel is translucent, so its contrast follows the background and
+## drops to about 3:1 over the bright areas of cyber_healer_g and
+## cyber_android. The outline below covers those without touching the art.
 
 define gui.interface_text_color = '#ffffff'
 
@@ -97,6 +92,29 @@ define gui.notify_text_size = 32
 define gui.title_text_size = 100
 
 
+## Text outlines ###############################################################
+##
+## Each character's name is drawn in that character's own colour, and those
+## colours were picked against the old name position rather than the plaque
+## the name now sits on. Several of them are unreadable on their own: on the
+## cyan cyber plaque Callie measures 1.9:1 and Stanley 2.7:1, and on the brown
+## fantasy plank Caharel measures 1.3:1. A dark outline lifts every one of
+## them without changing a character's colour or repainting the art.
+##
+## Caharel is the one this does not fully rescue -- #2b43c9 is dark enough
+## that a dark outline only reaches 2.8:1. Fixing that properly means picking
+## a lighter colour for him, which is a character-design call, not a code one.
+
+define gui.name_text_outlines = [ (4, "#000000", 0, 0) ]
+
+## Dialogue is white on two dark boxes, so this is only doing work on the
+## cyber panel, which is translucent and drops to about 3:1 over the bright
+## areas of cyber_healer_g and cyber_android. Kept thin and partly
+## transparent so it does nothing visible on the fantasy plank.
+
+define gui.dialogue_text_outlines = [ (2, "#00000099", 0, 0) ]
+
+
 ## Main and Game Menus #########################################################
 
 image main_menu_animated:
@@ -126,12 +144,22 @@ define gui.textbox_yalign = 1.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 480
-define gui.name_ypos = 155
+##
+## Both textbox images carry a raised plaque drawn to hold the name, starting
+## at image x 1180 in each -- screen x 1500 once the 1920-wide art is centred
+## on the 2560-wide window. namebox.png is fully transparent, so that plaque
+## is the only frame the name ever gets. These used to sit at 480/155, which
+## is Ren'Py's 1080p default scaled up, putting the name out on the left over
+## bare plank while the plaque sat empty.
+define gui.name_xpos = 1717
+define gui.name_ypos = 103
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
-define gui.name_xalign = 0.0
+##
+## Centred, so name_xpos above is read as the middle of the plaque and names
+## of different lengths stay centred in it.
+define gui.name_xalign = 0.5
 
 ## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.

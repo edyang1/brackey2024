@@ -2,7 +2,7 @@ label s_a2_healer:
     $ artstyle = "cyber"
 
     play music "cyber_casual.mp3" loop fadein 1.0
-    play sound "a_clinic.mp3" loop fadein 1.0
+    play ambient "a_clinic.mp3" loop fadein 1.0
 
     "The kaleidoscope of lights and sounds was drowned out by a sudden, encroaching blackness that consumed you just as you lay inside the white puff of cloth."
     "You have scarce memories of people yelling something and more vehicles moving around you."
@@ -245,6 +245,6 @@ label a2_healer_conversation_menu_2:
     "The city waits. But this time, you feel ready."
 
     stop music fadeout 2.0
-    stop sound fadeout 2.0
+    stop ambient fadeout 2.0
     scene black with fade
     jump s_a2_glitch

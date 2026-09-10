@@ -143,7 +143,7 @@ label s_a2_knight:
     "The door creaks open, and the noise of conversation and the clinking of glasses spills out. You step inside."
     "..."
 
-    play sound "a_club.mp3" loop fadein 2.0
+    play ambient "a_club.mp3" loop fadein 2.0
 
     stan "You look like you could use something to drink."
 
@@ -513,6 +513,6 @@ label a2_knight_conversation_menu_4:
     "The car hums to life, engines purring softly, and you're on your way."
 
     stop music fadeout 2.0
-    stop sound fadeout 2.0
+    stop ambient fadeout 2.0
     scene black with fade
     jump s_a2_android

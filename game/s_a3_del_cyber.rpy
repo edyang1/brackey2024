@@ -2,7 +2,7 @@ label s_a3_del_cyber:
     $ artstyle = "fantasy"
 
     play music "fantasy_casual.mp3" loop fadein 2.0
-    play sound "a_fantasy.mp3" loop fadein 2.0
+    play ambient "a_fantasy.mp3" loop fadein 2.0
 
     scene fantasy_knight with fade
 
@@ -129,7 +129,7 @@ label a3_del_cyber_1:
 
         "Leave and contemplate.":
             scene black with fade
-            stop sound fadeout 2.0
+            stop ambient fadeout 2.0
 
             "The wind brushes past you as you stand at the edge of the world, looking out over the mountains and forests you've wandered through."
 

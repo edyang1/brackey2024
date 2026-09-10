@@ -2,7 +2,7 @@ label s_a3_del_fantasy:
     $ artstyle = "cyber"
 
     play music "cyber_casual.mp3" loop fadein 2.0
-    play sound "a_safehouse.mp3" loop fadein 2.0
+    play ambient "a_safehouse.mp3" loop fadein 2.0
 
     scene cyber_android with fade
 
@@ -77,7 +77,7 @@ label a3_del_fantasy_1:
 
         "Leave and contemplate.":
             scene black with fade
-            stop sound fadeout 2.0
+            stop ambient fadeout 2.0
 
             "The city hums around you, its neon lights flickering like distant stars in the growing night."
 
